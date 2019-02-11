@@ -11,6 +11,16 @@
 		718173FCBD002DBEDAAE2DDF /* Pods_PersonalTrainingDev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50EE04B784E0AF496DCE2158 /* Pods_PersonalTrainingDev.framework */; };
 		81CFF6B8922128613650E0DF /* Pods_PersonalTraining.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD648603F085491A1966896E /* Pods_PersonalTraining.framework */; };
 		C36249E7B6B1758E53F13E07 /* Pods_PersonalTrainingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70CDF3E9CC277DEB007B0E9F /* Pods_PersonalTrainingTests.framework */; };
+		EC74A9D22211FC9200B54F46 /* location.json in Resources */ = {isa = PBXBuildFile; fileRef = EC74A9CF2211FC9200B54F46 /* location.json */; };
+		EC74A9D32211FC9200B54F46 /* location.json in Resources */ = {isa = PBXBuildFile; fileRef = EC74A9CF2211FC9200B54F46 /* location.json */; };
+		EC74A9D42211FC9200B54F46 /* selfie.json in Resources */ = {isa = PBXBuildFile; fileRef = EC74A9D02211FC9200B54F46 /* selfie.json */; };
+		EC74A9D52211FC9200B54F46 /* selfie.json in Resources */ = {isa = PBXBuildFile; fileRef = EC74A9D02211FC9200B54F46 /* selfie.json */; };
+		EC74A9D62211FC9200B54F46 /* keys.json in Resources */ = {isa = PBXBuildFile; fileRef = EC74A9D12211FC9200B54F46 /* keys.json */; };
+		EC74A9D72211FC9200B54F46 /* keys.json in Resources */ = {isa = PBXBuildFile; fileRef = EC74A9D12211FC9200B54F46 /* keys.json */; };
+		EC74A9DB2211FEB500B54F46 /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC74A9D92211FEB500B54F46 /* AnimationViewController.swift */; };
+		EC74A9DC2211FEB500B54F46 /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC74A9D92211FEB500B54F46 /* AnimationViewController.swift */; };
+		EC74A9DD2211FEB500B54F46 /* AnimationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC74A9DA2211FEB500B54F46 /* AnimationViewController.xib */; };
+		EC74A9DE2211FEB500B54F46 /* AnimationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC74A9DA2211FEB500B54F46 /* AnimationViewController.xib */; };
 		ECAFAA0F2211DFD600480517 /* LottieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAFAA0D2211DFD600480517 /* LottieViewController.swift */; };
 		ECAFAA102211DFD600480517 /* LottieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAFAA0D2211DFD600480517 /* LottieViewController.swift */; };
 		ECAFAA112211DFD600480517 /* LottieViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECAFAA0E2211DFD600480517 /* LottieViewController.xib */; };
@@ -75,6 +85,11 @@
 		BD648603F085491A1966896E /* Pods_PersonalTraining.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PersonalTraining.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C07BE3B5D1BBDD9ADCA804DB /* Pods-PersonalTrainingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PersonalTrainingUITests.debug.xcconfig"; path = "Target Support Files/Pods-PersonalTrainingUITests/Pods-PersonalTrainingUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C271F5C0C5323D2377CEBA99 /* Pods-PersonalTraining.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PersonalTraining.release.xcconfig"; path = "Target Support Files/Pods-PersonalTraining/Pods-PersonalTraining.release.xcconfig"; sourceTree = "<group>"; };
+		EC74A9CF2211FC9200B54F46 /* location.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = location.json; sourceTree = "<group>"; };
+		EC74A9D02211FC9200B54F46 /* selfie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = selfie.json; sourceTree = "<group>"; };
+		EC74A9D12211FC9200B54F46 /* keys.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = keys.json; sourceTree = "<group>"; };
+		EC74A9D92211FEB500B54F46 /* AnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationViewController.swift; sourceTree = "<group>"; };
+		EC74A9DA2211FEB500B54F46 /* AnimationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnimationViewController.xib; sourceTree = "<group>"; };
 		ECAFAA0D2211DFD600480517 /* LottieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieViewController.swift; sourceTree = "<group>"; };
 		ECAFAA0E2211DFD600480517 /* LottieViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LottieViewController.xib; sourceTree = "<group>"; };
 		ECAFAA132211E09700480517 /* LottieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieViewModel.swift; sourceTree = "<group>"; };
@@ -167,9 +182,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		EC74A9D82211FE4000B54F46 /* AnimationView */ = {
+			isa = PBXGroup;
+			children = (
+				EC74A9D92211FEB500B54F46 /* AnimationViewController.swift */,
+				EC74A9DA2211FEB500B54F46 /* AnimationViewController.xib */,
+			);
+			path = AnimationView;
+			sourceTree = "<group>";
+		};
 		ECAFAA0C2211DFC100480517 /* Lottie */ = {
 			isa = PBXGroup;
 			children = (
+				ECAFAA1D2211E0FF00480517 /* LottieCoordinator.swift */,
+				EC74A9D82211FE4000B54F46 /* AnimationView */,
 				ECAFAA162211E0DD00480517 /* Cell */,
 				ECAFAA0D2211DFD600480517 /* LottieViewController.swift */,
 				ECAFAA0E2211DFD600480517 /* LottieViewController.xib */,
@@ -190,6 +216,9 @@
 		ECAFAA202211E45A00480517 /* LottieAnimations */ = {
 			isa = PBXGroup;
 			children = (
+				EC74A9D12211FC9200B54F46 /* keys.json */,
+				EC74A9CF2211FC9200B54F46 /* location.json */,
+				EC74A9D02211FC9200B54F46 /* selfie.json */,
 			);
 			path = LottieAnimations;
 			sourceTree = "<group>";
@@ -262,8 +291,6 @@
 			isa = PBXGroup;
 			children = (
 				ECD707152211CDF700873E26 /* Coordinator.swift */,
-				ECD707182211CE3200873E26 /* RootCoordinator.swift */,
-				ECAFAA1D2211E0FF00480517 /* LottieCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -281,6 +308,7 @@
 		ECD7071B2211CE7500873E26 /* Options */ = {
 			isa = PBXGroup;
 			children = (
+				ECD707182211CE3200873E26 /* RootCoordinator.swift */,
 				ECD7071C2211CE9100873E26 /* OptionsViewController.swift */,
 				ECD7071D2211CE9100873E26 /* OptionsViewController.xib */,
 				ECD707222211CEDE00873E26 /* OptionsViewModel.swift */,
@@ -425,7 +453,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECAFAA252211F58500480517 /* LottieCell.xib in Resources */,
+				EC74A9DD2211FEB500B54F46 /* AnimationViewController.xib in Resources */,
+				EC74A9D22211FC9200B54F46 /* location.json in Resources */,
 				ECD707202211CE9100873E26 /* OptionsViewController.xib in Resources */,
+				EC74A9D42211FC9200B54F46 /* selfie.json in Resources */,
+				EC74A9D62211FC9200B54F46 /* keys.json in Resources */,
 				ECD7072A2211D15600873E26 /* RxOptionViewController.xib in Resources */,
 				ECD706D52211CC4500873E26 /* LaunchScreen.storyboard in Resources */,
 				ECAFAA112211DFD600480517 /* LottieViewController.xib in Resources */,
@@ -452,7 +484,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECAFAA262211F58500480517 /* LottieCell.xib in Resources */,
+				EC74A9DE2211FEB500B54F46 /* AnimationViewController.xib in Resources */,
+				EC74A9D32211FC9200B54F46 /* location.json in Resources */,
 				ECD707212211CE9100873E26 /* OptionsViewController.xib in Resources */,
+				EC74A9D52211FC9200B54F46 /* selfie.json in Resources */,
+				EC74A9D72211FC9200B54F46 /* keys.json in Resources */,
 				ECD7072B2211D15600873E26 /* RxOptionViewController.xib in Resources */,
 				ECD7070B2211CCA200873E26 /* LaunchScreen.storyboard in Resources */,
 				ECAFAA122211DFD600480517 /* LottieViewController.xib in Resources */,
@@ -606,6 +642,7 @@
 			files = (
 				ECD707162211CDF700873E26 /* Coordinator.swift in Sources */,
 				ECD707282211D15600873E26 /* RxOptionViewController.swift in Sources */,
+				EC74A9DB2211FEB500B54F46 /* AnimationViewController.swift in Sources */,
 				ECD7071E2211CE9100873E26 /* OptionsViewController.swift in Sources */,
 				ECD707232211CEDE00873E26 /* OptionsViewModel.swift in Sources */,
 				ECAFAA0F2211DFD600480517 /* LottieViewController.swift in Sources */,
@@ -639,6 +676,7 @@
 			files = (
 				ECD707172211CDF700873E26 /* Coordinator.swift in Sources */,
 				ECD707292211D15600873E26 /* RxOptionViewController.swift in Sources */,
+				EC74A9DC2211FEB500B54F46 /* AnimationViewController.swift in Sources */,
 				ECD7071F2211CE9100873E26 /* OptionsViewController.swift in Sources */,
 				ECD707242211CEDE00873E26 /* OptionsViewModel.swift in Sources */,
 				ECAFAA102211DFD600480517 /* LottieViewController.swift in Sources */,

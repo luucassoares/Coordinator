@@ -14,16 +14,16 @@ import UIKit
 class RootCoordinator: Coordinator {
     var name: String? = "Root"
     private var window: UIWindow
-    private let rootViewController: UINavigationController
+    var presenter: UINavigationController?
     private var options: [String] = []
-    private var childCoordinators: [Coordinator] = []
+    var childCoordinators: [Coordinator]? = []
     
     init( window: UIWindow ) {
         self.window = window
-        rootViewController = UINavigationController()
-        rootViewController.navigationBar.prefersLargeTitles = true
-        childCoordinators.append(LottieCoordinator(presenter: rootViewController))
-        for child in childCoordinators {
+        presenter = UINavigationController()
+        presenter!.navigationBar.prefersLargeTitles = true
+        childCoordinators?.append(LottieCoordinator(presenter: presenter!))
+        for child in childCoordinators ?? []{
             self.options.append(child.name ?? "noname")
         }
     }
@@ -33,13 +33,13 @@ class RootCoordinator: Coordinator {
         let viewModel = OptionsViewModel(withOptions: options)
         let viewController = OptionsViewController(withViewModel: viewModel)
         viewController.delegate = self
-        rootViewController.pushViewController(viewController, animated: true)
-        window.rootViewController = rootViewController
+        presenter!.pushViewController(viewController, animated: true)
+        window.rootViewController = presenter
         window.makeKeyAndVisible()
     }
     
     private func getChildCoordinator(at index: Int) -> Coordinator? {
-        return childCoordinators[index]
+        return childCoordinators?[index]
     }
 }
 

@@ -10,13 +10,15 @@ import UIKit
 
 class LottieCell: UICollectionViewCell {
 
+    @IBOutlet weak var imageIcon: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
 
-    func setup(withName: String) {
+    func setup(withName: String, withIcon: String) {
         nameLabel.text = withName
+        imageIcon.image = UIImage(named: withIcon)
     }
 }

@@ -10,6 +10,10 @@ import UIKit
 import RxSwift
 import RxCocoa
 
+protocol LottieViewControllerDelegate: class {
+    func didTapAnimation(at index: Int)
+}
+
 class LottieViewController: UIViewController {
 
     //MARK :- Outlets
@@ -17,6 +21,7 @@ class LottieViewController: UIViewController {
     
     //MARK :- Vars
     var viewModel: LottieViewModel?
+    weak var delegate: LottieViewControllerDelegate?
     
     //MARK :- Init
     convenience required init(withViewModel: LottieViewModel) {
@@ -35,26 +40,30 @@ class LottieViewController: UIViewController {
     func setup() {
         collectionView.register(UINib(nibName: "LottieCell", bundle: nil), forCellWithReuseIdentifier: viewModel!.getCellIdentifier())
         
-        collectionView.rx.delegate(self).disposed(by: viewModel!.disposeBag)
+        collectionView.rx.setDelegate(self).disposed(by: viewModel!.disposeBag)
         
-        viewModel!.content.asObservable().bind(to: collectionView.rx.items(cellIdentifier: viewModel!.getCellIdentifier(), cellType: LottieCell.self)) { row, element, cell in
-            cell.setup(withName: element.title)
+        viewModel!.content.asObservable().bind(to: collectionView.rx.items(cellIdentifier: viewModel!.getCellIdentifier(), cellType: LottieCell.self)) { indexPath, element, cell in
+            cell.setup(withName: element.title, withIcon: element.icon)
         }.disposed(by: viewModel!.disposeBag)
+        
+        collectionView.rx.itemSelected.subscribe(onNext: { indexPath in
+            self.delegate?.didTapAnimation(at: indexPath.row)
+        }).disposed(by: viewModel!.disposeBag)
     }
 }
 
-//extension LottieViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
-//    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-//        return viewModel!.content.value.count
-//    }
-//
-//    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-//        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: viewModel!.getCellIdentifier(), for: indexPath) as! LottieCell
-//        let element = viewModel!.content.value[indexPath.row]
-////        cell.setup(icon: element.icon, animationTitle: element.title)
-//        cell.setup(withName: element.title)
-//        return cell
-//    }
-//
-//
-//}
+extension LottieViewController: UICollectionViewDelegateFlowLayout {
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 8
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let width = (UIScreen.main.bounds.width - 16.0) / 2.0
+        return CGSize(width: width, height: 200.0)
+    }
+}
