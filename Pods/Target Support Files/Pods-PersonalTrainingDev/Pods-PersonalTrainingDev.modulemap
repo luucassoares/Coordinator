@@ -1,0 +1,6 @@
+framework module Pods_PersonalTrainingDev {
+  umbrella header "Pods-PersonalTrainingDev-umbrella.h"
+
+  export *
+  module * { export * }
+}

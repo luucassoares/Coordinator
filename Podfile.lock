@@ -1,0 +1,79 @@
+PODS:
+  - Alamofire (4.8.1)
+  - Differentiator (3.1.0)
+  - LGSideMenuController (2.1.1)
+  - lottie-ios (2.5.2)
+  - Moya/Core (11.0.2):
+    - Alamofire (~> 4.1)
+    - Result (~> 3.0)
+  - Moya/RxSwift (11.0.2):
+    - Moya/Core
+    - RxSwift (~> 4.0)
+  - Result (3.2.4)
+  - RxAlamofire (4.3.0):
+    - RxAlamofire/Core (= 4.3.0)
+  - RxAlamofire/Core (4.3.0):
+    - Alamofire (~> 4.5)
+    - RxSwift (~> 4)
+  - RxAtomic (4.4.1)
+  - RxBiBinding (0.1.6):
+    - RxCocoa (~> 4.2)
+    - RxSwift (~> 4.2)
+  - RxCocoa (4.4.1):
+    - RxSwift (~> 4.0)
+  - RxDataSources (3.1.0):
+    - Differentiator (~> 3.0)
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
+  - RxKeyboard (0.9.0):
+    - RxCocoa (>= 4.3.1)
+    - RxSwift (>= 4.3.1)
+  - RxSwift (4.4.1):
+    - RxAtomic (~> 4.4)
+
+DEPENDENCIES:
+  - Alamofire
+  - LGSideMenuController
+  - lottie-ios
+  - Moya/RxSwift (~> 11.0)
+  - RxAlamofire
+  - RxBiBinding
+  - RxCocoa
+  - RxDataSources
+  - RxKeyboard
+  - RxSwift
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - Differentiator
+    - LGSideMenuController
+    - lottie-ios
+    - Moya
+    - Result
+    - RxAlamofire
+    - RxAtomic
+    - RxBiBinding
+    - RxCocoa
+    - RxDataSources
+    - RxKeyboard
+    - RxSwift
+
+SPEC CHECKSUMS:
+  Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
+  Differentiator: be49ca3408f0ecfc761e4c7763d20c62be01b9ad
+  LGSideMenuController: ae40c80983ab8b8801c7cef0a6804d43aaa72d45
+  lottie-ios: 3fef45d3fabe63e3c7c2eb603dd64ddfffc73062
+  Moya: a725035953bc1c0eb1be505ab903984501d82440
+  Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
+  RxAlamofire: 09624d0f2d48ed8b686e4eb4cf68e28cbd2df556
+  RxAtomic: f8d6adc1ccb87a767811269e4875887bc74dbf19
+  RxBiBinding: e2a54fdaaf9b6fe66e840cd0980a054830280935
+  RxCocoa: 2f35a76bf8887872e28a1914112395b11b8e0e64
+  RxDataSources: a843bad90c29817f5923ec8163f4af2de084ceb3
+  RxKeyboard: 4f782303f499f41577b41c96c6a9a5d7acd51a47
+  RxSwift: 92fcf68dfef21f3e2ab1965363d9e7b3d787597e
+
+PODFILE CHECKSUM: 4da174f41bb095e16644f695a67e4b0ed91029f9
+
+COCOAPODS: 1.6.0
