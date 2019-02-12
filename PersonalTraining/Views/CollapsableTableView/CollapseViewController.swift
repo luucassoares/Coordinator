@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import ViewAnimator
 
 class CollapseViewController: UIViewController {
 
@@ -24,6 +24,11 @@ class CollapseViewController: UIViewController {
         setup()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        animateTableView()
+    }
+    
     func setup() {
         setupTableView()
     }
@@ -35,6 +40,11 @@ class CollapseViewController: UIViewController {
         tableView.estimatedRowHeight = 44.0
         tableView.rowHeight = UITableView.automaticDimension
         tableView.removeBlankEspaces()
+    }
+    func animateTableView() {
+        let fromAnimation = AnimationType.from(direction: .right, offset: 30.0)
+        let zoomAnimation = AnimationType.zoom(scale: 0.2)
+        UIView.animate(views: tableView.visibleCells, animations: [fromAnimation, zoomAnimation], delay: 0.5)
     }
 }
 

@@ -8,6 +8,7 @@
 
 import UIKit
 import RxSwift
+import ViewAnimator
 
 protocol OptionsViewControllerDelegate: class {
     func didTapOption(at index: Int)
@@ -33,6 +34,11 @@ class OptionsViewController: UIViewController {
         setup()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        animateTableView()
+    }
+    
     //MARK :- Setup
     func setup() {
         title = "Options View"
@@ -50,8 +56,12 @@ class OptionsViewController: UIViewController {
             self.delegate?.didTapOption(at: indexPath.row)
             self.tableView.deselectRow(at: indexPath, animated: true)
         }).disposed(by: viewModel!.getDisposeBag())
-        
-        
+    }
+    
+    func animateTableView() {
+        let fromAnimation = AnimationType.from(direction: .right, offset: 30.0)
+        let zoomAnimation = AnimationType.zoom(scale: 0.5)
+        UIView.animate(views: tableView.visibleCells, animations: [zoomAnimation, fromAnimation], delay: 0.3)
     }
 }
 

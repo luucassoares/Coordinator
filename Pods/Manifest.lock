@@ -1,6 +1,8 @@
 PODS:
   - Alamofire (4.8.1)
   - Differentiator (3.1.0)
+  - Hero (1.4.0)
+  - IBAnimatable (5.2.1)
   - LGSideMenuController (2.1.1)
   - lottie-ios (2.5.2)
   - Moya/Core (11.0.2):
@@ -30,9 +32,29 @@ PODS:
     - RxSwift (>= 4.3.1)
   - RxSwift (4.4.1):
     - RxAtomic (~> 4.4)
+  - SwifterSwift (4.6.0):
+    - SwifterSwift/AppKit (= 4.6.0)
+    - SwifterSwift/CoreGraphics (= 4.6.0)
+    - SwifterSwift/CoreLocation (= 4.6.0)
+    - SwifterSwift/Foundation (= 4.6.0)
+    - SwifterSwift/MapKit (= 4.6.0)
+    - SwifterSwift/SpriteKit (= 4.6.0)
+    - SwifterSwift/SwiftStdlib (= 4.6.0)
+    - SwifterSwift/UIKit (= 4.6.0)
+  - SwifterSwift/AppKit (4.6.0)
+  - SwifterSwift/CoreGraphics (4.6.0)
+  - SwifterSwift/CoreLocation (4.6.0)
+  - SwifterSwift/Foundation (4.6.0)
+  - SwifterSwift/MapKit (4.6.0)
+  - SwifterSwift/SpriteKit (4.6.0)
+  - SwifterSwift/SwiftStdlib (4.6.0)
+  - SwifterSwift/UIKit (4.6.0)
+  - ViewAnimator (2.2.2)
 
 DEPENDENCIES:
   - Alamofire
+  - Hero
+  - IBAnimatable
   - LGSideMenuController
   - lottie-ios
   - Moya/RxSwift (~> 11.0)
@@ -42,11 +64,15 @@ DEPENDENCIES:
   - RxDataSources
   - RxKeyboard
   - RxSwift
+  - SwifterSwift
+  - ViewAnimator
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - Differentiator
+    - Hero
+    - IBAnimatable
     - LGSideMenuController
     - lottie-ios
     - Moya
@@ -58,10 +84,14 @@ SPEC REPOS:
     - RxDataSources
     - RxKeyboard
     - RxSwift
+    - SwifterSwift
+    - ViewAnimator
 
 SPEC CHECKSUMS:
   Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
   Differentiator: be49ca3408f0ecfc761e4c7763d20c62be01b9ad
+  Hero: bac92350d7201a1a940003e0767c7b52ce7c99a1
+  IBAnimatable: a46b835ec6875178516cf7e014a40194d6bfa3fc
   LGSideMenuController: ae40c80983ab8b8801c7cef0a6804d43aaa72d45
   lottie-ios: 3fef45d3fabe63e3c7c2eb603dd64ddfffc73062
   Moya: a725035953bc1c0eb1be505ab903984501d82440
@@ -73,7 +103,9 @@ SPEC CHECKSUMS:
   RxDataSources: a843bad90c29817f5923ec8163f4af2de084ceb3
   RxKeyboard: 4f782303f499f41577b41c96c6a9a5d7acd51a47
   RxSwift: 92fcf68dfef21f3e2ab1965363d9e7b3d787597e
+  SwifterSwift: 812ffec6f301922f5430e75be3f2939ea3a80024
+  ViewAnimator: 6eaa112663b6a2d9e6b2573df65b416dd051cbe4
 
-PODFILE CHECKSUM: 0a2df888e09a25a08cda37c36bbf32e20d32cb9e
+PODFILE CHECKSUM: 62de724e094f12ada6e0c97e163f9debd9b4e0e1
 
 COCOAPODS: 1.6.0

@@ -23,7 +23,9 @@ def myPods
       pod 'lottie-ios'
       pod 'LGSideMenuController'
       pod 'IBAnimatable'
-      
+      pod 'ViewAnimator'
+      pod 'SwifterSwift'
+      pod 'Hero'
 end
 
 
