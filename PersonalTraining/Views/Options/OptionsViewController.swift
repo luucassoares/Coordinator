@@ -41,7 +41,6 @@ class OptionsViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        tableView.hero.modifiers = [.translate(y:100)]
     }
     
     //MARK :- Setup

@@ -1,7 +1,7 @@
 PODS:
   - Alamofire (4.8.1)
   - Differentiator (3.1.0)
-  - Hero (1.4.0)
+  - FoldingCell (4.0.2)
   - IBAnimatable (5.2.1)
   - LGSideMenuController (2.1.1)
   - lottie-ios (2.5.2)
@@ -53,7 +53,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
-  - Hero
+  - FoldingCell
   - IBAnimatable
   - LGSideMenuController
   - lottie-ios
@@ -71,7 +71,7 @@ SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - Differentiator
-    - Hero
+    - FoldingCell
     - IBAnimatable
     - LGSideMenuController
     - lottie-ios
@@ -90,7 +90,7 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
   Differentiator: be49ca3408f0ecfc761e4c7763d20c62be01b9ad
-  Hero: bac92350d7201a1a940003e0767c7b52ce7c99a1
+  FoldingCell: 352f0211a53f957b885a1b37d5ffa875da90bca5
   IBAnimatable: a46b835ec6875178516cf7e014a40194d6bfa3fc
   LGSideMenuController: ae40c80983ab8b8801c7cef0a6804d43aaa72d45
   lottie-ios: 3fef45d3fabe63e3c7c2eb603dd64ddfffc73062
@@ -106,6 +106,6 @@ SPEC CHECKSUMS:
   SwifterSwift: 812ffec6f301922f5430e75be3f2939ea3a80024
   ViewAnimator: 6eaa112663b6a2d9e6b2573df65b416dd051cbe4
 
-PODFILE CHECKSUM: 62de724e094f12ada6e0c97e163f9debd9b4e0e1
+PODFILE CHECKSUM: d2bc88ab2d830851f8d628e9fa5519cb3e3df49d
 
 COCOAPODS: 1.6.0
