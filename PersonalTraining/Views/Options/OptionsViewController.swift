@@ -39,6 +39,11 @@ class OptionsViewController: UIViewController {
         animateTableView()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        tableView.hero.modifiers = [.translate(y:100)]
+    }
+    
     //MARK :- Setup
     func setup() {
         title = "Options View"

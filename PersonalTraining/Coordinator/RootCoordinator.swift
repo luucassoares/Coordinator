@@ -10,7 +10,6 @@ import Foundation
 import UIKit
 
 
-
 class RootCoordinator: Coordinator {
     var name: String? = "Root"
     private var window: UIWindow
@@ -35,6 +34,7 @@ class RootCoordinator: Coordinator {
         for child in childCoordinators ?? []{
             self.options.append(child.name ?? "noname")
         }
+        
     }
     
     private func setupViewModelAndViewController() {
