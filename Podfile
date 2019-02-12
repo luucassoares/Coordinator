@@ -25,6 +25,7 @@ def myPods
       pod 'IBAnimatable'
       pod 'ViewAnimator'
       pod 'SwifterSwift'
+      pod 'Sica'
 
 end
 

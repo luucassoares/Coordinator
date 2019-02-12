@@ -13,6 +13,12 @@
 		DE14409E22125F8B0083445D /* PersonalTraining-info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ECD706D62211CC4500873E26 /* PersonalTraining-info.plist */; };
 		DE1440A022125FBC0083445D /* PersonalTrainingDev-info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE14409F22125FBC0083445D /* PersonalTrainingDev-info.plist */; };
 		DE1440A122125FBC0083445D /* PersonalTrainingDev-info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE14409F22125FBC0083445D /* PersonalTrainingDev-info.plist */; };
+		EC220CE622134E610096D63E /* SicaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC220CE422134E610096D63E /* SicaViewController.swift */; };
+		EC220CE722134E610096D63E /* SicaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC220CE422134E610096D63E /* SicaViewController.swift */; };
+		EC220CE822134E610096D63E /* SicaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC220CE522134E610096D63E /* SicaViewController.xib */; };
+		EC220CE922134E610096D63E /* SicaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC220CE522134E610096D63E /* SicaViewController.xib */; };
+		EC220CEB22134E740096D63E /* SicaCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC220CEA22134E740096D63E /* SicaCoordinator.swift */; };
+		EC220CEC22134E740096D63E /* SicaCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC220CEA22134E740096D63E /* SicaCoordinator.swift */; };
 		EC383BF12212E5B300EC1AA4 /* RxCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC383BF02212E5B300EC1AA4 /* RxCoordinator.swift */; };
 		EC383BF22212E5B300EC1AA4 /* RxCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC383BF02212E5B300EC1AA4 /* RxCoordinator.swift */; };
 		EC383BF42212E71800EC1AA4 /* RxOptionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC383BF32212E71800EC1AA4 /* RxOptionViewModel.swift */; };
@@ -120,6 +126,9 @@
 		D33B011A1F189B24E7798D94 /* Pods-PersonalTraining.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PersonalTraining.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PersonalTraining/Pods-PersonalTraining.debug.xcconfig"; sourceTree = "<group>"; };
 		DDBBE648B52B0E2FCF0B6799 /* Pods-PersonalTrainingDev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PersonalTrainingDev.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PersonalTrainingDev/Pods-PersonalTrainingDev.debug.xcconfig"; sourceTree = "<group>"; };
 		DE14409F22125FBC0083445D /* PersonalTrainingDev-info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "PersonalTrainingDev-info.plist"; sourceTree = "<group>"; };
+		EC220CE422134E610096D63E /* SicaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SicaViewController.swift; sourceTree = "<group>"; };
+		EC220CE522134E610096D63E /* SicaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SicaViewController.xib; sourceTree = "<group>"; };
+		EC220CEA22134E740096D63E /* SicaCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SicaCoordinator.swift; sourceTree = "<group>"; };
 		EC383BF02212E5B300EC1AA4 /* RxCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxCoordinator.swift; sourceTree = "<group>"; };
 		EC383BF32212E71800EC1AA4 /* RxOptionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxOptionViewModel.swift; sourceTree = "<group>"; };
 		EC383BF82212E73C00EC1AA4 /* UniversityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityModel.swift; sourceTree = "<group>"; };
@@ -222,6 +231,15 @@
 				94A457E3AF63F8BA8C04E1B8 /* Pods_PersonalTrainingDev.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EC220CE322134E540096D63E /* Sica */ = {
+			isa = PBXGroup;
+			children = (
+				EC220CE422134E610096D63E /* SicaViewController.swift */,
+				EC220CE522134E610096D63E /* SicaViewController.xib */,
+			);
+			path = Sica;
 			sourceTree = "<group>";
 		};
 		EC383BF62212E72D00EC1AA4 /* Models */ = {
@@ -398,6 +416,7 @@
 				ECD707152211CDF700873E26 /* Coordinator.swift */,
 				EC383BF02212E5B300EC1AA4 /* RxCoordinator.swift */,
 				EC383C0D2212F0FC00EC1AA4 /* CollapseCoordinator.swift */,
+				EC220CEA22134E740096D63E /* SicaCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -405,6 +424,7 @@
 		ECD707142211CD2C00873E26 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				EC220CE322134E540096D63E /* Sica */,
 				EC383C062212F07000EC1AA4 /* CollapsableTableView */,
 				ECAFAA0C2211DFC100480517 /* Lottie */,
 				ECD7071B2211CE7500873E26 /* Options */,
@@ -563,6 +583,7 @@
 				EC74A9DD2211FEB500B54F46 /* AnimationViewController.xib in Resources */,
 				EC383C2A22131E1F00EC1AA4 /* CollapsibleTableViewCell.xib in Resources */,
 				EC74A9D22211FC9200B54F46 /* location.json in Resources */,
+				EC220CE822134E610096D63E /* SicaViewController.xib in Resources */,
 				ECD707202211CE9100873E26 /* OptionsViewController.xib in Resources */,
 				DE1440A022125FBC0083445D /* PersonalTrainingDev-info.plist in Resources */,
 				EC74A9D42211FC9200B54F46 /* selfie.json in Resources */,
@@ -598,6 +619,7 @@
 				EC74A9DE2211FEB500B54F46 /* AnimationViewController.xib in Resources */,
 				EC383C2B22131E1F00EC1AA4 /* CollapsibleTableViewCell.xib in Resources */,
 				EC74A9D32211FC9200B54F46 /* location.json in Resources */,
+				EC220CE922134E610096D63E /* SicaViewController.xib in Resources */,
 				ECD707212211CE9100873E26 /* OptionsViewController.xib in Resources */,
 				DE1440A122125FBC0083445D /* PersonalTrainingDev-info.plist in Resources */,
 				EC74A9D52211FC9200B54F46 /* selfie.json in Resources */,
@@ -669,7 +691,6 @@
 				"${PODS_ROOT}/Target Support Files/Pods-PersonalTrainingDev/Pods-PersonalTrainingDev-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
-				"${BUILT_PRODUCTS_DIR}/FoldingCell/FoldingCell.framework",
 				"${BUILT_PRODUCTS_DIR}/IBAnimatable/IBAnimatable.framework",
 				"${BUILT_PRODUCTS_DIR}/LGSideMenuController/LGSideMenuController.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
@@ -681,6 +702,7 @@
 				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
 				"${BUILT_PRODUCTS_DIR}/RxKeyboard/RxKeyboard.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Sica/Sica.framework",
 				"${BUILT_PRODUCTS_DIR}/SwifterSwift/SwifterSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/ViewAnimator/ViewAnimator.framework",
 				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
@@ -691,7 +713,6 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FoldingCell.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IBAnimatable.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LGSideMenuController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
@@ -703,6 +724,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxKeyboard.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Sica.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwifterSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ViewAnimator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
@@ -723,7 +745,6 @@
 				"${PODS_ROOT}/Target Support Files/Pods-PersonalTraining/Pods-PersonalTraining-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
-				"${BUILT_PRODUCTS_DIR}/FoldingCell/FoldingCell.framework",
 				"${BUILT_PRODUCTS_DIR}/IBAnimatable/IBAnimatable.framework",
 				"${BUILT_PRODUCTS_DIR}/LGSideMenuController/LGSideMenuController.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
@@ -735,6 +756,7 @@
 				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
 				"${BUILT_PRODUCTS_DIR}/RxKeyboard/RxKeyboard.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Sica/Sica.framework",
 				"${BUILT_PRODUCTS_DIR}/SwifterSwift/SwifterSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/ViewAnimator/ViewAnimator.framework",
 				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
@@ -745,7 +767,6 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FoldingCell.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IBAnimatable.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LGSideMenuController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
@@ -757,6 +778,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxKeyboard.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Sica.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwifterSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ViewAnimator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
@@ -790,7 +812,9 @@
 				EC383C1B221310EF00EC1AA4 /* SectionModel.swift in Sources */,
 				EC383C2422131C3A00EC1AA4 /* ExtensionUIView.swift in Sources */,
 				EC383BF92212E73C00EC1AA4 /* UniversityModel.swift in Sources */,
+				EC220CEB22134E740096D63E /* SicaCoordinator.swift in Sources */,
 				ECD707232211CEDE00873E26 /* OptionsViewModel.swift in Sources */,
+				EC220CE622134E610096D63E /* SicaViewController.swift in Sources */,
 				ECAFAA0F2211DFD600480517 /* LottieViewController.swift in Sources */,
 				EC383C0E2212F0FC00EC1AA4 /* CollapseCoordinator.swift in Sources */,
 				ECAFAA142211E09700480517 /* LottieViewModel.swift in Sources */,
@@ -840,7 +864,9 @@
 				EC383C1C221310EF00EC1AA4 /* SectionModel.swift in Sources */,
 				EC383C2522131C3A00EC1AA4 /* ExtensionUIView.swift in Sources */,
 				EC383BFA2212E73C00EC1AA4 /* UniversityModel.swift in Sources */,
+				EC220CEC22134E740096D63E /* SicaCoordinator.swift in Sources */,
 				ECD707242211CEDE00873E26 /* OptionsViewModel.swift in Sources */,
+				EC220CE722134E610096D63E /* SicaViewController.swift in Sources */,
 				ECAFAA102211DFD600480517 /* LottieViewController.swift in Sources */,
 				EC383C0F2212F0FC00EC1AA4 /* CollapseCoordinator.swift in Sources */,
 				ECAFAA152211E09700480517 /* LottieViewModel.swift in Sources */,

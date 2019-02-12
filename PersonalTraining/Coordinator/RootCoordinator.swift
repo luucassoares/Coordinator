@@ -27,9 +27,10 @@ class RootCoordinator: Coordinator {
     }
     
     private func setupChildCoords() {
-        let childC: [Coordinator] = [LottieCoordinator(presenter: presenter!),
-                                     RxCoordinator(presenter: presenter!),
-                                     CollapseCoordinator(presenter: presenter!)]
+        let childC: [Coordinator] = [LottieCoordinator(presenter: presenter),
+                                     RxCoordinator(presenter: presenter),
+                                     CollapseCoordinator(presenter: presenter),
+                                     SicaCoordinator(presenter: presenter)]
         childCoordinators?.append(contentsOf: childC)
         for child in childCoordinators ?? []{
             self.options.append(child.name ?? "noname")

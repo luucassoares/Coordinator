@@ -41,6 +41,7 @@ class OptionsViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        delegate?.didTapOption(at: 3)
     }
     
     //MARK :- Setup
