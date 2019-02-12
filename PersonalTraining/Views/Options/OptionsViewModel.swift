@@ -16,6 +16,7 @@ class OptionsViewModel {
     private let options = BehaviorRelay<[String]>(value: [])
     
     init( withOptions: [String] ) {
+        print("Initing OptionsViewModel")
         self.options.accept(withOptions)
     }
     

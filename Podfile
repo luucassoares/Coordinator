@@ -22,7 +22,8 @@ def myPods
       pod 'Moya/RxSwift', '~> 11.0'
       pod 'lottie-ios'
       pod 'LGSideMenuController'
-
+      pod 'IBAnimatable'
+      
 end
 
 

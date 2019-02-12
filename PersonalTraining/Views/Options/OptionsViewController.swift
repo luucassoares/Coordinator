@@ -40,7 +40,7 @@ class OptionsViewController: UIViewController {
     }
     
     func setupTableview() {
-        tableView.tableFooterView = UIView()
+        tableView.removeBlankEspaces()
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         viewModel!.getOptions().asObservable().bind(to: tableView.rx.items(cellIdentifier: "Cell", cellType: UITableViewCell.self)) { row, element, cell in
             cell.textLabel?.text = "Row: \(row) - \(element)"
@@ -48,6 +48,7 @@ class OptionsViewController: UIViewController {
         
         tableView.rx.itemSelected.subscribe(onNext: { indexPath in
             self.delegate?.didTapOption(at: indexPath.row)
+            self.tableView.deselectRow(at: indexPath, animated: true)
         }).disposed(by: viewModel!.getDisposeBag())
         
         

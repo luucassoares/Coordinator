@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Lottie
+
 
 class AnimationViewController: UIViewController {
     
@@ -28,11 +30,14 @@ class AnimationViewController: UIViewController {
         super.viewDidLoad()
         animationLabel.text = mTitle
         bottomConstraint.constant = 0
-        LOTView.backgroundColor = .green
-        self.view.backgroundColor = UIColor.init(white: 0.9, alpha: 0.6)
-        UIView.animate(withDuration: 1, animations: {
+        UIView.animate(withDuration: 0.3, animations: {
             self.view.layoutIfNeeded()
         }, completion: nil)
+        let bundle = Bundle.main.path(forResource: "\(animationFile)", ofType: "json")
+        let animationView = LOTAnimationView(filePath: bundle ?? "")
+        animationView.frame = LOTView.frame
+        LOTView.addSubview(animationView)
+        animationView.play()
     }
 
     @IBAction func closeButtonTap(_ sender: Any) {

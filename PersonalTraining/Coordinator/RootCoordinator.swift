@@ -17,23 +17,38 @@ class RootCoordinator: Coordinator {
     var presenter: UINavigationController?
     private var options: [String] = []
     var childCoordinators: [Coordinator]? = []
+    var viewModel: OptionsViewModel?
+    var viewController: OptionsViewController?
     
     init( window: UIWindow ) {
         self.window = window
         presenter = UINavigationController()
         presenter!.navigationBar.prefersLargeTitles = true
-        childCoordinators?.append(LottieCoordinator(presenter: presenter!))
+        setupChildCoords()
+    }
+    
+    private func setupChildCoords() {
+        let childC: [Coordinator] = [LottieCoordinator(presenter: presenter!),
+                                     RxCoordinator(presenter: presenter!),
+                                     CollapseCoordinator(presenter: presenter!)]
+        childCoordinators?.append(contentsOf: childC)
         for child in childCoordinators ?? []{
             self.options.append(child.name ?? "noname")
         }
     }
     
+    private func setupViewModelAndViewController() {
+        if viewModel == nil {
+            viewModel = OptionsViewModel(withOptions: options)
+        }
+        viewController = OptionsViewController(withViewModel: viewModel!)
+        viewController?.delegate = self
+    }
+    
     func start() {
         print("Starting Root Coordinator")
-        let viewModel = OptionsViewModel(withOptions: options)
-        let viewController = OptionsViewController(withViewModel: viewModel)
-        viewController.delegate = self
-        presenter!.pushViewController(viewController, animated: true)
+        setupViewModelAndViewController()
+        presenter!.pushViewController(viewController!, animated: true)
         window.rootViewController = presenter
         window.makeKeyAndVisible()
     }

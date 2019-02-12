@@ -25,13 +25,13 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="22n-T8-ofR">
-                    <rect key="frame" x="0.0" y="671" width="375" height="246"/>
+                    <rect key="frame" x="0.0" y="1221" width="375" height="446"/>
                     <subviews>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oQE-4S-sXb">
-                            <rect key="frame" x="0.0" y="46" width="375" height="200"/>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="oQE-4S-sXb">
+                            <rect key="frame" x="8" y="46" width="359" height="400"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="200" id="7b6-oX-Cz6"/>
+                                <constraint firstAttribute="height" constant="400" id="rdZ-ec-w5w"/>
                             </constraints>
                         </view>
                         <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e7q-S9-hQY">
@@ -56,17 +56,20 @@
                                     </connections>
                                 </button>
                             </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="OOH-Ss-GtF"/>
+                            </constraints>
                         </stackView>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstAttribute="trailing" secondItem="oQE-4S-sXb" secondAttribute="trailing" id="0mU-Bm-hTI"/>
+                        <constraint firstAttribute="bottom" secondItem="oQE-4S-sXb" secondAttribute="bottom" id="3UW-86-Anl"/>
+                        <constraint firstItem="oQE-4S-sXb" firstAttribute="top" secondItem="e7q-S9-hQY" secondAttribute="bottom" constant="8" id="4Rx-rI-eHk"/>
                         <constraint firstItem="e7q-S9-hQY" firstAttribute="leading" secondItem="22n-T8-ofR" secondAttribute="leading" constant="16" id="FDf-bI-6HD"/>
-                        <constraint firstItem="oQE-4S-sXb" firstAttribute="leading" secondItem="22n-T8-ofR" secondAttribute="leading" id="KE0-Z0-lgc"/>
-                        <constraint firstItem="oQE-4S-sXb" firstAttribute="top" secondItem="e7q-S9-hQY" secondAttribute="bottom" constant="8" id="OYL-sb-ipe"/>
+                        <constraint firstAttribute="trailing" secondItem="oQE-4S-sXb" secondAttribute="trailing" constant="8" id="PHe-WJ-Lbw"/>
                         <constraint firstAttribute="trailing" secondItem="e7q-S9-hQY" secondAttribute="trailing" constant="16" id="PaR-Uc-cMT"/>
                         <constraint firstItem="e7q-S9-hQY" firstAttribute="top" secondItem="22n-T8-ofR" secondAttribute="top" constant="8" id="Rhu-a7-Qdw"/>
-                        <constraint firstAttribute="bottom" secondItem="oQE-4S-sXb" secondAttribute="bottom" id="r6U-hE-JIW"/>
+                        <constraint firstItem="oQE-4S-sXb" firstAttribute="leading" secondItem="22n-T8-ofR" secondAttribute="leading" constant="8" id="i5x-jL-KRF"/>
                     </constraints>
                 </view>
             </subviews>
@@ -74,7 +77,7 @@
             <constraints>
                 <constraint firstItem="22n-T8-ofR" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="bvc-Rg-16v"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="22n-T8-ofR" secondAttribute="trailing" id="qz1-b9-XGy"/>
-                <constraint firstItem="22n-T8-ofR" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" constant="250" id="ufV-pZ-rt6"/>
+                <constraint firstItem="22n-T8-ofR" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" constant="1000" id="ufV-pZ-rt6"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
         </view>

@@ -20,7 +20,6 @@ class LottieCoordinator: Coordinator {
     init( presenter: UINavigationController? ) {
         self.presenter = presenter
         setupCollectionContent()
-        setupViewModelAndViewController()
         
     }
     
@@ -31,7 +30,9 @@ class LottieCoordinator: Coordinator {
     }
     
     private func setupViewModelAndViewController() {
-        viewModel = LottieViewModel(collectionContent: collectionContent)
+        if viewModel == nil {
+            viewModel = LottieViewModel(collectionContent: collectionContent)
+        }
         viewController = LottieViewController(withViewModel: viewModel!)
         viewController?.title = name
         viewController?.delegate = self
@@ -40,11 +41,11 @@ class LottieCoordinator: Coordinator {
     
     func start() {
         print("Starting Lottie Animation Coordinator")
+        setupViewModelAndViewController()
         presenter?.pushViewController(viewController!, animated: true)
     }
     
     func startModal(withContentIndex index: Int) {
-        
         let element = collectionContent[index]
         let vc = AnimationViewController(withTitle: element.title, animationFile: element.icon)
         presenter?.present(vc, animated: true, completion: nil)

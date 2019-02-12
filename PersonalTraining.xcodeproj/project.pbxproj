@@ -13,6 +13,42 @@
 		DE14409E22125F8B0083445D /* PersonalTraining-info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ECD706D62211CC4500873E26 /* PersonalTraining-info.plist */; };
 		DE1440A022125FBC0083445D /* PersonalTrainingDev-info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE14409F22125FBC0083445D /* PersonalTrainingDev-info.plist */; };
 		DE1440A122125FBC0083445D /* PersonalTrainingDev-info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE14409F22125FBC0083445D /* PersonalTrainingDev-info.plist */; };
+		EC383BF12212E5B300EC1AA4 /* RxCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC383BF02212E5B300EC1AA4 /* RxCoordinator.swift */; };
+		EC383BF22212E5B300EC1AA4 /* RxCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC383BF02212E5B300EC1AA4 /* RxCoordinator.swift */; };
+		EC383BF42212E71800EC1AA4 /* RxOptionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC383BF32212E71800EC1AA4 /* RxOptionViewModel.swift */; };
+		EC383BF52212E71800EC1AA4 /* RxOptionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC383BF32212E71800EC1AA4 /* RxOptionViewModel.swift */; };
+		EC383BF92212E73C00EC1AA4 /* UniversityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC383BF82212E73C00EC1AA4 /* UniversityModel.swift */; };
+		EC383BFA2212E73C00EC1AA4 /* UniversityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC383BF82212E73C00EC1AA4 /* UniversityModel.swift */; };
+		EC383BFD2212E7DE00EC1AA4 /* APIRequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC383BFC2212E7DE00EC1AA4 /* APIRequestProtocol.swift */; };
+		EC383BFE2212E7DE00EC1AA4 /* APIRequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC383BFC2212E7DE00EC1AA4 /* APIRequestProtocol.swift */; };
+		EC383C002212E91700EC1AA4 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC383BFF2212E91700EC1AA4 /* APIClient.swift */; };
+		EC383C012212E91700EC1AA4 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC383BFF2212E91700EC1AA4 /* APIClient.swift */; };
+		EC383C042212EA9800EC1AA4 /* UniversityRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC383C032212EA9800EC1AA4 /* UniversityRequest.swift */; };
+		EC383C052212EA9800EC1AA4 /* UniversityRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC383C032212EA9800EC1AA4 /* UniversityRequest.swift */; };
+		EC383C092212F08B00EC1AA4 /* CollapseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC383C072212F08B00EC1AA4 /* CollapseViewController.swift */; };
+		EC383C0A2212F08B00EC1AA4 /* CollapseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC383C072212F08B00EC1AA4 /* CollapseViewController.swift */; };
+		EC383C0B2212F08B00EC1AA4 /* CollapseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC383C082212F08B00EC1AA4 /* CollapseViewController.xib */; };
+		EC383C0C2212F08B00EC1AA4 /* CollapseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC383C082212F08B00EC1AA4 /* CollapseViewController.xib */; };
+		EC383C0E2212F0FC00EC1AA4 /* CollapseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC383C0D2212F0FC00EC1AA4 /* CollapseCoordinator.swift */; };
+		EC383C0F2212F0FC00EC1AA4 /* CollapseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC383C0D2212F0FC00EC1AA4 /* CollapseCoordinator.swift */; };
+		EC383C112212F30900EC1AA4 /* CollapseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC383C102212F30900EC1AA4 /* CollapseViewModel.swift */; };
+		EC383C122212F30900EC1AA4 /* CollapseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC383C102212F30900EC1AA4 /* CollapseViewModel.swift */; };
+		EC383C15221306CA00EC1AA4 /* ExtensionTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC383C14221306CA00EC1AA4 /* ExtensionTableView.swift */; };
+		EC383C16221306CA00EC1AA4 /* ExtensionTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC383C14221306CA00EC1AA4 /* ExtensionTableView.swift */; };
+		EC383C182213078500EC1AA4 /* ExtensionBool.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC383C172213078500EC1AA4 /* ExtensionBool.swift */; };
+		EC383C192213078500EC1AA4 /* ExtensionBool.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC383C172213078500EC1AA4 /* ExtensionBool.swift */; };
+		EC383C1B221310EF00EC1AA4 /* SectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC383C1A221310EF00EC1AA4 /* SectionModel.swift */; };
+		EC383C1C221310EF00EC1AA4 /* SectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC383C1A221310EF00EC1AA4 /* SectionModel.swift */; };
+		EC383C1E221318B900EC1AA4 /* CollapsibleTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC383C1D221318B900EC1AA4 /* CollapsibleTableViewHeader.swift */; };
+		EC383C1F221318B900EC1AA4 /* CollapsibleTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC383C1D221318B900EC1AA4 /* CollapsibleTableViewHeader.swift */; };
+		EC383C2122131BC200EC1AA4 /* ExtensionColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC383C2022131BC200EC1AA4 /* ExtensionColor.swift */; };
+		EC383C2222131BC200EC1AA4 /* ExtensionColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC383C2022131BC200EC1AA4 /* ExtensionColor.swift */; };
+		EC383C2422131C3A00EC1AA4 /* ExtensionUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC383C2322131C3A00EC1AA4 /* ExtensionUIView.swift */; };
+		EC383C2522131C3A00EC1AA4 /* ExtensionUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC383C2322131C3A00EC1AA4 /* ExtensionUIView.swift */; };
+		EC383C2822131E1F00EC1AA4 /* CollapsibleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC383C2622131E1F00EC1AA4 /* CollapsibleTableViewCell.swift */; };
+		EC383C2922131E1F00EC1AA4 /* CollapsibleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC383C2622131E1F00EC1AA4 /* CollapsibleTableViewCell.swift */; };
+		EC383C2A22131E1F00EC1AA4 /* CollapsibleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC383C2722131E1F00EC1AA4 /* CollapsibleTableViewCell.xib */; };
+		EC383C2B22131E1F00EC1AA4 /* CollapsibleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC383C2722131E1F00EC1AA4 /* CollapsibleTableViewCell.xib */; };
 		EC74A9D22211FC9200B54F46 /* location.json in Resources */ = {isa = PBXBuildFile; fileRef = EC74A9CF2211FC9200B54F46 /* location.json */; };
 		EC74A9D32211FC9200B54F46 /* location.json in Resources */ = {isa = PBXBuildFile; fileRef = EC74A9CF2211FC9200B54F46 /* location.json */; };
 		EC74A9D42211FC9200B54F46 /* selfie.json in Resources */ = {isa = PBXBuildFile; fileRef = EC74A9D02211FC9200B54F46 /* selfie.json */; };
@@ -84,6 +120,24 @@
 		D33B011A1F189B24E7798D94 /* Pods-PersonalTraining.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PersonalTraining.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PersonalTraining/Pods-PersonalTraining.debug.xcconfig"; sourceTree = "<group>"; };
 		DDBBE648B52B0E2FCF0B6799 /* Pods-PersonalTrainingDev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PersonalTrainingDev.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PersonalTrainingDev/Pods-PersonalTrainingDev.debug.xcconfig"; sourceTree = "<group>"; };
 		DE14409F22125FBC0083445D /* PersonalTrainingDev-info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "PersonalTrainingDev-info.plist"; sourceTree = "<group>"; };
+		EC383BF02212E5B300EC1AA4 /* RxCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxCoordinator.swift; sourceTree = "<group>"; };
+		EC383BF32212E71800EC1AA4 /* RxOptionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxOptionViewModel.swift; sourceTree = "<group>"; };
+		EC383BF82212E73C00EC1AA4 /* UniversityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityModel.swift; sourceTree = "<group>"; };
+		EC383BFC2212E7DE00EC1AA4 /* APIRequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestProtocol.swift; sourceTree = "<group>"; };
+		EC383BFF2212E91700EC1AA4 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		EC383C032212EA9800EC1AA4 /* UniversityRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityRequest.swift; sourceTree = "<group>"; };
+		EC383C072212F08B00EC1AA4 /* CollapseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapseViewController.swift; sourceTree = "<group>"; };
+		EC383C082212F08B00EC1AA4 /* CollapseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollapseViewController.xib; sourceTree = "<group>"; };
+		EC383C0D2212F0FC00EC1AA4 /* CollapseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapseCoordinator.swift; sourceTree = "<group>"; };
+		EC383C102212F30900EC1AA4 /* CollapseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapseViewModel.swift; sourceTree = "<group>"; };
+		EC383C14221306CA00EC1AA4 /* ExtensionTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionTableView.swift; sourceTree = "<group>"; };
+		EC383C172213078500EC1AA4 /* ExtensionBool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionBool.swift; sourceTree = "<group>"; };
+		EC383C1A221310EF00EC1AA4 /* SectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionModel.swift; sourceTree = "<group>"; };
+		EC383C1D221318B900EC1AA4 /* CollapsibleTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsibleTableViewHeader.swift; sourceTree = "<group>"; };
+		EC383C2022131BC200EC1AA4 /* ExtensionColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionColor.swift; sourceTree = "<group>"; };
+		EC383C2322131C3A00EC1AA4 /* ExtensionUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUIView.swift; sourceTree = "<group>"; };
+		EC383C2622131E1F00EC1AA4 /* CollapsibleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsibleTableViewCell.swift; sourceTree = "<group>"; };
+		EC383C2722131E1F00EC1AA4 /* CollapsibleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollapsibleTableViewCell.xib; sourceTree = "<group>"; };
 		EC74A9CF2211FC9200B54F46 /* location.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = location.json; sourceTree = "<group>"; };
 		EC74A9D02211FC9200B54F46 /* selfie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = selfie.json; sourceTree = "<group>"; };
 		EC74A9D12211FC9200B54F46 /* keys.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = keys.json; sourceTree = "<group>"; };
@@ -170,6 +224,65 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		EC383BF62212E72D00EC1AA4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EC383BF72212E73100EC1AA4 /* Request */,
+				EC383C1A221310EF00EC1AA4 /* SectionModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EC383BF72212E73100EC1AA4 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				EC383BF82212E73C00EC1AA4 /* UniversityModel.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		EC383BFB2212E7D100EC1AA4 /* APIManager */ = {
+			isa = PBXGroup;
+			children = (
+				EC383C022212EA9000EC1AA4 /* Request */,
+				EC383BFC2212E7DE00EC1AA4 /* APIRequestProtocol.swift */,
+				EC383BFF2212E91700EC1AA4 /* APIClient.swift */,
+			);
+			path = APIManager;
+			sourceTree = "<group>";
+		};
+		EC383C022212EA9000EC1AA4 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				EC383C032212EA9800EC1AA4 /* UniversityRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		EC383C062212F07000EC1AA4 /* CollapsableTableView */ = {
+			isa = PBXGroup;
+			children = (
+				EC383C072212F08B00EC1AA4 /* CollapseViewController.swift */,
+				EC383C082212F08B00EC1AA4 /* CollapseViewController.xib */,
+				EC383C102212F30900EC1AA4 /* CollapseViewModel.swift */,
+				EC383C1D221318B900EC1AA4 /* CollapsibleTableViewHeader.swift */,
+				EC383C2622131E1F00EC1AA4 /* CollapsibleTableViewCell.swift */,
+				EC383C2722131E1F00EC1AA4 /* CollapsibleTableViewCell.xib */,
+			);
+			path = CollapsableTableView;
+			sourceTree = "<group>";
+		};
+		EC383C13221306C000EC1AA4 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				EC383C14221306CA00EC1AA4 /* ExtensionTableView.swift */,
+				EC383C172213078500EC1AA4 /* ExtensionBool.swift */,
+				EC383C2022131BC200EC1AA4 /* ExtensionColor.swift */,
+				EC383C2322131C3A00EC1AA4 /* ExtensionUIView.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		EC74A9D82211FE4000B54F46 /* AnimationView */ = {
 			isa = PBXGroup;
 			children = (
@@ -182,10 +295,9 @@
 		ECAFAA0C2211DFC100480517 /* Lottie */ = {
 			isa = PBXGroup;
 			children = (
-				ECAFAA1D2211E0FF00480517 /* LottieCoordinator.swift */,
+				ECAFAA0D2211DFD600480517 /* LottieViewController.swift */,
 				EC74A9D82211FE4000B54F46 /* AnimationView */,
 				ECAFAA162211E0DD00480517 /* Cell */,
-				ECAFAA0D2211DFD600480517 /* LottieViewController.swift */,
 				ECAFAA0E2211DFD600480517 /* LottieViewController.xib */,
 				ECAFAA132211E09700480517 /* LottieViewModel.swift */,
 			);
@@ -237,6 +349,9 @@
 		ECD706C92211CC4300873E26 /* PersonalTraining */ = {
 			isa = PBXGroup;
 			children = (
+				EC383C13221306C000EC1AA4 /* Utils */,
+				EC383BFB2212E7D100EC1AA4 /* APIManager */,
+				EC383BF62212E72D00EC1AA4 /* Models */,
 				ECAFAA202211E45A00480517 /* LottieAnimations */,
 				ECD707122211CCC000873E26 /* Plist */,
 				ECD706CA2211CC4300873E26 /* AppDelegate.swift */,
@@ -278,7 +393,11 @@
 		ECD707132211CD2500873E26 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
+				ECAFAA1D2211E0FF00480517 /* LottieCoordinator.swift */,
+				ECD707182211CE3200873E26 /* RootCoordinator.swift */,
 				ECD707152211CDF700873E26 /* Coordinator.swift */,
+				EC383BF02212E5B300EC1AA4 /* RxCoordinator.swift */,
+				EC383C0D2212F0FC00EC1AA4 /* CollapseCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -286,6 +405,7 @@
 		ECD707142211CD2C00873E26 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				EC383C062212F07000EC1AA4 /* CollapsableTableView */,
 				ECAFAA0C2211DFC100480517 /* Lottie */,
 				ECD7071B2211CE7500873E26 /* Options */,
 				ECD707252211D14700873E26 /* RxOption */,
@@ -296,7 +416,6 @@
 		ECD7071B2211CE7500873E26 /* Options */ = {
 			isa = PBXGroup;
 			children = (
-				ECD707182211CE3200873E26 /* RootCoordinator.swift */,
 				ECD7071C2211CE9100873E26 /* OptionsViewController.swift */,
 				ECD7071D2211CE9100873E26 /* OptionsViewController.xib */,
 				ECD707222211CEDE00873E26 /* OptionsViewModel.swift */,
@@ -309,6 +428,7 @@
 			children = (
 				ECD707262211D15600873E26 /* RxOptionViewController.swift */,
 				ECD707272211D15600873E26 /* RxOptionViewController.xib */,
+				EC383BF32212E71800EC1AA4 /* RxOptionViewModel.swift */,
 			);
 			path = RxOption;
 			sourceTree = "<group>";
@@ -441,12 +561,14 @@
 			files = (
 				ECAFAA252211F58500480517 /* LottieCell.xib in Resources */,
 				EC74A9DD2211FEB500B54F46 /* AnimationViewController.xib in Resources */,
+				EC383C2A22131E1F00EC1AA4 /* CollapsibleTableViewCell.xib in Resources */,
 				EC74A9D22211FC9200B54F46 /* location.json in Resources */,
 				ECD707202211CE9100873E26 /* OptionsViewController.xib in Resources */,
 				DE1440A022125FBC0083445D /* PersonalTrainingDev-info.plist in Resources */,
 				EC74A9D42211FC9200B54F46 /* selfie.json in Resources */,
 				EC74A9D62211FC9200B54F46 /* keys.json in Resources */,
 				DE14409D22125F8B0083445D /* PersonalTraining-info.plist in Resources */,
+				EC383C0B2212F08B00EC1AA4 /* CollapseViewController.xib in Resources */,
 				ECD7072A2211D15600873E26 /* RxOptionViewController.xib in Resources */,
 				ECD706D52211CC4500873E26 /* LaunchScreen.storyboard in Resources */,
 				ECAFAA112211DFD600480517 /* LottieViewController.xib in Resources */,
@@ -474,12 +596,14 @@
 			files = (
 				ECAFAA262211F58500480517 /* LottieCell.xib in Resources */,
 				EC74A9DE2211FEB500B54F46 /* AnimationViewController.xib in Resources */,
+				EC383C2B22131E1F00EC1AA4 /* CollapsibleTableViewCell.xib in Resources */,
 				EC74A9D32211FC9200B54F46 /* location.json in Resources */,
 				ECD707212211CE9100873E26 /* OptionsViewController.xib in Resources */,
 				DE1440A122125FBC0083445D /* PersonalTrainingDev-info.plist in Resources */,
 				EC74A9D52211FC9200B54F46 /* selfie.json in Resources */,
 				EC74A9D72211FC9200B54F46 /* keys.json in Resources */,
 				DE14409E22125F8B0083445D /* PersonalTraining-info.plist in Resources */,
+				EC383C0C2212F08B00EC1AA4 /* CollapseViewController.xib in Resources */,
 				ECD7072B2211D15600873E26 /* RxOptionViewController.xib in Resources */,
 				ECD7070B2211CCA200873E26 /* LaunchScreen.storyboard in Resources */,
 				ECAFAA122211DFD600480517 /* LottieViewController.xib in Resources */,
@@ -542,7 +666,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-PersonalTrainingDev/Pods-PersonalTrainingDev-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-PersonalTrainingDev/Pods-PersonalTrainingDev-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
 				"${BUILT_PRODUCTS_DIR}/LGSideMenuController/LGSideMenuController.framework",
@@ -577,7 +701,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PersonalTrainingDev/Pods-PersonalTrainingDev-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PersonalTrainingDev/Pods-PersonalTrainingDev-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BD0FCDEE8FBFEFCC61609188 /* [CP] Embed Pods Frameworks */ = {
@@ -588,7 +712,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-PersonalTraining/Pods-PersonalTraining-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-PersonalTraining/Pods-PersonalTraining-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
 				"${BUILT_PRODUCTS_DIR}/LGSideMenuController/LGSideMenuController.framework",
@@ -623,7 +747,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PersonalTraining/Pods-PersonalTraining-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PersonalTraining/Pods-PersonalTraining-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -633,17 +757,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC383BF42212E71800EC1AA4 /* RxOptionViewModel.swift in Sources */,
+				EC383C15221306CA00EC1AA4 /* ExtensionTableView.swift in Sources */,
+				EC383C112212F30900EC1AA4 /* CollapseViewModel.swift in Sources */,
+				EC383C092212F08B00EC1AA4 /* CollapseViewController.swift in Sources */,
+				EC383BFD2212E7DE00EC1AA4 /* APIRequestProtocol.swift in Sources */,
 				ECD707162211CDF700873E26 /* Coordinator.swift in Sources */,
+				EC383C002212E91700EC1AA4 /* APIClient.swift in Sources */,
+				EC383C042212EA9800EC1AA4 /* UniversityRequest.swift in Sources */,
 				ECD707282211D15600873E26 /* RxOptionViewController.swift in Sources */,
 				EC74A9DB2211FEB500B54F46 /* AnimationViewController.swift in Sources */,
+				EC383C1E221318B900EC1AA4 /* CollapsibleTableViewHeader.swift in Sources */,
+				EC383C2822131E1F00EC1AA4 /* CollapsibleTableViewCell.swift in Sources */,
 				ECD7071E2211CE9100873E26 /* OptionsViewController.swift in Sources */,
+				EC383C182213078500EC1AA4 /* ExtensionBool.swift in Sources */,
+				EC383C1B221310EF00EC1AA4 /* SectionModel.swift in Sources */,
+				EC383C2422131C3A00EC1AA4 /* ExtensionUIView.swift in Sources */,
+				EC383BF92212E73C00EC1AA4 /* UniversityModel.swift in Sources */,
 				ECD707232211CEDE00873E26 /* OptionsViewModel.swift in Sources */,
 				ECAFAA0F2211DFD600480517 /* LottieViewController.swift in Sources */,
+				EC383C0E2212F0FC00EC1AA4 /* CollapseCoordinator.swift in Sources */,
 				ECAFAA142211E09700480517 /* LottieViewModel.swift in Sources */,
 				ECAFAA1E2211E0FF00480517 /* LottieCoordinator.swift in Sources */,
+				EC383BF12212E5B300EC1AA4 /* RxCoordinator.swift in Sources */,
 				ECD707192211CE3200873E26 /* RootCoordinator.swift in Sources */,
 				ECAFAA232211F58500480517 /* LottieCell.swift in Sources */,
 				ECD706CB2211CC4300873E26 /* AppDelegate.swift in Sources */,
+				EC383C2122131BC200EC1AA4 /* ExtensionColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -667,17 +807,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC383BF52212E71800EC1AA4 /* RxOptionViewModel.swift in Sources */,
+				EC383C16221306CA00EC1AA4 /* ExtensionTableView.swift in Sources */,
+				EC383C122212F30900EC1AA4 /* CollapseViewModel.swift in Sources */,
+				EC383C0A2212F08B00EC1AA4 /* CollapseViewController.swift in Sources */,
+				EC383BFE2212E7DE00EC1AA4 /* APIRequestProtocol.swift in Sources */,
 				ECD707172211CDF700873E26 /* Coordinator.swift in Sources */,
+				EC383C012212E91700EC1AA4 /* APIClient.swift in Sources */,
+				EC383C052212EA9800EC1AA4 /* UniversityRequest.swift in Sources */,
 				ECD707292211D15600873E26 /* RxOptionViewController.swift in Sources */,
 				EC74A9DC2211FEB500B54F46 /* AnimationViewController.swift in Sources */,
+				EC383C1F221318B900EC1AA4 /* CollapsibleTableViewHeader.swift in Sources */,
+				EC383C2922131E1F00EC1AA4 /* CollapsibleTableViewCell.swift in Sources */,
 				ECD7071F2211CE9100873E26 /* OptionsViewController.swift in Sources */,
+				EC383C192213078500EC1AA4 /* ExtensionBool.swift in Sources */,
+				EC383C1C221310EF00EC1AA4 /* SectionModel.swift in Sources */,
+				EC383C2522131C3A00EC1AA4 /* ExtensionUIView.swift in Sources */,
+				EC383BFA2212E73C00EC1AA4 /* UniversityModel.swift in Sources */,
 				ECD707242211CEDE00873E26 /* OptionsViewModel.swift in Sources */,
 				ECAFAA102211DFD600480517 /* LottieViewController.swift in Sources */,
+				EC383C0F2212F0FC00EC1AA4 /* CollapseCoordinator.swift in Sources */,
 				ECAFAA152211E09700480517 /* LottieViewModel.swift in Sources */,
 				ECAFAA1F2211E0FF00480517 /* LottieCoordinator.swift in Sources */,
+				EC383BF22212E5B300EC1AA4 /* RxCoordinator.swift in Sources */,
 				ECD7071A2211CE3200873E26 /* RootCoordinator.swift in Sources */,
 				ECAFAA242211F58500480517 /* LottieCell.swift in Sources */,
 				ECD707082211CCA200873E26 /* AppDelegate.swift in Sources */,
+				EC383C2222131BC200EC1AA4 /* ExtensionColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
