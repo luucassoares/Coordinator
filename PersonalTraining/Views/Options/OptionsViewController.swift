@@ -41,7 +41,7 @@ class OptionsViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        delegate?.didTapOption(at: 3)
+//        delegate?.didTapOption(at: 3)
     }
     
     //MARK :- Setup
@@ -54,7 +54,7 @@ class OptionsViewController: UIViewController {
         tableView.removeBlankEspaces()
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         viewModel!.getOptions().asObservable().bind(to: tableView.rx.items(cellIdentifier: "Cell", cellType: UITableViewCell.self)) { row, element, cell in
-            cell.textLabel?.text = "Row: \(row) - \(element)"
+            cell.textLabel?.text = "\(row + 1) - \(element)"
         }.disposed(by: viewModel!.getDisposeBag())
         
         tableView.rx.itemSelected.subscribe(onNext: { indexPath in

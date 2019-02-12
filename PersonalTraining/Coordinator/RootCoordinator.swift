@@ -30,7 +30,8 @@ class RootCoordinator: Coordinator {
         let childC: [Coordinator] = [LottieCoordinator(presenter: presenter),
                                      RxCoordinator(presenter: presenter),
                                      CollapseCoordinator(presenter: presenter),
-                                     SicaCoordinator(presenter: presenter)]
+                                     SicaCoordinator(presenter: presenter),
+                                     UberCoordinator(presenter: presenter)]
         childCoordinators?.append(contentsOf: childC)
         for child in childCoordinators ?? []{
             self.options.append(child.name ?? "noname")

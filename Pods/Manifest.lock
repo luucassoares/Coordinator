@@ -49,6 +49,9 @@ PODS:
   - SwifterSwift/SpriteKit (4.6.0)
   - SwifterSwift/SwiftStdlib (4.6.0)
   - SwifterSwift/UIKit (4.6.0)
+  - UberSignature (1.0.3):
+    - UberSignature/Swift (= 1.0.3)
+  - UberSignature/Swift (1.0.3)
   - ViewAnimator (2.2.2)
 
 DEPENDENCIES:
@@ -65,6 +68,7 @@ DEPENDENCIES:
   - RxSwift
   - Sica
   - SwifterSwift
+  - UberSignature
   - ViewAnimator
 
 SPEC REPOS:
@@ -85,6 +89,7 @@ SPEC REPOS:
     - RxSwift
     - Sica
     - SwifterSwift
+    - UberSignature
     - ViewAnimator
 
 SPEC CHECKSUMS:
@@ -104,8 +109,9 @@ SPEC CHECKSUMS:
   RxSwift: 92fcf68dfef21f3e2ab1965363d9e7b3d787597e
   Sica: 85af08a79d98e0c68a45d5e31e3c98e4473c9389
   SwifterSwift: 812ffec6f301922f5430e75be3f2939ea3a80024
+  UberSignature: 93a5860a83211569d6d25b586e0fcad8aa163144
   ViewAnimator: 6eaa112663b6a2d9e6b2573df65b416dd051cbe4
 
-PODFILE CHECKSUM: 2dbb30d0a5476e6c878a921b6f7d456618b68763
+PODFILE CHECKSUM: 0f21c95dee43ab9c7ba1f023d97819ff5d790b8c
 
 COCOAPODS: 1.6.0

@@ -26,6 +26,7 @@ def myPods
       pod 'ViewAnimator'
       pod 'SwifterSwift'
       pod 'Sica'
+      pod 'UberSignature'
 
 end
 
