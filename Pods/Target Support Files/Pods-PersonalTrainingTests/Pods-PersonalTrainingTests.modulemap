@@ -1,6 +1,0 @@
-framework module Pods_PersonalTrainingTests {
-  umbrella header "Pods-PersonalTrainingTests-umbrella.h"
-
-  export *
-  module * { export * }
-}

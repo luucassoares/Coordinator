@@ -1,39 +1,35 @@
-# Uncomment the next line to define a global platform for your project
-# platform :ios, '10.0'
 
-target 'PersonalTraining' do
-  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
-  use_frameworks!
 
-  # Pods for PersonalTraining
 
-  pod 'RxDataSources'
-  pod 'RxBiBinding'
-  pod 'RxSwift'
-  pod 'RxCocoa'
-  pod 'Alamofire'
-  pod 'RxAlamofire'
-  pod 'RxKeyboard'    
-  pod 'Moya/RxSwift', '~> 11.0'
-  pod 'lottie-ios'
-  pod 'LGSideMenuController'
+# Uncomment this line to define a global platform for your project
+platform :ios, '10.0'
 
-  target 'PersonalTrainingTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
+# Comment this line if you're not using Swift and don't want to use dynamic frameworks
+use_frameworks!
+inhibit_all_warnings!
 
-  target 'PersonalTrainingUITests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
+source 'https://github.com/CocoaPods/Specs.git'
+
+def myPods
+    
+      pod 'RxDataSources'
+      pod 'RxBiBinding'
+      pod 'RxSwift'
+      pod 'RxCocoa'
+      pod 'Alamofire'
+      pod 'RxAlamofire'
+      pod 'RxKeyboard'
+      pod 'Moya/RxSwift', '~> 11.0'
+      pod 'lottie-ios'
+      pod 'LGSideMenuController'
 
 end
 
+
+target 'PersonalTraining' do
+    myPods
+end
+
 target 'PersonalTrainingDev' do
-  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
-  use_frameworks!
-
-  # Pods for PersonalTrainingDev
-
+    myPods
 end
