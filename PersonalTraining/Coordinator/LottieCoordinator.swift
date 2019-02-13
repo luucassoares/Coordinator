@@ -29,7 +29,7 @@ class LottieCoordinator: Coordinator {
         collectionContent.append(("location", "Localização"))
     }
     
-    private func setupViewModelAndViewController() {
+    func setupViewModelAndViewController() {
         if viewModel == nil {
             viewModel = LottieViewModel(collectionContent: collectionContent)
         }
@@ -45,16 +45,13 @@ class LottieCoordinator: Coordinator {
         presenter?.pushViewController(viewController!, animated: true)
     }
     
-    func startModal(withContentIndex index: Int) {
-        let element = collectionContent[index]
-        let vc = AnimationViewController(withTitle: element.title, animationFile: element.icon)
-        presenter?.present(vc, animated: true, completion: nil)
-    }
 
 }
 
 extension LottieCoordinator: LottieViewControllerDelegate {
     func didTapAnimation(at index: Int) {
-        startModal(withContentIndex: index)
+        let element = collectionContent[index]
+        let vc = AnimationViewController(withTitle: element.title, animationFile: element.icon)
+        presenter?.present(vc, animated: true, completion: nil)
     }
 }

@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 import UberSignature
 
-class UberCoordinator: Coordinator {
+class UberCoordinator {
     var name: String? = "Uber Signature"
     var viewController: SignatureDrawingViewController?
     var presenter: UINavigationController?

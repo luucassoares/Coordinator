@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 class CollapseCoordinator: Coordinator {
-    var name: String? = "Collapse Table View"
+    var name: String? = "Collapsible TableView"
     var presenter: UINavigationController?
     var viewController: CollapseViewController?
     var viewModel: CollapseViewModel?
@@ -28,7 +28,6 @@ class CollapseCoordinator: Coordinator {
     }
     
     func start() {
-        print("Starting Collapse Coordinator")
         setupViewModelAndViewController()
         presenter?.pushViewController(viewController!, animated: true)
     }

@@ -11,41 +11,46 @@ import UIKit
 
 
 class RootCoordinator: Coordinator {
-    var name: String? = "Root"
+    
     private var window: UIWindow
     var presenter: UINavigationController?
     private var options: [String] = []
     var childCoordinators: [Coordinator]? = []
     var viewModel: OptionsViewModel?
     var viewController: OptionsViewController?
+    var name: String? = "Root"
     
     init( window: UIWindow ) {
         self.window = window
         presenter = UINavigationController()
         presenter!.navigationBar.prefersLargeTitles = true
+        presenter?.navigationBar.backItem?.title = ""
         setupChildCoords()
     }
     
+    //create the options to go from this screen
     private func setupChildCoords() {
         let childC: [Coordinator] = [LottieCoordinator(presenter: presenter),
                                      RxCoordinator(presenter: presenter),
                                      CollapseCoordinator(presenter: presenter),
-                                     SicaCoordinator(presenter: presenter),
-                                     UberCoordinator(presenter: presenter)]
+                                     SicaCoordinator(presenter: presenter)]
+//                                     UberCoordinator(presenter: presenter)]
         childCoordinators?.append(contentsOf: childC)
         for child in childCoordinators ?? []{
-            self.options.append(child.name ?? "noname")
+            self.options.append(child.name ?? "")
         }
         
     }
     
-    private func setupViewModelAndViewController() {
+    func setupViewModelAndViewController() {
         if viewModel == nil {
             viewModel = OptionsViewModel(withOptions: options)
         }
         viewController = OptionsViewController(withViewModel: viewModel!)
         viewController?.delegate = self
     }
+    
+ 
     
     func start() {
         print("Starting Root Coordinator")

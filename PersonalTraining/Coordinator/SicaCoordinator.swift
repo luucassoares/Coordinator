@@ -10,8 +10,9 @@ import Foundation
 import UIKit
 
 class SicaCoordinator: Coordinator {
-    var name: String? = "Sica"
+    
     var presenter: UINavigationController?
+    var name: String? = "Animations"
     var viewController: SicaViewController?
     
     init( presenter: UINavigationController? ) {
@@ -24,7 +25,7 @@ class SicaCoordinator: Coordinator {
     }
     
     func start() {
-        print("Initing Sica Coordinator")
+        print("Initing Sica ViewController")
         setupViewModelAndViewController()
         presenter?.pushViewController(viewController!, animated: true)
     }

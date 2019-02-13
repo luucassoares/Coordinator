@@ -8,10 +8,9 @@
 
 import Foundation
 import UIKit
-@objc protocol Coordinator {
+protocol Coordinator {
     var name: String? { get set }
     var presenter: UINavigationController? { get set }
-    @objc optional func startModal(withContentIndex index: Int)
     func start()
-    
+    func setupViewModelAndViewController()
 }
