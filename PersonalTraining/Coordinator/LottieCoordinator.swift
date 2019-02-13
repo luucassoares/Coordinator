@@ -17,7 +17,7 @@ class LottieCoordinator: Coordinator {
     private var collectionContent: [(icon: String, title: String)] = []
     
     
-    init( presenter: UINavigationController? ) {
+    required init( presenter: UINavigationController? ) {
         self.presenter = presenter
         setupCollectionContent()
         

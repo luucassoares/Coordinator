@@ -13,4 +13,5 @@ protocol Coordinator {
     var presenter: UINavigationController? { get set }
     func start()
     func setupViewModelAndViewController()
+    init(presenter: UINavigationController?)
 }

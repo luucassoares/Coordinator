@@ -101,6 +101,9 @@
 		ECD707292211D15600873E26 /* RxOptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD707262211D15600873E26 /* RxOptionViewController.swift */; };
 		ECD7072A2211D15600873E26 /* RxOptionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECD707272211D15600873E26 /* RxOptionViewController.xib */; };
 		ECD7072B2211D15600873E26 /* RxOptionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECD707272211D15600873E26 /* RxOptionViewController.xib */; };
+		ECF18CA82214927600770861 /* ViewCodeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF18CA72214927600770861 /* ViewCodeCoordinator.swift */; };
+		ECF18CAB221493A800770861 /* ViewCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF18CA9221493A800770861 /* ViewCodeViewController.swift */; };
+		ECF18CAC221493A800770861 /* ViewCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECF18CAA221493A800770861 /* ViewCodeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -180,6 +183,9 @@
 		ECD707222211CEDE00873E26 /* OptionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsViewModel.swift; sourceTree = "<group>"; };
 		ECD707262211D15600873E26 /* RxOptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxOptionViewController.swift; sourceTree = "<group>"; };
 		ECD707272211D15600873E26 /* RxOptionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RxOptionViewController.xib; sourceTree = "<group>"; };
+		ECF18CA72214927600770861 /* ViewCodeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodeCoordinator.swift; sourceTree = "<group>"; };
+		ECF18CA9221493A800770861 /* ViewCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodeViewController.swift; sourceTree = "<group>"; };
+		ECF18CAA221493A800770861 /* ViewCodeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewCodeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -421,6 +427,7 @@
 				EC383C0D2212F0FC00EC1AA4 /* CollapseCoordinator.swift */,
 				EC220CEA22134E740096D63E /* SicaCoordinator.swift */,
 				EC2A5D352213586A0003DA0D /* UberCoordinator.swift */,
+				ECF18CA72214927600770861 /* ViewCodeCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -428,6 +435,7 @@
 		ECD707142211CD2C00873E26 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				ECF18CA62214926500770861 /* ViewCode */,
 				EC220CE322134E540096D63E /* Sica */,
 				EC383C062212F07000EC1AA4 /* CollapsableTableView */,
 				ECAFAA0C2211DFC100480517 /* Lottie */,
@@ -455,6 +463,15 @@
 				EC383BF32212E71800EC1AA4 /* RxOptionViewModel.swift */,
 			);
 			path = RxOption;
+			sourceTree = "<group>";
+		};
+		ECF18CA62214926500770861 /* ViewCode */ = {
+			isa = PBXGroup;
+			children = (
+				ECF18CA9221493A800770861 /* ViewCodeViewController.swift */,
+				ECF18CAA221493A800770861 /* ViewCodeViewController.xib */,
+			);
+			path = ViewCode;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -583,6 +600,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECF18CAC221493A800770861 /* ViewCodeViewController.xib in Resources */,
 				ECAFAA252211F58500480517 /* LottieCell.xib in Resources */,
 				EC74A9DD2211FEB500B54F46 /* AnimationViewController.xib in Resources */,
 				EC383C2A22131E1F00EC1AA4 /* CollapsibleTableViewCell.xib in Resources */,
@@ -815,6 +833,7 @@
 				EC74A9DB2211FEB500B54F46 /* AnimationViewController.swift in Sources */,
 				EC2A5D362213586A0003DA0D /* UberCoordinator.swift in Sources */,
 				EC383C1E221318B900EC1AA4 /* CollapsibleTableViewHeader.swift in Sources */,
+				ECF18CAB221493A800770861 /* ViewCodeViewController.swift in Sources */,
 				EC383C2822131E1F00EC1AA4 /* CollapsibleTableViewCell.swift in Sources */,
 				ECD7071E2211CE9100873E26 /* OptionsViewController.swift in Sources */,
 				EC383C182213078500EC1AA4 /* ExtensionBool.swift in Sources */,
@@ -831,6 +850,7 @@
 				EC383BF12212E5B300EC1AA4 /* RxCoordinator.swift in Sources */,
 				ECD707192211CE3200873E26 /* RootCoordinator.swift in Sources */,
 				ECAFAA232211F58500480517 /* LottieCell.swift in Sources */,
+				ECF18CA82214927600770861 /* ViewCodeCoordinator.swift in Sources */,
 				ECD706CB2211CC4300873E26 /* AppDelegate.swift in Sources */,
 				EC383C2122131BC200EC1AA4 /* ExtensionColor.swift in Sources */,
 			);

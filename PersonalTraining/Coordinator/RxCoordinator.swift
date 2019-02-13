@@ -14,7 +14,7 @@ class RxCoordinator: Coordinator {
     var presenter: UINavigationController?
     var viewController: RxOptionViewController?
     
-    init ( presenter: UINavigationController? ) {
+    required init ( presenter: UINavigationController? ) {
         self.presenter = presenter
         
     }

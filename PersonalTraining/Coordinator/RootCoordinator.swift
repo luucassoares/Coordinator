@@ -11,6 +11,9 @@ import UIKit
 
 
 class RootCoordinator: Coordinator {
+
+    
+    
     
     private var window: UIWindow
     var presenter: UINavigationController?
@@ -23,9 +26,13 @@ class RootCoordinator: Coordinator {
     init( window: UIWindow ) {
         self.window = window
         presenter = UINavigationController()
-        presenter!.navigationBar.prefersLargeTitles = true
-        presenter?.navigationBar.backItem?.title = ""
         setupChildCoords()
+    }
+    
+    required init(presenter: UINavigationController?) {
+        self.presenter = presenter
+        self.options.append(contentsOf: [""])
+        self.window = UIWindow()
     }
     
     //create the options to go from this screen
@@ -33,7 +40,8 @@ class RootCoordinator: Coordinator {
         let childC: [Coordinator] = [LottieCoordinator(presenter: presenter),
                                      RxCoordinator(presenter: presenter),
                                      CollapseCoordinator(presenter: presenter),
-                                     SicaCoordinator(presenter: presenter)]
+                                     SicaCoordinator(presenter: presenter),
+                                     ViewCodeCoordinator(presenter: presenter)]
 //                                     UberCoordinator(presenter: presenter)]
         childCoordinators?.append(contentsOf: childC)
         for child in childCoordinators ?? []{

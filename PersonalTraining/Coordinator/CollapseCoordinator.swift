@@ -15,7 +15,7 @@ class CollapseCoordinator: Coordinator {
     var viewController: CollapseViewController?
     var viewModel: CollapseViewModel?
     var content: [Section] = sectionsData
-    init (presenter: UINavigationController?) {
+    required init (presenter: UINavigationController?) {
         self.presenter = presenter
     }
     

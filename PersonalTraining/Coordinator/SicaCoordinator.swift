@@ -15,7 +15,7 @@ class SicaCoordinator: Coordinator {
     var name: String? = "Animations"
     var viewController: SicaViewController?
     
-    init( presenter: UINavigationController? ) {
+    required init( presenter: UINavigationController? ) {
         self.presenter = presenter
     }
     
