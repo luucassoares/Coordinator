@@ -33,7 +33,7 @@ class CollapseViewController: UIViewController {
         tableView.register(UINib(nibName: "CollapsibleTableViewCell", bundle: nil), forCellReuseIdentifier: "cell")
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.estimatedRowHeight = 44.0
+        tableView.estimatedRowHeight = 120.0
         tableView.rowHeight = UITableView.automaticDimension
         tableView.removeBlankEspaces()
     }

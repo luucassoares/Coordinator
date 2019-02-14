@@ -53,7 +53,6 @@ class ViewCodeViewController: UIViewController {
 
         newView.translatesAutoresizingMaskIntoConstraints = false
         newView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-//        newView.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -100).isActive = true
         newView.topAnchor.constraint(equalTo: container.topAnchor, constant: 80).isActive = true
         newView.widthAnchor.constraint(equalToConstant: 100).isActive = true
         newView.heightAnchor.constraint(equalToConstant: 100).isActive = true
@@ -114,7 +113,9 @@ class ViewCodeViewController: UIViewController {
         addButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40).isActive = true
         addButton.heightAnchor.constraint(equalToConstant: 44).isActive = true
         addButton.topAnchor.constraint(equalTo: button.bottomAnchor, constant: 8).isActive = true
-        addButton.bottomAnchor.constraint(greaterThanOrEqualTo: container.bottomAnchor, constant: 20).isActive = true
+        container.bottomAnchor.constraint(greaterThanOrEqualToSystemSpacingBelow: addButton.bottomAnchor, multiplier: 1).isActive = true
+//        NSLayoutConstraint(item: container, attribute: .bottom, relatedBy: .greaterThanOrEqual, toItem: addButton, attribute: .bottom, multiplier: 1, constant: 20).isActive = true // funciona também
+        
         
     }
     
@@ -126,7 +127,9 @@ class ViewCodeViewController: UIViewController {
             self.newView.layer.borderWidth = self.surnameLabel.isHidden ? 2 : 0
             self.newView.layer.borderColor = self.surnameLabel.isHidden ? UIColor.blue.cgColor : UIColor.red.cgColor
             self.nameLabel.text = self.surnameLabel.isHidden ? "Animou:)" : "Label 1"
+            self.view.backgroundColor = self.surnameLabel.isHidden ? .yellow : .white
             self.view.layoutIfNeeded()
+            
         }, completion: nil)
         
     }

@@ -32,25 +32,21 @@ class CollapsibleTableViewHeader: UITableViewHeaderFooterView {
         contentView.backgroundColor = .lightGray
         
         let marginGuide = contentView.layoutMarginsGuide
-        
         // Arrow label
         contentView.addSubview(arrowLabel)
         arrowLabel.textColor = .black
         arrowLabel.translatesAutoresizingMaskIntoConstraints = false
         arrowLabel.widthAnchor.constraint(equalToConstant: 12).isActive = true
-        arrowLabel.topAnchor.constraint(equalTo: marginGuide.topAnchor).isActive = true
         arrowLabel.trailingAnchor.constraint(equalTo: marginGuide.trailingAnchor).isActive = true
-        arrowLabel.bottomAnchor.constraint(equalTo: marginGuide.bottomAnchor).isActive = true
-
+        arrowLabel.centerYAnchor.constraint(equalTo: marginGuide.centerYAnchor).isActive = true
+//
         
-        // Title label
         contentView.addSubview(titleLabel)
         titleLabel.textColor = .black
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
-        titleLabel.topAnchor.constraint(equalTo: marginGuide.topAnchor).isActive = true
-        titleLabel.trailingAnchor.constraint(equalTo: marginGuide.trailingAnchor).isActive = true
-        titleLabel.bottomAnchor.constraint(equalTo: marginGuide.bottomAnchor).isActive = true
+        titleLabel.centerYAnchor.constraint(equalTo: marginGuide.centerYAnchor).isActive = true
         titleLabel.leadingAnchor.constraint(equalTo: marginGuide.leadingAnchor).isActive = true
+        titleLabel.font = UIFont.boldSystemFont(ofSize: 15)
         
         //
         // Call tapHeader when tapping on this header
@@ -72,6 +68,7 @@ class CollapsibleTableViewHeader: UITableViewHeaderFooterView {
     
     func setCollapsed(_ collapsed: Bool) {
         //animate arrow rotating
+        arrowLabel.font = collapsed ? UIFont.systemFont(ofSize: 15) : UIFont.boldSystemFont(ofSize: 15)
         arrowLabel.rotate(collapsed ? 0.0 : .pi / 2)
     }
 }

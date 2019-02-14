@@ -12,10 +12,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SicaViewController" customModule="PersonalTraining" customModuleProvider="target">
             <connections>
-                <outlet property="sampleView" destination="fPw-UE-rJp" id="vNj-OC-Dnf"/>
-                <outlet property="sampleView2" destination="qh0-pR-zxC" id="ZzR-bp-lUJ"/>
-                <outlet property="sampleView3" destination="AD1-Uw-mAK" id="izd-gn-KLw"/>
-                <outlet property="sampleView4" destination="ver-8y-4QK" id="ZtR-EF-CsG"/>
+                <outlet property="bottomView" destination="ver-8y-4QK" id="Cqo-2v-6kG"/>
+                <outlet property="leadingView" destination="fPw-UE-rJp" id="4fD-rN-cim"/>
+                <outlet property="topView" destination="AD1-Uw-mAK" id="g45-fc-LCW"/>
+                <outlet property="trailingView" destination="qh0-pR-zxC" id="Lr2-VP-R79"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="viewVerticalY" destination="Mi3-Mu-wsg" id="Hv8-3V-8BQ"/>
             </connections>

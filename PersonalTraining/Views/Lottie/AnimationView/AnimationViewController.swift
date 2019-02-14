@@ -12,13 +12,13 @@ import Lottie
 
 class AnimationViewController: UIViewController {
     
+    @IBOutlet weak var closeButton: UIButton!
+    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var bottomConstraint: NSLayoutConstraint!
     @IBOutlet weak var containerView: UIView!
-    @IBOutlet weak var LOTView: UIView!
-    @IBOutlet weak var animationLabel: UILabel!
-    
-    var mTitle = "Testes"
-    var animationFile = ""
+    @IBOutlet weak var containerViewHeight: NSLayoutConstraint!
+    var mTitle: String?
+    var animationFile: String?
     
     convenience required init (withTitle: String, animationFile: String) {
         self.init()
@@ -26,22 +26,41 @@ class AnimationViewController: UIViewController {
         self.animationFile = animationFile
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        animationLabel.text = mTitle
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        
         bottomConstraint.constant = 0
-        UIView.animate(withDuration: 0.3, animations: {
+        UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseInOut, animations: {
+            self.titleLabel.text = self.mTitle
+            self.closeButton.setTitle("Fechar", for: .normal)
+            let bundle = Bundle.main.path(forResource: "\(self.animationFile ?? "")", ofType: "json")
+            let animationView = LOTAnimationView(filePath: bundle ?? "")
+            animationView.loopAnimation = true
+            let height = UIScreen.main.bounds.height * 0.6
+            self.containerViewHeight.constant = height
+            animationView.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: height)
+            self.containerView.addSubview(animationView)
+            animationView.play()
+            self.view.layoutIfNeeded()
+        }, completion: { finished in
+         
+        })
+
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        bottomConstraint.constant = -500
+        UIView.animate(withDuration: 1, animations: {
             self.view.layoutIfNeeded()
         }, completion: nil)
-        let bundle = Bundle.main.path(forResource: "\(animationFile)", ofType: "json")
-        let animationView = LOTAnimationView(filePath: bundle ?? "")
-        animationView.frame = LOTView.frame
-        LOTView.addSubview(animationView)
-        animationView.play()
     }
 
-    @IBAction func closeButtonTap(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
+    @IBAction func closeButtonAction(_ sender: Any) {
+        self.dismiss(animated: true, completion: {
+            print("successfully dismissed animationModal")
+        })
     }
     
 }
