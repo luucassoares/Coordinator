@@ -103,7 +103,6 @@
 		ECD7072B2211D15600873E26 /* RxOptionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECD707272211D15600873E26 /* RxOptionViewController.xib */; };
 		ECF18CA82214927600770861 /* ViewCodeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF18CA72214927600770861 /* ViewCodeCoordinator.swift */; };
 		ECF18CAB221493A800770861 /* ViewCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF18CA9221493A800770861 /* ViewCodeViewController.swift */; };
-		ECF18CAC221493A800770861 /* ViewCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECF18CAA221493A800770861 /* ViewCodeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -185,7 +184,6 @@
 		ECD707272211D15600873E26 /* RxOptionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RxOptionViewController.xib; sourceTree = "<group>"; };
 		ECF18CA72214927600770861 /* ViewCodeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodeCoordinator.swift; sourceTree = "<group>"; };
 		ECF18CA9221493A800770861 /* ViewCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodeViewController.swift; sourceTree = "<group>"; };
-		ECF18CAA221493A800770861 /* ViewCodeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewCodeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -469,7 +467,6 @@
 			isa = PBXGroup;
 			children = (
 				ECF18CA9221493A800770861 /* ViewCodeViewController.swift */,
-				ECF18CAA221493A800770861 /* ViewCodeViewController.xib */,
 			);
 			path = ViewCode;
 			sourceTree = "<group>";
@@ -600,7 +597,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECF18CAC221493A800770861 /* ViewCodeViewController.xib in Resources */,
 				ECAFAA252211F58500480517 /* LottieCell.xib in Resources */,
 				EC74A9DD2211FEB500B54F46 /* AnimationViewController.xib in Resources */,
 				EC383C2A22131E1F00EC1AA4 /* CollapsibleTableViewCell.xib in Resources */,
@@ -710,7 +706,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PersonalTrainingDev/Pods-PersonalTrainingDev-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-PersonalTrainingDev/Pods-PersonalTrainingDev-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
 				"${BUILT_PRODUCTS_DIR}/IBAnimatable/IBAnimatable.framework",
@@ -755,7 +751,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PersonalTrainingDev/Pods-PersonalTrainingDev-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PersonalTrainingDev/Pods-PersonalTrainingDev-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BD0FCDEE8FBFEFCC61609188 /* [CP] Embed Pods Frameworks */ = {
@@ -766,7 +762,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PersonalTraining/Pods-PersonalTraining-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-PersonalTraining/Pods-PersonalTraining-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
 				"${BUILT_PRODUCTS_DIR}/IBAnimatable/IBAnimatable.framework",
@@ -811,7 +807,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PersonalTraining/Pods-PersonalTraining-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PersonalTraining/Pods-PersonalTraining-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
