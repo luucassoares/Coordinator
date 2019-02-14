@@ -13,6 +13,7 @@
 		DE14409E22125F8B0083445D /* PersonalTraining-info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ECD706D62211CC4500873E26 /* PersonalTraining-info.plist */; };
 		DE1440A022125FBC0083445D /* PersonalTrainingDev-info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE14409F22125FBC0083445D /* PersonalTrainingDev-info.plist */; };
 		DE1440A122125FBC0083445D /* PersonalTrainingDev-info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE14409F22125FBC0083445D /* PersonalTrainingDev-info.plist */; };
+		DEA6D482221579AA0034EC3A /* ViewCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF18CA9221493A800770861 /* ViewCodeViewController.swift */; };
 		EC220CE622134E610096D63E /* SicaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC220CE422134E610096D63E /* SicaViewController.swift */; };
 		EC220CE722134E610096D63E /* SicaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC220CE422134E610096D63E /* SicaViewController.swift */; };
 		EC220CE822134E610096D63E /* SicaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC220CE522134E610096D63E /* SicaViewController.xib */; };
@@ -873,6 +874,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC383BF52212E71800EC1AA4 /* RxOptionViewModel.swift in Sources */,
+				DEA6D482221579AA0034EC3A /* ViewCodeViewController.swift in Sources */,
 				EC383C16221306CA00EC1AA4 /* ExtensionTableView.swift in Sources */,
 				EC383C122212F30900EC1AA4 /* CollapseViewModel.swift in Sources */,
 				EC383C0A2212F08B00EC1AA4 /* CollapseViewController.swift in Sources */,
@@ -1055,7 +1057,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = G6U6U95FVZ;
+				DEVELOPMENT_TEAM = T225YY893P;
 				INFOPLIST_FILE = "$(SRCROOT)/PersonalTraining/Plist/PersonalTraining-info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1075,7 +1077,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = G6U6U95FVZ;
+				DEVELOPMENT_TEAM = T225YY893P;
 				INFOPLIST_FILE = "$(SRCROOT)/PersonalTraining/Plist/PersonalTraining-info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -53,19 +53,20 @@ class ViewCodeViewController: UIViewController {
 
         newView.translatesAutoresizingMaskIntoConstraints = false
         newView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        newView.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -100).isActive = true
+//        newView.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -100).isActive = true
+        newView.topAnchor.constraint(equalTo: container.topAnchor, constant: 80).isActive = true
         newView.widthAnchor.constraint(equalToConstant: 100).isActive = true
         newView.heightAnchor.constraint(equalToConstant: 100).isActive = true
         newView.backgroundColor = .red
 
         //config nameLabel
-        nameLabel.text = "Lucas"
+        nameLabel.text = "Label 1"
         nameLabel.numberOfLines = 0
         nameLabel.font = UIFont.boldSystemFont(ofSize: 17)
         nameLabel.textAlignment = .center
 
         //config surname
-        surnameLabel.text = "Soares"
+        surnameLabel.text = "Label 2"
         surnameLabel.numberOfLines = 0
         surnameLabel.font = UIFont.systemFont(ofSize: 17)
         surnameLabel.textAlignment = .center
@@ -113,7 +114,7 @@ class ViewCodeViewController: UIViewController {
         addButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40).isActive = true
         addButton.heightAnchor.constraint(equalToConstant: 44).isActive = true
         addButton.topAnchor.constraint(equalTo: button.bottomAnchor, constant: 8).isActive = true
-        addButton.bottomAnchor.constraint(lessThanOrEqualTo: container.bottomAnchor, constant: 8).isActive = true
+        addButton.bottomAnchor.constraint(greaterThanOrEqualTo: container.bottomAnchor, constant: 20).isActive = true
         
     }
     
@@ -124,7 +125,7 @@ class ViewCodeViewController: UIViewController {
             self.newView.layer.cornerRadius = self.surnameLabel.isHidden ? 50 : 0
             self.newView.layer.borderWidth = self.surnameLabel.isHidden ? 2 : 0
             self.newView.layer.borderColor = self.surnameLabel.isHidden ? UIColor.blue.cgColor : UIColor.red.cgColor
-            self.nameLabel.text = self.surnameLabel.isHidden ? "Animou:)" : "Lucas"
+            self.nameLabel.text = self.surnameLabel.isHidden ? "Animou:)" : "Label 1"
             self.view.layoutIfNeeded()
         }, completion: nil)
         
@@ -132,8 +133,8 @@ class ViewCodeViewController: UIViewController {
     
     @objc func addButtonTap() {
         let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 10)
-        label.text = "Label número: \(stackView.arrangedSubviews.count + 1)"
+        label.font = UIFont.systemFont(ofSize: 17)
+        label.text = "Label \(stackView.arrangedSubviews.count + 1)"
         label.textAlignment = .center
         stackView.addArrangedSubview(label)
     }
