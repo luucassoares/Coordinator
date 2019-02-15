@@ -26,8 +26,6 @@ class SicaViewController: UIViewController {
         
         UIViewPropertyAnimator.runningPropertyAnimator(withDuration: duration, delay: 0.1, options: .curveEaseInOut, animations: {
             
-            
-            
             self.view.layoutIfNeeded()
         }) { (position) in
             

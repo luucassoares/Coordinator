@@ -31,6 +31,7 @@ class RootCoordinator: Coordinator {
     
     required init(presenter: UINavigationController?) {
         self.presenter = presenter
+        self.presenter?.navigationBar.prefersLargeTitles = true
         self.options.append(contentsOf: [""])
         self.window = UIWindow()
     }

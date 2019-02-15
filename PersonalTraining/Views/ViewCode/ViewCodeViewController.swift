@@ -19,11 +19,11 @@ class ViewCodeViewController: UIViewController {
     var addButton = UIButton()
     var scrollView = UIScrollView()
     var container = UIView()
+    var clearButton = UIButton()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
+      
         view.backgroundColor = .white
         
         //scrollview cofnig
@@ -46,18 +46,33 @@ class ViewCodeViewController: UIViewController {
         containerHeight.isActive = true
         container.widthAnchor.constraint(equalTo: scrollView.widthAnchor).isActive = true
         
-        
+
         
         //new view config
         container.addSubview(newView)
 
         newView.translatesAutoresizingMaskIntoConstraints = false
         newView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        newView.topAnchor.constraint(equalTo: container.topAnchor, constant: 80).isActive = true
+//        newView.topAnchor.constraint(equalTo: container.topAnchor, constant: 40).isActive = true
         newView.widthAnchor.constraint(equalToConstant: 100).isActive = true
         newView.heightAnchor.constraint(equalToConstant: 100).isActive = true
         newView.backgroundColor = .red
 
+        
+        //clear butotn
+        container.addSubview(clearButton)
+        clearButton.translatesAutoresizingMaskIntoConstraints = false
+        newView.topAnchor.constraint(equalTo: clearButton.bottomAnchor, constant: 15).isActive = true
+        clearButton.centerXAnchor.constraint(equalTo: container.centerXAnchor).isActive = true
+        clearButton.topAnchor.constraint(equalTo: container.topAnchor, constant: 20).isActive = true
+        clearButton.addTarget(self, action: #selector(removeAllLabels), for: .touchUpInside)
+        clearButton.setTitle("Clear stack", for: .normal)
+        clearButton.setTitleColor(UIColor.black, for: .normal)
+        clearButton.titleLabel?.font = UIFont.systemFont(ofSize: 15)
+        clearButton.layer.borderColor = UIColor.black.cgColor
+        clearButton.layer.borderWidth = 1.0
+        clearButton.widthAnchor.constraint(equalToConstant: 150).isActive = true
+//
         //config nameLabel
         nameLabel.text = "Label 1"
         nameLabel.numberOfLines = 0
@@ -116,6 +131,10 @@ class ViewCodeViewController: UIViewController {
         container.bottomAnchor.constraint(greaterThanOrEqualToSystemSpacingBelow: addButton.bottomAnchor, multiplier: 1).isActive = true
 //        NSLayoutConstraint(item: container, attribute: .bottom, relatedBy: .greaterThanOrEqual, toItem: addButton, attribute: .bottom, multiplier: 1, constant: 20).isActive = true // funciona também
         
+        UIView.animate(withDuration: 1) {
+            self.view.layoutIfNeeded()
+        }
+        
         
     }
     
@@ -125,9 +144,10 @@ class ViewCodeViewController: UIViewController {
             self.surnameLabel.isHidden.toggle()
             self.newView.layer.cornerRadius = self.surnameLabel.isHidden ? 50 : 0
             self.newView.layer.borderWidth = self.surnameLabel.isHidden ? 2 : 0
-            self.newView.layer.borderColor = self.surnameLabel.isHidden ? UIColor.blue.cgColor : UIColor.red.cgColor
+            self.newView.layer.borderColor = self.surnameLabel.isHidden ? UIColor.red.cgColor : UIColor.blue.cgColor
             self.nameLabel.text = self.surnameLabel.isHidden ? "Animou:)" : "Label 1"
             self.view.backgroundColor = self.surnameLabel.isHidden ? .yellow : .white
+            self.newView.backgroundColor = self.surnameLabel.isHidden ? .blue : .red
             self.view.layoutIfNeeded()
             
         }, completion: nil)
@@ -135,11 +155,28 @@ class ViewCodeViewController: UIViewController {
     }
     
     @objc func addButtonTap() {
-        let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 17)
-        label.text = "Label \(stackView.arrangedSubviews.count + 1)"
-        label.textAlignment = .center
-        stackView.addArrangedSubview(label)
+        for _ in 0...4 {
+            let label = UILabel()
+            label.font = UIFont.systemFont(ofSize: 17)
+            label.text = "Label \(stackView.arrangedSubviews.count + 1)"
+            label.textAlignment = .center
+            self.stackView.addArrangedSubview(label)
+        }
+        UIView.animate(withDuration: 0.3, animations: {
+            self.view.layoutIfNeeded()
+        }, completion: nil)
+        
     }
  
+    @objc func removeAllLabels() {
+        for view in stackView.arrangedSubviews {
+            view.isHidden = true
+        }
+        
+        UIView.animate(withDuration: 0.3, animations: {
+            self.view.layoutIfNeeded()
+        }, completion: nil)
+       
+        
+    }
 }

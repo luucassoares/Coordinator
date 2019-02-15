@@ -30,7 +30,6 @@ class CollapsibleTableViewHeader: UITableViewHeaderFooterView {
         
         // Content View
         contentView.backgroundColor = .lightGray
-        
         let marginGuide = contentView.layoutMarginsGuide
         // Arrow label
         contentView.addSubview(arrowLabel)
