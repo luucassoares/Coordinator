@@ -14,8 +14,7 @@
             <connections>
                 <outlet property="button1" destination="kEZ-OX-Xyd" id="5dK-bd-vaU"/>
                 <outlet property="button2" destination="5ep-QZ-1UP" id="vRB-Y4-ytG"/>
-                <outlet property="indicator" destination="yKn-Rm-KRs" id="sby-YE-5AJ"/>
-                <outlet property="leadingConstraint" destination="ata-tU-rfq" id="qY4-Fa-bkp"/>
+                <outlet property="stackView" destination="qwv-Is-3Pu" id="BRy-hz-ZeH"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -25,18 +24,31 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="qwv-Is-3Pu">
-                    <rect key="frame" x="0.0" y="20" width="375" height="50"/>
+                    <rect key="frame" x="8" y="28" width="359" height="50"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kEZ-OX-Xyd" customClass="GradientButton" customModule="PersonalTraining" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="0.0" width="183.5" height="50"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kEZ-OX-Xyd" customClass="CustomUIButton" customModule="PersonalTraining" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="175.5" height="50"/>
                             <state key="normal" title="button 1"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="0.0"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
                             <connections>
                                 <action selector="button1tap:" destination="-1" eventType="touchUpInside" id="j5Q-ZA-4AJ"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ep-QZ-1UP" customClass="CustomUIButton" customModule="PersonalTraining" customModuleProvider="target">
-                            <rect key="frame" x="191.5" y="0.0" width="183.5" height="50"/>
-                            <state key="normal" title="button2"/>
+                            <rect key="frame" x="183.5" y="0.0" width="175.5" height="50"/>
+                            <state key="normal" title="button2">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                     <real key="value" value="1"/>
@@ -45,7 +57,7 @@
                                     <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </userDefinedRuntimeAttribute>
                                 <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                    <real key="value" value="8"/>
+                                    <real key="value" value="0.0"/>
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                             <connections>
@@ -57,22 +69,12 @@
                         <constraint firstAttribute="height" constant="50" id="DUH-oM-6pw"/>
                     </constraints>
                 </stackView>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yKn-Rm-KRs">
-                    <rect key="frame" x="0.0" y="70" width="183.5" height="1"/>
-                    <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="1" id="meW-NM-gBe"/>
-                    </constraints>
-                </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="qwv-Is-3Pu" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="5bf-lr-rhG"/>
-                <constraint firstItem="yKn-Rm-KRs" firstAttribute="width" secondItem="kEZ-OX-Xyd" secondAttribute="width" id="Tt6-1E-m3t"/>
-                <constraint firstItem="yKn-Rm-KRs" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ata-tU-rfq"/>
-                <constraint firstItem="qwv-Is-3Pu" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ms6-pN-xh6"/>
-                <constraint firstItem="yKn-Rm-KRs" firstAttribute="top" secondItem="qwv-Is-3Pu" secondAttribute="bottom" id="nHz-MO-bcT"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="qwv-Is-3Pu" secondAttribute="trailing" id="zQz-05-svn"/>
+                <constraint firstItem="qwv-Is-3Pu" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="8" id="5bf-lr-rhG"/>
+                <constraint firstItem="qwv-Is-3Pu" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="8" id="ms6-pN-xh6"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="qwv-Is-3Pu" secondAttribute="trailing" constant="8" id="zQz-05-svn"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
         </view>
