@@ -18,7 +18,14 @@ extension UITableView {
      Registra a nib na tableView
      */
     func registerNib(named: String){
-        self.tableView.register(UINib(nibName: named, bundle: nil), forCellReuseIdentifier: named)
+        self.register(UINib(nibName: named, bundle: nil), forCellReuseIdentifier: named)
     }
     
+}
+
+extension UICollectionView {
+    
+    func registerNib(named: String) {
+        self.register(UINib(nibName: named, bundle: nil), forCellWithReuseIdentifier: named)
+    }
 }

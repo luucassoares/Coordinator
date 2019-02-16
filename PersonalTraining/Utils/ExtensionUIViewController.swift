@@ -22,6 +22,36 @@ extension UIViewController {
         addObservers()
     }
     
+    @objc func didTapView(gesture: UITapGestureRecognizer) {
+        view.endEditing(true)
+    }
+    
+    func addObservers(){
+        NotificationCenter.default.addObserver(forName: UIResponder.keyboardWillShowNotification, object: nil, queue: nil) { (notification) in
+            self.keyboardWillShow(notification: notification)
+        }
+        
+        NotificationCenter.default.addObserver(forName: UIResponder.keyboardWillHideNotification, object: nil, queue: nil) { (notification) in
+            self.keyboardWillHide(notification: notification)
+        }
+    }
+    
+    func keyboardWillShow(notification: Notification) {
+        guard let userInfo = notification.userInfo,
+            let frame = (userInfo[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue else {
+                return
+        }
+        let contentInset = UIEdgeInsets(top: 0, left: 0, bottom: frame.height, right: 0)
+        setScrollViewContentInset(contentInset)
+    }
+    
+    func keyboardWillHide(notification: Notification) {
+        setScrollViewContentInset(UIEdgeInsets.zero)
+    }
+    
+    func removeObservers() {
+        NotificationCenter.default.removeObserver(self)
+    }
     // OVERRIDE IT!
     @objc func setScrollViewContentInset(_ inset: UIEdgeInsets) {
         
@@ -36,7 +66,7 @@ extension UIViewController {
     func showLoader() {
         
         if(loaderView == nil) {
-            loaderView = NVActivityIndicatorView(frame: CGRect(x: (UIScreen.main.bounds.size.width/2) - 15, y: UIScreen.main.bounds.size.height/2, width: 35, height: 35) , type: NVActivityIndicatorType.circleStrokeSpin, color: Colors.MAIN_COLOR, padding: 0)
+            loaderView = NVActivityIndicatorView(frame: CGRect(x: (UIScreen.main.bounds.size.width/2) - 15, y: UIScreen.main.bounds.size.height/2, width: 35, height: 35) , type: NVActivityIndicatorType.lineSpinFadeLoader, color: Colors.BLUE_GRADIENT_LEFT, padding: 0)
         }
         
         self.lockView(self.view)

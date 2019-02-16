@@ -30,7 +30,7 @@ class CollapseViewController: UIViewController {
     }
     
     func setupTableView() {
-        tableView.register(UINib(nibName: "CollapsibleTableViewCell", bundle: nil), forCellReuseIdentifier: "cell")
+        tableView.registerNib(named: "CollapsibleTableViewCell")
         tableView.delegate = self
         tableView.dataSource = self
         tableView.estimatedRowHeight = 120.0
@@ -75,7 +75,7 @@ extension CollapseViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CollapsibleTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CollapsibleTableViewCell", for: indexPath) as! CollapsibleTableViewCell
         let model = self.viewModel?.getModelAtIndexPath(at: indexPath)
         cell.setup(with: model?.name ?? "", and: model?.detail ?? "")
         return cell

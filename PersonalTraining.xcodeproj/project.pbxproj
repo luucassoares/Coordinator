@@ -18,6 +18,8 @@
 		DE1440A022125FBC0083445D /* PersonalTrainingDev-info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE14409F22125FBC0083445D /* PersonalTrainingDev-info.plist */; };
 		DE1440A122125FBC0083445D /* PersonalTrainingDev-info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE14409F22125FBC0083445D /* PersonalTrainingDev-info.plist */; };
 		DEA6D482221579AA0034EC3A /* ViewCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF18CA9221493A800770861 /* ViewCodeViewController.swift */; };
+		DECAEF5F22186EB9000F4418 /* ExtensionDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECAEF5E22186EB9000F4418 /* ExtensionDate.swift */; };
+		DECAEF6122186FDC000F4418 /* ExtensionUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECAEF6022186FDC000F4418 /* ExtensionUIButton.swift */; };
 		EC220CE622134E610096D63E /* SicaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC220CE422134E610096D63E /* SicaViewController.swift */; };
 		EC220CE722134E610096D63E /* SicaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC220CE422134E610096D63E /* SicaViewController.swift */; };
 		EC220CE822134E610096D63E /* SicaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC220CE522134E610096D63E /* SicaViewController.xib */; };
@@ -44,8 +46,8 @@
 		EC383C0F2212F0FC00EC1AA4 /* CollapseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC383C0D2212F0FC00EC1AA4 /* CollapseCoordinator.swift */; };
 		EC383C112212F30900EC1AA4 /* CollapseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC383C102212F30900EC1AA4 /* CollapseViewModel.swift */; };
 		EC383C122212F30900EC1AA4 /* CollapseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC383C102212F30900EC1AA4 /* CollapseViewModel.swift */; };
-		EC383C15221306CA00EC1AA4 /* ExtensionTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC383C14221306CA00EC1AA4 /* ExtensionTableView.swift */; };
-		EC383C16221306CA00EC1AA4 /* ExtensionTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC383C14221306CA00EC1AA4 /* ExtensionTableView.swift */; };
+		EC383C15221306CA00EC1AA4 /* ExtensionTableViewAndCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC383C14221306CA00EC1AA4 /* ExtensionTableViewAndCollection.swift */; };
+		EC383C16221306CA00EC1AA4 /* ExtensionTableViewAndCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC383C14221306CA00EC1AA4 /* ExtensionTableViewAndCollection.swift */; };
 		EC383C182213078500EC1AA4 /* ExtensionBool.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC383C172213078500EC1AA4 /* ExtensionBool.swift */; };
 		EC383C192213078500EC1AA4 /* ExtensionBool.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC383C172213078500EC1AA4 /* ExtensionBool.swift */; };
 		EC383C1B221310EF00EC1AA4 /* SectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC383C1A221310EF00EC1AA4 /* SectionModel.swift */; };
@@ -137,6 +139,8 @@
 		DE0168DA2217B574003E5BB6 /* ExtensionString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionString.swift; sourceTree = "<group>"; };
 		DE0168DC2217B5FA003E5BB6 /* NewTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTextField.swift; sourceTree = "<group>"; };
 		DE14409F22125FBC0083445D /* PersonalTrainingDev-info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "PersonalTrainingDev-info.plist"; sourceTree = "<group>"; };
+		DECAEF5E22186EB9000F4418 /* ExtensionDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDate.swift; sourceTree = "<group>"; };
+		DECAEF6022186FDC000F4418 /* ExtensionUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUIButton.swift; sourceTree = "<group>"; };
 		EC220CE422134E610096D63E /* SicaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SicaViewController.swift; sourceTree = "<group>"; };
 		EC220CE522134E610096D63E /* SicaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SicaViewController.xib; sourceTree = "<group>"; };
 		EC220CEA22134E740096D63E /* SicaCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SicaCoordinator.swift; sourceTree = "<group>"; };
@@ -150,7 +154,7 @@
 		EC383C082212F08B00EC1AA4 /* CollapseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollapseViewController.xib; sourceTree = "<group>"; };
 		EC383C0D2212F0FC00EC1AA4 /* CollapseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapseCoordinator.swift; sourceTree = "<group>"; };
 		EC383C102212F30900EC1AA4 /* CollapseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapseViewModel.swift; sourceTree = "<group>"; };
-		EC383C14221306CA00EC1AA4 /* ExtensionTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionTableView.swift; sourceTree = "<group>"; };
+		EC383C14221306CA00EC1AA4 /* ExtensionTableViewAndCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionTableViewAndCollection.swift; sourceTree = "<group>"; };
 		EC383C172213078500EC1AA4 /* ExtensionBool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionBool.swift; sourceTree = "<group>"; };
 		EC383C1A221310EF00EC1AA4 /* SectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionModel.swift; sourceTree = "<group>"; };
 		EC383C1D221318B900EC1AA4 /* CollapsibleTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsibleTableViewHeader.swift; sourceTree = "<group>"; };
@@ -314,13 +318,15 @@
 		EC383C13221306C000EC1AA4 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				EC383C14221306CA00EC1AA4 /* ExtensionTableView.swift */,
+				EC383C14221306CA00EC1AA4 /* ExtensionTableViewAndCollection.swift */,
 				EC383C172213078500EC1AA4 /* ExtensionBool.swift */,
 				EC383C2022131BC200EC1AA4 /* ExtensionColor.swift */,
 				EC383C2322131C3A00EC1AA4 /* ExtensionUIView.swift */,
 				DE0168D82217B442003E5BB6 /* ExtensionUIViewController.swift */,
 				DE0168DA2217B574003E5BB6 /* ExtensionString.swift */,
 				DE0168DC2217B5FA003E5BB6 /* NewTextField.swift */,
+				DECAEF5E22186EB9000F4418 /* ExtensionDate.swift */,
+				DECAEF6022186FDC000F4418 /* ExtensionUIButton.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -337,9 +343,9 @@
 		ECAFAA0C2211DFC100480517 /* Lottie */ = {
 			isa = PBXGroup;
 			children = (
-				ECAFAA0D2211DFD600480517 /* LottieViewController.swift */,
-				EC74A9D82211FE4000B54F46 /* AnimationView */,
 				ECAFAA162211E0DD00480517 /* Cell */,
+				EC74A9D82211FE4000B54F46 /* AnimationView */,
+				ECAFAA0D2211DFD600480517 /* LottieViewController.swift */,
 				ECAFAA0E2211DFD600480517 /* LottieViewController.xib */,
 				ECAFAA132211E09700480517 /* LottieViewModel.swift */,
 			);
@@ -844,13 +850,14 @@
 			files = (
 				DE0168D92217B442003E5BB6 /* ExtensionUIViewController.swift in Sources */,
 				EC383BF42212E71800EC1AA4 /* RxOptionViewModel.swift in Sources */,
-				EC383C15221306CA00EC1AA4 /* ExtensionTableView.swift in Sources */,
+				EC383C15221306CA00EC1AA4 /* ExtensionTableViewAndCollection.swift in Sources */,
 				EC383C112212F30900EC1AA4 /* CollapseViewModel.swift in Sources */,
 				EC383C092212F08B00EC1AA4 /* CollapseViewController.swift in Sources */,
 				EC383BFD2212E7DE00EC1AA4 /* APIRequestProtocol.swift in Sources */,
 				ECD707162211CDF700873E26 /* Coordinator.swift in Sources */,
 				EC383C002212E91700EC1AA4 /* APIClient.swift in Sources */,
 				EC383C042212EA9800EC1AA4 /* UniversityRequest.swift in Sources */,
+				DECAEF6122186FDC000F4418 /* ExtensionUIButton.swift in Sources */,
 				ECD707282211D15600873E26 /* RxOptionViewController.swift in Sources */,
 				EC74A9DB2211FEB500B54F46 /* AnimationViewController.swift in Sources */,
 				EC383C1E221318B900EC1AA4 /* CollapsibleTableViewHeader.swift in Sources */,
@@ -867,6 +874,7 @@
 				EC220CE622134E610096D63E /* SicaViewController.swift in Sources */,
 				ECAFAA0F2211DFD600480517 /* LottieViewController.swift in Sources */,
 				EC383C0E2212F0FC00EC1AA4 /* CollapseCoordinator.swift in Sources */,
+				DECAEF5F22186EB9000F4418 /* ExtensionDate.swift in Sources */,
 				ECAFAA142211E09700480517 /* LottieViewModel.swift in Sources */,
 				ECAFAA1E2211E0FF00480517 /* LottieCoordinator.swift in Sources */,
 				DE0168D72217B383003E5BB6 /* GradientButton.swift in Sources */,
@@ -902,7 +910,7 @@
 			files = (
 				EC383BF52212E71800EC1AA4 /* RxOptionViewModel.swift in Sources */,
 				DEA6D482221579AA0034EC3A /* ViewCodeViewController.swift in Sources */,
-				EC383C16221306CA00EC1AA4 /* ExtensionTableView.swift in Sources */,
+				EC383C16221306CA00EC1AA4 /* ExtensionTableViewAndCollection.swift in Sources */,
 				EC383C122212F30900EC1AA4 /* CollapseViewModel.swift in Sources */,
 				EC383C0A2212F08B00EC1AA4 /* CollapseViewController.swift in Sources */,
 				EC383BFE2212E7DE00EC1AA4 /* APIRequestProtocol.swift in Sources */,

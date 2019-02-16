@@ -57,9 +57,9 @@ class NewTextField: MDCTextField {
         super.init(coder: aDecoder)
         self.textInputController = MDCTextInputControllerUnderline(textInput: self)
         self.clearButtonMode = .never
-        self.textInputController?.normalColor = Colors.MAIN_COLOR
-        self.textInputController?.activeColor = Colors.MAIN_COLOR
-        self.textInputController?.floatingPlaceholderActiveColor = Colors.MAIN_TEXT_COLOR
+        self.textInputController?.normalColor = UIColor.black
+        self.textInputController?.activeColor = UIColor.black
+        self.textInputController?.floatingPlaceholderActiveColor = UIColor.black
         self.textInputController?.errorColor = UIColor.red
         self.textInputController?.textInputFont = UIFont.boldSystemFont(ofSize: 15
         )
@@ -359,7 +359,7 @@ class NewTextField: MDCTextField {
     /*
      Altera a cor da borda do TextField
      */
-    func setTextFieldColor(textColor: UIColor = .white, normalColor: UIColor = Colors.MAIN_COLOR, activeColor: UIColor = Colors.MAIN_COLOR, floatingPlaceholderActiveColor: UIColor = Colors.MAIN_COLOR) {
+    func setTextFieldColor(textColor: UIColor = .white, normalColor: UIColor = UIColor.black, activeColor: UIColor = UIColor.black, floatingPlaceholderActiveColor: UIColor = UIColor.black) {
         self.textColor = textColor
         self.textInputController?.normalColor = normalColor
         self.textInputController?.activeColor = activeColor

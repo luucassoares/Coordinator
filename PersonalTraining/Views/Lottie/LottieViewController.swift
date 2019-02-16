@@ -38,8 +38,7 @@ class LottieViewController: UIViewController {
 
     //MARK :- Setup
     func setup() {
-        collectionView.register(UINib(nibName: "LottieCell", bundle: nil), forCellWithReuseIdentifier: viewModel!.getCellIdentifier())
-        
+        collectionView.registerNib(named: viewModel!.getCellIdentifier())
         collectionView.rx.setDelegate(self).disposed(by: viewModel!.disposeBag)
         
         viewModel!.content.asObservable().bind(to: collectionView.rx.items(cellIdentifier: viewModel!.getCellIdentifier(), cellType: LottieCell.self)) { indexPath, element, cell in
