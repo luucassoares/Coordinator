@@ -24,19 +24,30 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="qwv-Is-3Pu">
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="qwv-Is-3Pu">
                     <rect key="frame" x="0.0" y="20" width="375" height="50"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kEZ-OX-Xyd">
-                            <rect key="frame" x="0.0" y="0.0" width="187.5" height="50"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kEZ-OX-Xyd" customClass="GradientButton" customModule="PersonalTraining" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="183.5" height="50"/>
                             <state key="normal" title="button 1"/>
                             <connections>
                                 <action selector="button1tap:" destination="-1" eventType="touchUpInside" id="j5Q-ZA-4AJ"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ep-QZ-1UP">
-                            <rect key="frame" x="187.5" y="0.0" width="187.5" height="50"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ep-QZ-1UP" customClass="CustomUIButton" customModule="PersonalTraining" customModuleProvider="target">
+                            <rect key="frame" x="191.5" y="0.0" width="183.5" height="50"/>
                             <state key="normal" title="button2"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
                             <connections>
                                 <action selector="button2tap:" destination="-1" eventType="touchUpInside" id="6pQ-xP-HrC"/>
                             </connections>
@@ -47,7 +58,7 @@
                     </constraints>
                 </stackView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yKn-Rm-KRs">
-                    <rect key="frame" x="0.0" y="70" width="187.5" height="1"/>
+                    <rect key="frame" x="0.0" y="70" width="183.5" height="1"/>
                     <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="1" id="meW-NM-gBe"/>

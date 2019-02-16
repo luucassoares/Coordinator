@@ -8,7 +8,6 @@
 
 import UIKit
 import RxSwift
-import ViewAnimator
 
 protocol OptionsViewControllerDelegate: class {
     func didTapOption(at index: Int)
@@ -45,6 +44,7 @@ class OptionsViewController: UIViewController {
     
     //MARK :- Setup
     func setup() {
+        tableView.isHidden = true
         title = "Options View"
         setupTableview()
     }
@@ -63,9 +63,11 @@ class OptionsViewController: UIViewController {
     }
     
     func animateTableView() {
-        let fromAnimation = AnimationType.from(direction: .right, offset: 30.0)
-        let zoomAnimation = AnimationType.zoom(scale: 0.5)
-        UIView.animate(views: tableView.visibleCells, animations: [zoomAnimation, fromAnimation], delay: 0.3)
+       
+        UIView.animate(withDuration: 1, delay: 0.1, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseOut, animations: {
+            self.tableView.isHidden = false
+            self.view.layoutIfNeeded()
+        }, completion: nil)
     }
 }
 

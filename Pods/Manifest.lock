@@ -47,26 +47,7 @@ PODS:
     - RxSwift (>= 4.3.1)
   - RxSwift (4.4.1):
     - RxAtomic (~> 4.4)
-  - Sica (0.3.4)
-  - SwifterSwift (4.6.0):
-    - SwifterSwift/AppKit (= 4.6.0)
-    - SwifterSwift/CoreGraphics (= 4.6.0)
-    - SwifterSwift/CoreLocation (= 4.6.0)
-    - SwifterSwift/Foundation (= 4.6.0)
-    - SwifterSwift/MapKit (= 4.6.0)
-    - SwifterSwift/SpriteKit (= 4.6.0)
-    - SwifterSwift/SwiftStdlib (= 4.6.0)
-    - SwifterSwift/UIKit (= 4.6.0)
-  - SwifterSwift/AppKit (4.6.0)
-  - SwifterSwift/CoreGraphics (4.6.0)
-  - SwifterSwift/CoreLocation (4.6.0)
-  - SwifterSwift/Foundation (4.6.0)
-  - SwifterSwift/MapKit (4.6.0)
-  - SwifterSwift/SpriteKit (4.6.0)
-  - SwifterSwift/SwiftStdlib (4.6.0)
-  - SwifterSwift/UIKit (4.6.0)
   - TLCustomMask (2.0.0)
-  - ViewAnimator (2.2.2)
 
 DEPENDENCIES:
   - Alamofire
@@ -81,10 +62,7 @@ DEPENDENCIES:
   - RxDataSources
   - RxKeyboard
   - RxSwift
-  - Sica
-  - SwifterSwift
   - TLCustomMask
-  - ViewAnimator
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -104,10 +82,7 @@ SPEC REPOS:
     - RxDataSources
     - RxKeyboard
     - RxSwift
-    - Sica
-    - SwifterSwift
     - TLCustomMask
-    - ViewAnimator
 
 SPEC CHECKSUMS:
   Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
@@ -126,11 +101,8 @@ SPEC CHECKSUMS:
   RxDataSources: a843bad90c29817f5923ec8163f4af2de084ceb3
   RxKeyboard: 4f782303f499f41577b41c96c6a9a5d7acd51a47
   RxSwift: 92fcf68dfef21f3e2ab1965363d9e7b3d787597e
-  Sica: 85af08a79d98e0c68a45d5e31e3c98e4473c9389
-  SwifterSwift: 812ffec6f301922f5430e75be3f2939ea3a80024
   TLCustomMask: 32bcd873851167c2d2a3726b048766b737873710
-  ViewAnimator: 6eaa112663b6a2d9e6b2573df65b416dd051cbe4
 
-PODFILE CHECKSUM: 66a0246238068a09b4fb0b3376f6dab4d81d08c4
+PODFILE CHECKSUM: 3d21ede0269ec6604257b4459a9632cbb6f16b25
 
 COCOAPODS: 1.5.3

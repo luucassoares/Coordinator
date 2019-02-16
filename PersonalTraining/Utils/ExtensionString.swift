@@ -142,7 +142,7 @@ extension String {
      Verifica se é um CNPJ válido
      */
     func isCNPJ() -> Bool {
-        let numbers = characters.flatMap({Int(String($0))})
+        let numbers = characters.compactMap({Int(String($0))})
         guard numbers.count == 14 && Set(numbers).count != 1 else { return false }
         let soma1 = 11 - ( numbers[11] * 2 +
             numbers[10] * 3 +
