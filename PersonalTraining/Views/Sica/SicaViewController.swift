@@ -10,29 +10,36 @@ import UIKit
 import Sica
 import ViewAnimator
 class SicaViewController: UIViewController {
-    @IBOutlet weak var viewVerticalY: NSLayoutConstraint!
-    @IBOutlet weak var topView: UIView! // verde
-    @IBOutlet weak var leadingView: UIView! //vermelha
-    @IBOutlet weak var bottomView: UIView! //amarela
-    @IBOutlet weak var trailingView: UIView! //roxa
-    
+
+    @IBOutlet weak var indicator: UIView!
+    @IBOutlet weak var button1: UIButton!
+    @IBOutlet weak var button2: UIButton!
+    @IBOutlet weak var leadingConstraint: NSLayoutConstraint!
     override func viewDidLoad() {
         super.viewDidLoad()
         
     }
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        let duration: Double = 1
-        
-        UIViewPropertyAnimator.runningPropertyAnimator(withDuration: duration, delay: 0.1, options: .curveEaseInOut, animations: {
+    @IBAction func button2tap(_ sender: Any) {
+        if indicator.frame.origin.x == 0 {
+            self.leadingConstraint.constant = indicator.frame.size.width;
+        }
+        UIViewPropertyAnimator.runningPropertyAnimator(withDuration: 0.5, delay: 0.1, options: .curveEaseInOut, animations: {
             
             self.view.layoutIfNeeded()
         }) { (position) in
             
         }
         
-        
     }
-    
-
+    @IBAction func button1tap(_ sender: Any) {
+        if indicator.frame.origin.x == indicator.frame.size.width {
+            self.leadingConstraint.constant = 0;
+        }
+        UIViewPropertyAnimator.runningPropertyAnimator(withDuration: 0.5, delay: 0.1, options: .curveEaseInOut, animations: {
+            
+            self.view.layoutIfNeeded()
+        }) { (position) in
+            
+        }
+    }
 }

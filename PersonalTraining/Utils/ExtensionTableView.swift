@@ -12,4 +12,13 @@ extension UITableView {
     func removeBlankEspaces() {
         self.tableFooterView = UIView()
     }
+    
+    // MARK: - RegisterNib
+    /**
+     Registra a nib na tableView
+     */
+    func registerNib(named: String){
+        self.tableView.register(UINib(nibName: named, bundle: nil), forCellReuseIdentifier: named)
+    }
+    
 }
