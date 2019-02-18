@@ -37,7 +37,7 @@ class AnimationViewController: UIViewController {
             let bundle = Bundle.main.path(forResource: "\(self.animationFile ?? "")", ofType: "json")
             let animationView = LOTAnimationView(filePath: bundle ?? "")
             animationView.loopAnimation = true
-            let height = UIScreen.main.bounds.height * 0.6
+            let height = UIScreen.main.bounds.height * 0.5
             self.containerViewHeight.constant = height
             animationView.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: height)
             self.containerView.addSubview(animationView)

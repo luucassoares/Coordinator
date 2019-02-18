@@ -22,3 +22,4 @@ class LottieCell: UICollectionViewCell {
         imageIcon.image = UIImage(named: withIcon)
     }
 }
+

@@ -27,6 +27,7 @@ class LottieCoordinator: Coordinator {
         collectionContent.append(("selfie", "Selfie"))
         collectionContent.append(("keys", "Chave"))
         collectionContent.append(("location", "Localização"))
+        collectionContent.append(("card", "Cartão"))
     }
     
     func setupViewModelAndViewController() {

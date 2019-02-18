@@ -46,7 +46,6 @@ class OptionsViewController: UIViewController {
     //MARK :- Setup
     func setup() {
         tableView.isHidden = true
-        title = "Options View"
         setupTableview()
     }
     

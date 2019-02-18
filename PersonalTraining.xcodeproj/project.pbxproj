@@ -21,6 +21,7 @@
 		DECAEF5F22186EB9000F4418 /* ExtensionDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECAEF5E22186EB9000F4418 /* ExtensionDate.swift */; };
 		DECAEF6122186FDC000F4418 /* ExtensionUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECAEF6022186FDC000F4418 /* ExtensionUIButton.swift */; };
 		EC059988221B14E900E5013F /* CustomUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC059987221B14E900E5013F /* CustomUIView.swift */; };
+		EC05998A221B252400E5013F /* card.json in Resources */ = {isa = PBXBuildFile; fileRef = EC059989221B252400E5013F /* card.json */; };
 		EC220CE622134E610096D63E /* SicaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC220CE422134E610096D63E /* SicaViewController.swift */; };
 		EC220CE722134E610096D63E /* SicaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC220CE422134E610096D63E /* SicaViewController.swift */; };
 		EC220CE822134E610096D63E /* SicaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC220CE522134E610096D63E /* SicaViewController.xib */; };
@@ -143,6 +144,7 @@
 		DECAEF5E22186EB9000F4418 /* ExtensionDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDate.swift; sourceTree = "<group>"; };
 		DECAEF6022186FDC000F4418 /* ExtensionUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUIButton.swift; sourceTree = "<group>"; };
 		EC059987221B14E900E5013F /* CustomUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUIView.swift; sourceTree = "<group>"; };
+		EC059989221B252400E5013F /* card.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = card.json; sourceTree = "<group>"; };
 		EC220CE422134E610096D63E /* SicaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SicaViewController.swift; sourceTree = "<group>"; };
 		EC220CE522134E610096D63E /* SicaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SicaViewController.xib; sourceTree = "<group>"; };
 		EC220CEA22134E740096D63E /* SicaCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SicaCoordinator.swift; sourceTree = "<group>"; };
@@ -367,6 +369,7 @@
 		ECAFAA202211E45A00480517 /* LottieAnimations */ = {
 			isa = PBXGroup;
 			children = (
+				EC059989221B252400E5013F /* card.json */,
 				EC74A9D12211FC9200B54F46 /* keys.json */,
 				EC74A9CF2211FC9200B54F46 /* location.json */,
 				EC74A9D02211FC9200B54F46 /* selfie.json */,
@@ -634,6 +637,7 @@
 				EC74A9D62211FC9200B54F46 /* keys.json in Resources */,
 				DE14409D22125F8B0083445D /* PersonalTraining-info.plist in Resources */,
 				EC383C0B2212F08B00EC1AA4 /* CollapseViewController.xib in Resources */,
+				EC05998A221B252400E5013F /* card.json in Resources */,
 				ECD7072A2211D15600873E26 /* RxOptionViewController.xib in Resources */,
 				ECD706D52211CC4500873E26 /* LaunchScreen.storyboard in Resources */,
 				ECAFAA112211DFD600480517 /* LottieViewController.xib in Resources */,
