@@ -20,6 +20,7 @@
 		DEA6D482221579AA0034EC3A /* ViewCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF18CA9221493A800770861 /* ViewCodeViewController.swift */; };
 		DECAEF5F22186EB9000F4418 /* ExtensionDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECAEF5E22186EB9000F4418 /* ExtensionDate.swift */; };
 		DECAEF6122186FDC000F4418 /* ExtensionUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECAEF6022186FDC000F4418 /* ExtensionUIButton.swift */; };
+		EC059988221B14E900E5013F /* CustomUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC059987221B14E900E5013F /* CustomUIView.swift */; };
 		EC220CE622134E610096D63E /* SicaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC220CE422134E610096D63E /* SicaViewController.swift */; };
 		EC220CE722134E610096D63E /* SicaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC220CE422134E610096D63E /* SicaViewController.swift */; };
 		EC220CE822134E610096D63E /* SicaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC220CE522134E610096D63E /* SicaViewController.xib */; };
@@ -141,6 +142,7 @@
 		DE14409F22125FBC0083445D /* PersonalTrainingDev-info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "PersonalTrainingDev-info.plist"; sourceTree = "<group>"; };
 		DECAEF5E22186EB9000F4418 /* ExtensionDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDate.swift; sourceTree = "<group>"; };
 		DECAEF6022186FDC000F4418 /* ExtensionUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUIButton.swift; sourceTree = "<group>"; };
+		EC059987221B14E900E5013F /* CustomUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUIView.swift; sourceTree = "<group>"; };
 		EC220CE422134E610096D63E /* SicaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SicaViewController.swift; sourceTree = "<group>"; };
 		EC220CE522134E610096D63E /* SicaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SicaViewController.xib; sourceTree = "<group>"; };
 		EC220CEA22134E740096D63E /* SicaCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SicaCoordinator.swift; sourceTree = "<group>"; };
@@ -254,6 +256,7 @@
 			isa = PBXGroup;
 			children = (
 				DE0168D62217B383003E5BB6 /* GradientButton.swift */,
+				EC059987221B14E900E5013F /* CustomUIView.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -729,7 +732,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-PersonalTrainingDev/Pods-PersonalTrainingDev-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-PersonalTrainingDev/Pods-PersonalTrainingDev-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
 				"${BUILT_PRODUCTS_DIR}/LGSideMenuController/LGSideMenuController.framework",
@@ -772,7 +775,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PersonalTrainingDev/Pods-PersonalTrainingDev-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PersonalTrainingDev/Pods-PersonalTrainingDev-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BD0FCDEE8FBFEFCC61609188 /* [CP] Embed Pods Frameworks */ = {
@@ -783,7 +786,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-PersonalTraining/Pods-PersonalTraining-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-PersonalTraining/Pods-PersonalTraining-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
 				"${BUILT_PRODUCTS_DIR}/LGSideMenuController/LGSideMenuController.framework",
@@ -826,7 +829,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PersonalTraining/Pods-PersonalTraining-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PersonalTraining/Pods-PersonalTraining-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -847,6 +850,7 @@
 				EC383C042212EA9800EC1AA4 /* UniversityRequest.swift in Sources */,
 				DECAEF6122186FDC000F4418 /* ExtensionUIButton.swift in Sources */,
 				ECD707282211D15600873E26 /* RxOptionViewController.swift in Sources */,
+				EC059988221B14E900E5013F /* CustomUIView.swift in Sources */,
 				EC74A9DB2211FEB500B54F46 /* AnimationViewController.swift in Sources */,
 				EC383C1E221318B900EC1AA4 /* CollapsibleTableViewHeader.swift in Sources */,
 				ECF18CAB221493A800770861 /* ViewCodeViewController.swift in Sources */,
@@ -1079,7 +1083,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = A639RLSZU5;
+				DEVELOPMENT_TEAM = G6U6U95FVZ;
 				INFOPLIST_FILE = "$(SRCROOT)/PersonalTraining/Plist/PersonalTraining-info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1099,7 +1103,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = A639RLSZU5;
+				DEVELOPMENT_TEAM = G6U6U95FVZ;
 				INFOPLIST_FILE = "$(SRCROOT)/PersonalTraining/Plist/PersonalTraining-info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -14,6 +14,11 @@
             <connections>
                 <outlet property="button1" destination="kEZ-OX-Xyd" id="5dK-bd-vaU"/>
                 <outlet property="button2" destination="5ep-QZ-1UP" id="vRB-Y4-ytG"/>
+                <outlet property="button3" destination="Fx5-vU-XFt" id="IoK-VG-28K"/>
+                <outlet property="button4" destination="nGe-jZ-Oi8" id="tTZ-h4-QGO"/>
+                <outlet property="button5" destination="R4D-Kn-C1I" id="75P-XQ-ILI"/>
+                <outlet property="gradientButton" destination="BGi-b9-soe" id="fnr-4k-oNt"/>
+                <outlet property="shapeView" destination="OpW-vl-W2j" id="3yt-PR-6jh"/>
                 <outlet property="stackView" destination="qwv-Is-3Pu" id="BRy-hz-ZeH"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -27,7 +32,8 @@
                     <rect key="frame" x="8" y="28" width="359" height="50"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kEZ-OX-Xyd" customClass="CustomUIButton" customModule="PersonalTraining" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="0.0" width="175.5" height="50"/>
+                            <rect key="frame" x="0.0" y="0.0" width="65.5" height="50"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
                             <state key="normal" title="button 1"/>
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
@@ -45,16 +51,17 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ep-QZ-1UP" customClass="CustomUIButton" customModule="PersonalTraining" customModuleProvider="target">
-                            <rect key="frame" x="183.5" y="0.0" width="175.5" height="50"/>
+                            <rect key="frame" x="73.5" y="0.0" width="65.5" height="50"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
                             <state key="normal" title="button2">
-                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="titleColor" red="1" green="0.0" blue="0.03624573524" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                     <real key="value" value="1"/>
                                 </userDefinedRuntimeAttribute>
                                 <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                    <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="value" red="1" green="0.0" blue="0.03624573524" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </userDefinedRuntimeAttribute>
                                 <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                     <real key="value" value="0.0"/>
@@ -64,16 +71,76 @@
                                 <action selector="button2tap:" destination="-1" eventType="touchUpInside" id="6pQ-xP-HrC"/>
                             </connections>
                         </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fx5-vU-XFt" customClass="CustomUIButton" customModule="PersonalTraining" customModuleProvider="target">
+                            <rect key="frame" x="147" y="0.0" width="65" height="50"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <state key="normal" title="button 3"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="button3tap:" destination="-1" eventType="touchUpInside" id="X5b-HD-587"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nGe-jZ-Oi8" customClass="CustomUIButton" customModule="PersonalTraining" customModuleProvider="target">
+                            <rect key="frame" x="220" y="0.0" width="65.5" height="50"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <state key="normal" title="button 4"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="button4tap:" destination="-1" eventType="touchUpInside" id="Ayy-xJ-2nB"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R4D-Kn-C1I" customClass="CustomUIButton" customModule="PersonalTraining" customModuleProvider="target">
+                            <rect key="frame" x="293.5" y="0.0" width="65.5" height="50"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <state key="normal" title="button 5"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="button5tap:" destination="-1" eventType="touchUpInside" id="gje-gV-AGd"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="DUH-oM-6pw"/>
                     </constraints>
                 </stackView>
+                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BGi-b9-soe" customClass="GradientButton" customModule="PersonalTraining" customModuleProvider="target">
+                    <rect key="frame" x="30" y="138" width="315" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="Bhr-Gc-IZl"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OpW-vl-W2j" customClass="GradientView" customModule="PersonalTraining" customModuleProvider="target">
+                    <rect key="frame" x="147.5" y="190" width="80" height="80"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="thl-cc-6Sd"/>
+                        <constraint firstAttribute="height" constant="80" id="uuy-Wx-bHo"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="qwv-Is-3Pu" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="8" id="5bf-lr-rhG"/>
+                <constraint firstItem="BGi-b9-soe" firstAttribute="top" secondItem="qwv-Is-3Pu" secondAttribute="bottom" constant="60" id="81l-7d-9hQ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="BGi-b9-soe" secondAttribute="trailing" constant="30" id="ATL-Ui-5bS"/>
+                <constraint firstItem="OpW-vl-W2j" firstAttribute="top" secondItem="BGi-b9-soe" secondAttribute="bottom" constant="8" id="OKQ-Md-b36"/>
+                <constraint firstItem="BGi-b9-soe" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="Xv8-AZ-Zx4"/>
                 <constraint firstItem="qwv-Is-3Pu" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="8" id="ms6-pN-xh6"/>
+                <constraint firstItem="OpW-vl-W2j" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="q0W-nH-QyK"/>
+                <constraint firstItem="BGi-b9-soe" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="r6R-iD-zY1"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="qwv-Is-3Pu" secondAttribute="trailing" constant="8" id="zQz-05-svn"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

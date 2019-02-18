@@ -11,9 +11,6 @@ import UIKit
 
 
 class RootCoordinator: Coordinator {
-
-    
-    
     
     private var window: UIWindow
     var presenter: UINavigationController?

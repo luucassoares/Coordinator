@@ -11,6 +11,9 @@ import UIKit
 enum GradientType {
     case golden
     case blue
+    case green
+    case yellow
+    case red
 }
 
 class GradientButton: UIButton {
@@ -20,34 +23,9 @@ class GradientButton: UIButton {
     override func draw(_ rect: CGRect) {
         
         self.setTitleColor(UIColor.white, for: .normal)
+ 
         
-        self.layer.cornerRadius = 8
-        self.layer.masksToBounds = false
-        
-        let gradientLayer = CAGradientLayer()
-        
-        let alpha: Float = 90 / 360
-        let startPointX = powf(sinf(2 * Float.pi * ((alpha + 0.75) / 2)), 2)
-        let startPointY = powf(sinf(2 * Float.pi * ((alpha + 0) / 2)), 2)
-        let endPointX = powf(sinf(2 * Float.pi * ((alpha + 0.25) / 2)), 2)
-        let endPointY = powf(sinf(2 * Float.pi * ((alpha + 0.5) / 2)), 2)
-        
-        gradientLayer.endPoint = CGPoint(x: CGFloat(endPointX),y: CGFloat(endPointY))
-        gradientLayer.startPoint = CGPoint(x: CGFloat(startPointX), y: CGFloat(startPointY))
-        
-        gradientLayer.frame = bounds
-        
-        switch gradientType {
-        case .golden:
-            gradientLayer.colors = [Colors.GOLD_GRADIENT_LEFT.cgColor, Colors.GOLD_GRADIENT_RIGHT.cgColor]
-        case .blue:
-            gradientLayer.colors = [Colors.BLUE_GRADIENT_LEFT.cgColor, Colors.BLUE_GRADIENT_RIGHT.cgColor]
-        }
-        
-        gradientLayer.borderColor = layer.borderColor
-        gradientLayer.borderWidth = layer.borderWidth
-        gradientLayer.cornerRadius = layer.cornerRadius
-        layer.insertSublayer(gradientLayer, at: 0)
+       changeGradient(to: gradientType)
         
     }
     
@@ -95,4 +73,48 @@ class GradientButton: UIButton {
         self.addConstraint(yCenterConstraint)
     }
     
+    func changeGradient(to gradientType: GradientType) {
+        self.gradientType = gradientType
+        
+        var sublayers = layer.sublayers ?? []
+        sublayers.removeAll(where: { (layer) -> Bool in
+            if layer is CAGradientLayer {
+                return true
+            } else {
+                return false
+            }
+        })
+        
+        layer.cornerRadius = 8
+        layer.masksToBounds = false
+        let gradientLayer = CAGradientLayer()
+        
+        let alpha: Float = 90 / 360
+        let startPointX = powf(sinf(2 * Float.pi * ((alpha + 0.75) / 2)), 2)
+        let startPointY = powf(sinf(2 * Float.pi * ((alpha + 0) / 2)), 2)
+        let endPointX = powf(sinf(2 * Float.pi * ((alpha + 0.25) / 2)), 2)
+        let endPointY = powf(sinf(2 * Float.pi * ((alpha + 0.5) / 2)), 2)
+        
+        gradientLayer.endPoint = CGPoint(x: CGFloat(endPointX),y: CGFloat(endPointY))
+        gradientLayer.startPoint = CGPoint(x: CGFloat(startPointX), y: CGFloat(startPointY))
+        
+        gradientLayer.frame = bounds
+        
+        switch gradientType {
+        case .golden:
+            gradientLayer.colors = [Colors.GOLD_GRADIENT_LEFT.cgColor, Colors.GOLD_GRADIENT_RIGHT.cgColor]
+        case .blue:
+            gradientLayer.colors = [Colors.BLUE_GRADIENT_LEFT.cgColor, Colors.BLUE_GRADIENT_RIGHT.cgColor]
+        case .green:
+            gradientLayer.colors = [Colors.GREEN_GRADIENT_LEFT.cgColor, Colors.GREEN_GRADIENT_RIGHT.cgColor]
+        case .yellow:
+            gradientLayer.colors = [Colors.YELLOW_GRADIENT_LEFT.cgColor, Colors.YELLOW_GRADIENT_RIGHT.cgColor]
+        case .red:
+            gradientLayer.colors = [Colors.RED_GRADIENT_LEFT.cgColor, Colors.RED_GRADIENT_RIGHT.cgColor]
+        }
+        sublayers.insert(gradientLayer, at: 0)
+        layer.sublayers = sublayers
+    }
+    
 }
+

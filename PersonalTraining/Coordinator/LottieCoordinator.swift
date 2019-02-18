@@ -52,6 +52,6 @@ extension LottieCoordinator: LottieViewControllerDelegate {
     func didTapAnimation(at index: Int) {
         let element = collectionContent[index]
         let vc = AnimationViewController(withTitle: element.title, animationFile: element.icon)
-        presenter?.present(vc, animated: true, completion: nil)
+        viewController?.showModal(viewController: vc)
     }
 }

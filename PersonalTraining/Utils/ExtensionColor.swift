@@ -14,7 +14,12 @@ class Colors {
     static let GOLD_GRADIENT_RIGHT = UIColorFromRGB(rgbValue: 0xB69958)
     static let BLUE_GRADIENT_LEFT = UIColorFromRGB(rgbValue: 0x142534)
     static let BLUE_GRADIENT_RIGHT = UIColorFromRGB(rgbValue: 0x173855)
-    
+    static let GREEN_GRADIENT_LEFT = UIColorFromRGB(rgbValue: 0x416429)
+    static let GREEN_GRADIENT_RIGHT = UIColorFromRGB(rgbValue: 0x70F911)
+    static let RED_GRADIENT_LEFT = UIColorFromRGB(rgbValue: 0x8A2727)
+    static let RED_GRADIENT_RIGHT = UIColorFromRGB(rgbValue: 0xFC1919)
+    static let YELLOW_GRADIENT_LEFT = UIColorFromRGB(rgbValue: 0xBEC61D)
+    static let YELLOW_GRADIENT_RIGHT = UIColorFromRGB(rgbValue: 0xF3FF04)
     static func UIColorFromRGB(rgbValue: UInt) -> UIColor {
         return UIColor(
             red: CGFloat((rgbValue & 0xFF0000) >> 16) / 255.0,

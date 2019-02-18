@@ -22,6 +22,7 @@ class OptionsViewController: UIViewController {
     var viewModel: OptionsViewModel?
     weak var delegate: OptionsViewControllerDelegate?
     
+    
     convenience required init(withViewModel: OptionsViewModel) {
         self.init()
         self.viewModel = withViewModel
