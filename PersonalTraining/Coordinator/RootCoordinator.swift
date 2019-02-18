@@ -52,8 +52,9 @@ class RootCoordinator: Coordinator {
         if viewModel == nil {
             viewModel = OptionsViewModel(withOptions: options)
         }
-        viewController?.title = "Options"
         viewController = OptionsViewController(withViewModel: viewModel!)
+        viewController?.title = "Options"
+        viewController?.setupBack()
         viewController?.delegate = self
     }
     
