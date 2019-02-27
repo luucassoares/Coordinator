@@ -91,6 +91,8 @@
 		ECAFAA242211F58500480517 /* LottieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAFAA212211F58500480517 /* LottieCell.swift */; };
 		ECAFAA252211F58500480517 /* LottieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECAFAA222211F58500480517 /* LottieCell.xib */; };
 		ECAFAA262211F58500480517 /* LottieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECAFAA222211F58500480517 /* LottieCell.xib */; };
+		ECCD6A9222270DDE007F8F81 /* BaseModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCD6A9022270DDE007F8F81 /* BaseModalViewController.swift */; };
+		ECCD6A9322270DDE007F8F81 /* BaseModalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECCD6A9122270DDE007F8F81 /* BaseModalViewController.xib */; };
 		ECD706CB2211CC4300873E26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD706CA2211CC4300873E26 /* AppDelegate.swift */; };
 		ECD706D22211CC4500873E26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECD706D12211CC4500873E26 /* Assets.xcassets */; };
 		ECD706D52211CC4500873E26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECD706D32211CC4500873E26 /* LaunchScreen.storyboard */; };
@@ -193,6 +195,8 @@
 		ECAFAA1D2211E0FF00480517 /* LottieCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieCoordinator.swift; sourceTree = "<group>"; };
 		ECAFAA212211F58500480517 /* LottieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieCell.swift; sourceTree = "<group>"; };
 		ECAFAA222211F58500480517 /* LottieCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LottieCell.xib; sourceTree = "<group>"; };
+		ECCD6A9022270DDE007F8F81 /* BaseModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModalViewController.swift; sourceTree = "<group>"; };
+		ECCD6A9122270DDE007F8F81 /* BaseModalViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BaseModalViewController.xib; sourceTree = "<group>"; };
 		ECD706C72211CC4300873E26 /* PersonalTraining.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonalTraining.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECD706CA2211CC4300873E26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECD706D12211CC4500873E26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -418,6 +422,23 @@
 			path = LottieAnimations;
 			sourceTree = "<group>";
 		};
+		ECCD6A8E22270DC4007F8F81 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				ECCD6A8F22270DCD007F8F81 /* Base */,
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		ECCD6A8F22270DCD007F8F81 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				ECCD6A9022270DDE007F8F81 /* BaseModalViewController.swift */,
+				ECCD6A9122270DDE007F8F81 /* BaseModalViewController.xib */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		ECD706BE2211CC4300873E26 = {
 			isa = PBXGroup;
 			children = (
@@ -505,6 +526,7 @@
 		ECD707142211CD2C00873E26 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				ECCD6A8E22270DC4007F8F81 /* Modal */,
 				EC0075CE2226CCB200C8615F /* FoldingCell */,
 				ECEE630C221C3B5A00652EFC /* Charts */,
 				ECF18CA62214926500770861 /* ViewCode */,
@@ -698,6 +720,7 @@
 				EC74A9D22211FC9200B54F46 /* location.json in Resources */,
 				EC220CE822134E610096D63E /* SicaViewController.xib in Resources */,
 				ECD707202211CE9100873E26 /* OptionsViewController.xib in Resources */,
+				ECCD6A9322270DDE007F8F81 /* BaseModalViewController.xib in Resources */,
 				DE1440A022125FBC0083445D /* PersonalTrainingDev-info.plist in Resources */,
 				EC74A9D42211FC9200B54F46 /* selfie.json in Resources */,
 				EC74A9D62211FC9200B54F46 /* keys.json in Resources */,
@@ -944,6 +967,7 @@
 				ECF18CAB221493A800770861 /* ViewCodeViewController.swift in Sources */,
 				EC383C2822131E1F00EC1AA4 /* CollapsibleTableViewCell.swift in Sources */,
 				DE0168DD2217B5FA003E5BB6 /* NewTextField.swift in Sources */,
+				ECCD6A9222270DDE007F8F81 /* BaseModalViewController.swift in Sources */,
 				ECD7071E2211CE9100873E26 /* OptionsViewController.swift in Sources */,
 				EC383C182213078500EC1AA4 /* ExtensionBool.swift in Sources */,
 				EC383C1B221310EF00EC1AA4 /* SectionModel.swift in Sources */,

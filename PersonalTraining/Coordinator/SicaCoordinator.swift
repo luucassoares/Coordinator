@@ -25,7 +25,7 @@ class SicaCoordinator: Coordinator {
     }
     
     func start() {
-        print("Initing Sica ViewController")
+        NSLog("Initing Sica ViewController")
         setupViewModelAndViewController()
         presenter?.pushViewController(viewController!, animated: true)
     }

@@ -41,7 +41,7 @@ class LottieCoordinator: Coordinator {
     
     
     func start() {
-        print("Starting Lottie Animation Coordinator")
+        NSLog("Starting Lottie Animation Coordinator")
         setupViewModelAndViewController()
         presenter?.pushViewController(viewController!, animated: true)
     }

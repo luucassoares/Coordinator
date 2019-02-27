@@ -24,7 +24,8 @@ class GradientButton: UIButton {
         
         self.setTitleColor(UIColor.white, for: .normal)
  
-        
+        layer.cornerRadius = 8
+        layer.masksToBounds = false
        changeGradient(to: gradientType)
         
     }
@@ -85,8 +86,7 @@ class GradientButton: UIButton {
             }
         })
         
-        layer.cornerRadius = 8
-        layer.masksToBounds = false
+   
         let gradientLayer = CAGradientLayer()
         
         let alpha: Float = 90 / 360

@@ -28,6 +28,7 @@ class CollapseCoordinator: Coordinator {
     }
     
     func start() {
+        NSLog("Initing CollapseTableView Controller")
         setupViewModelAndViewController()
         presenter?.pushViewController(viewController!, animated: true)
     }

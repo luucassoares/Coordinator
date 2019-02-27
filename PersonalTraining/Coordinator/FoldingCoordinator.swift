@@ -17,16 +17,18 @@ class FoldingCoordinator: Coordinator {
     var viewModel: FoldingViewModel?
     
     func start() {
+        NSLog("Initing Folding View Controller")
         setupViewModelAndViewController()
         presenter?.pushViewController(viewController!, animated: true)
+        
     }
     
     func setupViewModelAndViewController() {
         if viewModel == nil {
             viewModel = FoldingViewModel()
         }
-        viewController?.title = name
         viewController = FoldingViewController(viewModel: viewModel)
+        viewController?.title = name
     }
     
     required init(presenter: UINavigationController?) {

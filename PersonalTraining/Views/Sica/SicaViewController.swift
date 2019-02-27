@@ -72,7 +72,7 @@ class SicaViewController: UIViewController {
     
     //MARK: - Actions
     @IBAction func button1tap(_ sender: Any) {
-        print("Move indicator to button 1")
+        NSLog("Move indicator to button 1")
         UIView.animate(withDuration: 0.5, animations: {
             self.indicator.frame.origin.x = 8
             self.gradientButton.changeGradient(to: .golden)
@@ -83,7 +83,7 @@ class SicaViewController: UIViewController {
     }
     
     @IBAction func button2tap(_ sender: Any) {
-        print("Move indicator to button 2")
+        NSLog("Move indicator to button 2")
         UIView.animate(withDuration: 0.5, animations: {
             self.indicator.frame.origin.x = self.button1.frame.width + 16 // 16 = 8 leading da stack + 8 de espaço entre os botoes da stack
             self.gradientButton.changeGradient(to: .blue)
@@ -94,7 +94,7 @@ class SicaViewController: UIViewController {
     }
   
     @IBAction func button3tap(_ sender: Any) {
-        print("Move indicator to button 3")
+        NSLog("Move indicator to button 3")
 
         UIView.animate(withDuration: 0.5, animations: {
             self.indicator.frame.origin.x = (self.button1.frame.width * 2) + 24
@@ -105,7 +105,7 @@ class SicaViewController: UIViewController {
         }, completion: nil)
     }
     @IBAction func button4tap(_ sender: Any) {
-        print("Move indicator to button 4")
+        NSLog("Move indicator to button 4")
         UIView.animate(withDuration: 0.5, animations: {
             self.indicator.frame.origin.x = (self.button1.frame.width * 3) + 32
             self.shapeView.changeGradient(to: .yellow)
@@ -115,7 +115,7 @@ class SicaViewController: UIViewController {
         }, completion: nil)
     }
     @IBAction func button5tap(_ sender: Any) {
-        print("Move indicator to button 5")
+        NSLog("Move indicator to button 5")
         UIView.animate(withDuration: 0.5, animations: {
             self.indicator.frame.origin.x = (self.button1.frame.width * 4) + 40
             self.shapeView.changeGradient(to: .red)

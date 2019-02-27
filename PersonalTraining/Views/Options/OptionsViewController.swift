@@ -10,7 +10,7 @@ import UIKit
 import RxSwift
 
 protocol OptionsViewControllerDelegate: class {
-    func didTapOption(at index: Int)
+    func didTapOption(at index: Int?)
 }
 
 class OptionsViewController: UIViewController {

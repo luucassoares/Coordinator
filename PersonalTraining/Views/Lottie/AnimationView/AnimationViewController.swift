@@ -59,7 +59,7 @@ class AnimationViewController: UIViewController {
 
     @IBAction func closeButtonAction(_ sender: Any) {
         self.dismiss(animated: true, completion: {
-            print("successfully dismissed animationModal")
+            NSLog("successfully dismissed animationModal")
         })
     }
     

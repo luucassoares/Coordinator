@@ -8,9 +8,10 @@
 
 import UIKit
 
+
+
 class FoldingViewController: UIViewController {
 
-    
     //MARK :- Vars
     var viewModel: FoldingViewModel?
     
@@ -22,6 +23,6 @@ class FoldingViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
+ 
 }

@@ -61,7 +61,7 @@ class RootCoordinator: Coordinator {
  
     
     func start() {
-        print("Starting Root Coordinator")
+        NSLog("Starting Root Coordinator")
         setupViewModelAndViewController()
         presenter!.pushViewController(viewController!, animated: true)
         window.rootViewController = presenter
@@ -74,7 +74,23 @@ class RootCoordinator: Coordinator {
 }
 
 extension RootCoordinator: OptionsViewControllerDelegate {
-    func didTapOption(at index: Int) {
-      getChildCoordinator(at: index)?.start()
+    func didTapOption(at index: Int?) {
+        guard let mIndex = index, mIndex < childCoordinators!.count - 1, mIndex < childCoordinators!.count - 2 else {
+            let baseModal = BaseModalViewController(modalTitle: "Not implemented", modalMessage: "It is not possible to retrieve the flow using coordinator at index \(index ?? -1)", pMessage: "Ok", nMessage: "Cancel")
+            baseModal.delegate = self
+            viewController!.showModal(viewController: baseModal)
+            return
+        }
+        getChildCoordinator(at: mIndex)?.start()
+    }
+}
+
+extension RootCoordinator: BaseModalViewControllerDelegate {
+    func didTapPositiveButton(modal: BaseModalViewController) {
+        print("Positive Tap")
+    }
+    
+    func didTapNegativeButton(modal: BaseModalViewController) {
+        print("Negative Tap")
     }
 }

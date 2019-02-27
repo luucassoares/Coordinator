@@ -15,7 +15,7 @@ class LottieViewModel {
     let content = BehaviorRelay<[(icon: String, title: String)]>(value: [])
     
     init(collectionContent: [(String,String)]) {
-        print("Initing LottieViewModel")
+        NSLog("Initing LottieViewModel")
         content.accept(collectionContent)
     }
     

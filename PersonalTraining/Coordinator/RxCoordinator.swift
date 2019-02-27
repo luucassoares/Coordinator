@@ -25,7 +25,7 @@ class RxCoordinator: Coordinator {
     }
     
     func start() {
-        print("Starting Rx Coordinator")
+        NSLog("Starting Rx Coordinator")
         setupViewModelAndViewController()
         presenter?.pushViewController(viewController!, animated: true)
     }

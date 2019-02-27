@@ -15,7 +15,7 @@ class ViewCodeCoordinator: Coordinator {
     var viewController: ViewCodeViewController?
     
     func start() {
-        print("Starting ViewCodeViewController")
+        NSLog("Starting ViewCodeViewController")
         setupViewModelAndViewController()
         presenter?.pushViewController(viewController!, animated: true)
     }

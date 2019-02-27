@@ -15,4 +15,3 @@ protocol Coordinator {
     func setupViewModelAndViewController()
     init(presenter: UINavigationController?)
 }
-

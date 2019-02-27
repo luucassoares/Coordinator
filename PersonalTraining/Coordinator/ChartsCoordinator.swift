@@ -23,7 +23,7 @@ class ChartsCoordinator: Coordinator {
     var options: [ChartType]?
     
     func start() {
-        print("Starting Charts ViewController")
+        NSLog("Starting Charts ViewController")
         setupViewModelAndViewController()
         presenter?.pushViewController(viewController!, animated: true)
     }
