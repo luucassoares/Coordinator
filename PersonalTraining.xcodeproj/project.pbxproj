@@ -20,6 +20,11 @@
 		DEA6D482221579AA0034EC3A /* ViewCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF18CA9221493A800770861 /* ViewCodeViewController.swift */; };
 		DECAEF5F22186EB9000F4418 /* ExtensionDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECAEF5E22186EB9000F4418 /* ExtensionDate.swift */; };
 		DECAEF6122186FDC000F4418 /* ExtensionUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECAEF6022186FDC000F4418 /* ExtensionUIButton.swift */; };
+		EC0075D12226CCC600C8615F /* FoldingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0075CF2226CCC600C8615F /* FoldingViewController.swift */; };
+		EC0075D22226CCC600C8615F /* FoldingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC0075D02226CCC600C8615F /* FoldingViewController.xib */; };
+		EC0075D42226CCD300C8615F /* FoldingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0075D32226CCD300C8615F /* FoldingCoordinator.swift */; };
+		EC0075D62226CCFE00C8615F /* FoldingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0075D52226CCFE00C8615F /* FoldingViewModel.swift */; };
+		EC0075DA2226CEAD00C8615F /* UniversityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0075D92226CEAD00C8615F /* UniversityService.swift */; };
 		EC059988221B14E900E5013F /* CustomUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC059987221B14E900E5013F /* CustomUIView.swift */; };
 		EC05998A221B252400E5013F /* card.json in Resources */ = {isa = PBXBuildFile; fileRef = EC059989221B252400E5013F /* card.json */; };
 		EC220CE622134E610096D63E /* SicaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC220CE422134E610096D63E /* SicaViewController.swift */; };
@@ -108,6 +113,12 @@
 		ECD707292211D15600873E26 /* RxOptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD707262211D15600873E26 /* RxOptionViewController.swift */; };
 		ECD7072A2211D15600873E26 /* RxOptionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECD707272211D15600873E26 /* RxOptionViewController.xib */; };
 		ECD7072B2211D15600873E26 /* RxOptionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECD707272211D15600873E26 /* RxOptionViewController.xib */; };
+		ECEE630F221C3B7400652EFC /* ChartsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEE630D221C3B7400652EFC /* ChartsViewController.swift */; };
+		ECEE6310221C3B7400652EFC /* ChartsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECEE630E221C3B7400652EFC /* ChartsViewController.xib */; };
+		ECEE6312221C3BC300652EFC /* ChartsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEE6311221C3BC300652EFC /* ChartsViewModel.swift */; };
+		ECEE6314221C3C1000652EFC /* ChartsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEE6313221C3C1000652EFC /* ChartsCoordinator.swift */; };
+		ECEE6318221C42E900652EFC /* ChartContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEE6316221C42E900652EFC /* ChartContentViewController.swift */; };
+		ECEE6319221C42E900652EFC /* ChartContentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECEE6317221C42E900652EFC /* ChartContentViewController.xib */; };
 		ECF18CA82214927600770861 /* ViewCodeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF18CA72214927600770861 /* ViewCodeCoordinator.swift */; };
 		ECF18CAB221493A800770861 /* ViewCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF18CA9221493A800770861 /* ViewCodeViewController.swift */; };
 /* End PBXBuildFile section */
@@ -143,6 +154,11 @@
 		DE14409F22125FBC0083445D /* PersonalTrainingDev-info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "PersonalTrainingDev-info.plist"; sourceTree = "<group>"; };
 		DECAEF5E22186EB9000F4418 /* ExtensionDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDate.swift; sourceTree = "<group>"; };
 		DECAEF6022186FDC000F4418 /* ExtensionUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUIButton.swift; sourceTree = "<group>"; };
+		EC0075CF2226CCC600C8615F /* FoldingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoldingViewController.swift; sourceTree = "<group>"; };
+		EC0075D02226CCC600C8615F /* FoldingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoldingViewController.xib; sourceTree = "<group>"; };
+		EC0075D32226CCD300C8615F /* FoldingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoldingCoordinator.swift; sourceTree = "<group>"; };
+		EC0075D52226CCFE00C8615F /* FoldingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoldingViewModel.swift; sourceTree = "<group>"; };
+		EC0075D92226CEAD00C8615F /* UniversityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityService.swift; sourceTree = "<group>"; };
 		EC059987221B14E900E5013F /* CustomUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUIView.swift; sourceTree = "<group>"; };
 		EC059989221B252400E5013F /* card.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = card.json; sourceTree = "<group>"; };
 		EC220CE422134E610096D63E /* SicaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SicaViewController.swift; sourceTree = "<group>"; };
@@ -196,6 +212,12 @@
 		ECD707222211CEDE00873E26 /* OptionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsViewModel.swift; sourceTree = "<group>"; };
 		ECD707262211D15600873E26 /* RxOptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxOptionViewController.swift; sourceTree = "<group>"; };
 		ECD707272211D15600873E26 /* RxOptionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RxOptionViewController.xib; sourceTree = "<group>"; };
+		ECEE630D221C3B7400652EFC /* ChartsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsViewController.swift; sourceTree = "<group>"; };
+		ECEE630E221C3B7400652EFC /* ChartsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChartsViewController.xib; sourceTree = "<group>"; };
+		ECEE6311221C3BC300652EFC /* ChartsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsViewModel.swift; sourceTree = "<group>"; };
+		ECEE6313221C3C1000652EFC /* ChartsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsCoordinator.swift; sourceTree = "<group>"; };
+		ECEE6316221C42E900652EFC /* ChartContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartContentViewController.swift; sourceTree = "<group>"; };
+		ECEE6317221C42E900652EFC /* ChartContentViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChartContentViewController.xib; sourceTree = "<group>"; };
 		ECF18CA72214927600770861 /* ViewCodeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodeCoordinator.swift; sourceTree = "<group>"; };
 		ECF18CA9221493A800770861 /* ViewCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -263,6 +285,24 @@
 			path = CustomViews;
 			sourceTree = "<group>";
 		};
+		EC0075CE2226CCB200C8615F /* FoldingCell */ = {
+			isa = PBXGroup;
+			children = (
+				EC0075CF2226CCC600C8615F /* FoldingViewController.swift */,
+				EC0075D02226CCC600C8615F /* FoldingViewController.xib */,
+				EC0075D52226CCFE00C8615F /* FoldingViewModel.swift */,
+			);
+			path = FoldingCell;
+			sourceTree = "<group>";
+		};
+		EC0075D82226CE9800C8615F /* Moya */ = {
+			isa = PBXGroup;
+			children = (
+				EC0075D92226CEAD00C8615F /* UniversityService.swift */,
+			);
+			path = Moya;
+			sourceTree = "<group>";
+		};
 		EC220CE322134E540096D63E /* Sica */ = {
 			isa = PBXGroup;
 			children = (
@@ -292,6 +332,7 @@
 		EC383BFB2212E7D100EC1AA4 /* APIManager */ = {
 			isa = PBXGroup;
 			children = (
+				EC0075D82226CE9800C8615F /* Moya */,
 				EC383C022212EA9000EC1AA4 /* Request */,
 				EC383BFC2212E7DE00EC1AA4 /* APIRequestProtocol.swift */,
 				EC383BFF2212E91700EC1AA4 /* APIClient.swift */,
@@ -455,6 +496,8 @@
 				EC383C0D2212F0FC00EC1AA4 /* CollapseCoordinator.swift */,
 				EC220CEA22134E740096D63E /* SicaCoordinator.swift */,
 				ECF18CA72214927600770861 /* ViewCodeCoordinator.swift */,
+				ECEE6313221C3C1000652EFC /* ChartsCoordinator.swift */,
+				EC0075D32226CCD300C8615F /* FoldingCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -462,6 +505,8 @@
 		ECD707142211CD2C00873E26 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				EC0075CE2226CCB200C8615F /* FoldingCell */,
+				ECEE630C221C3B5A00652EFC /* Charts */,
 				ECF18CA62214926500770861 /* ViewCode */,
 				EC220CE322134E540096D63E /* Sica */,
 				EC383C062212F07000EC1AA4 /* CollapsableTableView */,
@@ -490,6 +535,26 @@
 				EC383BF32212E71800EC1AA4 /* RxOptionViewModel.swift */,
 			);
 			path = RxOption;
+			sourceTree = "<group>";
+		};
+		ECEE630C221C3B5A00652EFC /* Charts */ = {
+			isa = PBXGroup;
+			children = (
+				ECEE6315221C3DEF00652EFC /* ChartContent */,
+				ECEE630D221C3B7400652EFC /* ChartsViewController.swift */,
+				ECEE630E221C3B7400652EFC /* ChartsViewController.xib */,
+				ECEE6311221C3BC300652EFC /* ChartsViewModel.swift */,
+			);
+			path = Charts;
+			sourceTree = "<group>";
+		};
+		ECEE6315221C3DEF00652EFC /* ChartContent */ = {
+			isa = PBXGroup;
+			children = (
+				ECEE6316221C42E900652EFC /* ChartContentViewController.swift */,
+				ECEE6317221C42E900652EFC /* ChartContentViewController.xib */,
+			);
+			path = ChartContent;
 			sourceTree = "<group>";
 		};
 		ECF18CA62214926500770861 /* ViewCode */ = {
@@ -628,6 +693,7 @@
 			files = (
 				ECAFAA252211F58500480517 /* LottieCell.xib in Resources */,
 				EC74A9DD2211FEB500B54F46 /* AnimationViewController.xib in Resources */,
+				ECEE6310221C3B7400652EFC /* ChartsViewController.xib in Resources */,
 				EC383C2A22131E1F00EC1AA4 /* CollapsibleTableViewCell.xib in Resources */,
 				EC74A9D22211FC9200B54F46 /* location.json in Resources */,
 				EC220CE822134E610096D63E /* SicaViewController.xib in Resources */,
@@ -638,10 +704,12 @@
 				DE14409D22125F8B0083445D /* PersonalTraining-info.plist in Resources */,
 				EC383C0B2212F08B00EC1AA4 /* CollapseViewController.xib in Resources */,
 				EC05998A221B252400E5013F /* card.json in Resources */,
+				ECEE6319221C42E900652EFC /* ChartContentViewController.xib in Resources */,
 				ECD7072A2211D15600873E26 /* RxOptionViewController.xib in Resources */,
 				ECD706D52211CC4500873E26 /* LaunchScreen.storyboard in Resources */,
 				ECAFAA112211DFD600480517 /* LottieViewController.xib in Resources */,
 				ECD706D22211CC4500873E26 /* Assets.xcassets in Resources */,
+				EC0075D22226CCC600C8615F /* FoldingViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -739,6 +807,8 @@
 				"${PODS_ROOT}/Target Support Files/Pods-PersonalTrainingDev/Pods-PersonalTrainingDev-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/FoldingCell/FoldingCell.framework",
+				"${BUILT_PRODUCTS_DIR}/IBAnimatable/IBAnimatable.framework",
 				"${BUILT_PRODUCTS_DIR}/LGSideMenuController/LGSideMenuController.framework",
 				"${BUILT_PRODUCTS_DIR}/MDFInternationalization/MDFInternationalization.framework",
 				"${BUILT_PRODUCTS_DIR}/MaterialComponents/MaterialComponents.framework",
@@ -752,6 +822,7 @@
 				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
 				"${BUILT_PRODUCTS_DIR}/RxKeyboard/RxKeyboard.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftCharts/SwiftCharts.framework",
 				"${BUILT_PRODUCTS_DIR}/TLCustomMask/TLCustomMask.framework",
 				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
 			);
@@ -761,6 +832,8 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FoldingCell.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IBAnimatable.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LGSideMenuController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFInternationalization.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MaterialComponents.framework",
@@ -774,6 +847,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxKeyboard.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftCharts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TLCustomMask.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
 			);
@@ -793,6 +867,8 @@
 				"${PODS_ROOT}/Target Support Files/Pods-PersonalTraining/Pods-PersonalTraining-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/FoldingCell/FoldingCell.framework",
+				"${BUILT_PRODUCTS_DIR}/IBAnimatable/IBAnimatable.framework",
 				"${BUILT_PRODUCTS_DIR}/LGSideMenuController/LGSideMenuController.framework",
 				"${BUILT_PRODUCTS_DIR}/MDFInternationalization/MDFInternationalization.framework",
 				"${BUILT_PRODUCTS_DIR}/MaterialComponents/MaterialComponents.framework",
@@ -806,6 +882,7 @@
 				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
 				"${BUILT_PRODUCTS_DIR}/RxKeyboard/RxKeyboard.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftCharts/SwiftCharts.framework",
 				"${BUILT_PRODUCTS_DIR}/TLCustomMask/TLCustomMask.framework",
 				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
 			);
@@ -815,6 +892,8 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FoldingCell.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IBAnimatable.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LGSideMenuController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFInternationalization.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MaterialComponents.framework",
@@ -828,6 +907,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxKeyboard.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftCharts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TLCustomMask.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
 			);
@@ -843,10 +923,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECEE630F221C3B7400652EFC /* ChartsViewController.swift in Sources */,
 				DE0168D92217B442003E5BB6 /* ExtensionUIViewController.swift in Sources */,
 				EC383BF42212E71800EC1AA4 /* RxOptionViewModel.swift in Sources */,
 				EC383C15221306CA00EC1AA4 /* ExtensionTableViewAndCollection.swift in Sources */,
 				EC383C112212F30900EC1AA4 /* CollapseViewModel.swift in Sources */,
+				EC0075D62226CCFE00C8615F /* FoldingViewModel.swift in Sources */,
 				EC383C092212F08B00EC1AA4 /* CollapseViewController.swift in Sources */,
 				EC383BFD2212E7DE00EC1AA4 /* APIRequestProtocol.swift in Sources */,
 				ECD707162211CDF700873E26 /* Coordinator.swift in Sources */,
@@ -856,6 +938,8 @@
 				ECD707282211D15600873E26 /* RxOptionViewController.swift in Sources */,
 				EC059988221B14E900E5013F /* CustomUIView.swift in Sources */,
 				EC74A9DB2211FEB500B54F46 /* AnimationViewController.swift in Sources */,
+				EC0075D42226CCD300C8615F /* FoldingCoordinator.swift in Sources */,
+				ECEE6318221C42E900652EFC /* ChartContentViewController.swift in Sources */,
 				EC383C1E221318B900EC1AA4 /* CollapsibleTableViewHeader.swift in Sources */,
 				ECF18CAB221493A800770861 /* ViewCodeViewController.swift in Sources */,
 				EC383C2822131E1F00EC1AA4 /* CollapsibleTableViewCell.swift in Sources */,
@@ -875,10 +959,14 @@
 				ECAFAA1E2211E0FF00480517 /* LottieCoordinator.swift in Sources */,
 				DE0168D72217B383003E5BB6 /* GradientButton.swift in Sources */,
 				EC383BF12212E5B300EC1AA4 /* RxCoordinator.swift in Sources */,
+				EC0075D12226CCC600C8615F /* FoldingViewController.swift in Sources */,
+				ECEE6312221C3BC300652EFC /* ChartsViewModel.swift in Sources */,
+				ECEE6314221C3C1000652EFC /* ChartsCoordinator.swift in Sources */,
 				ECD707192211CE3200873E26 /* RootCoordinator.swift in Sources */,
 				ECAFAA232211F58500480517 /* LottieCell.swift in Sources */,
 				DE0168DB2217B574003E5BB6 /* ExtensionString.swift in Sources */,
 				ECF18CA82214927600770861 /* ViewCodeCoordinator.swift in Sources */,
+				EC0075DA2226CEAD00C8615F /* UniversityService.swift in Sources */,
 				ECD706CB2211CC4300873E26 /* AppDelegate.swift in Sources */,
 				EC383C2122131BC200EC1AA4 /* ExtensionColor.swift in Sources */,
 			);

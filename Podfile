@@ -28,7 +28,9 @@ def myPods
       #pod 'Sica'
       pod 'MaterialComponents/TextFields'
       pod 'TLCustomMask'
-
+      pod 'SwiftCharts', '~> 0.6.3'
+      pod 'IBAnimatable'
+      pod 'FoldingCell'
 end
 
 

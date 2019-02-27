@@ -23,13 +23,12 @@ class RootCoordinator: Coordinator {
     init( window: UIWindow ) {
         self.window = window
         presenter = UINavigationController()
+        self.presenter?.navigationBar.prefersLargeTitles = true
         setupChildCoords()
     }
     
     required init(presenter: UINavigationController?) {
         self.presenter = presenter
-        self.presenter?.navigationBar.prefersLargeTitles = true
-        self.options.append(contentsOf: [""])
         self.window = UIWindow()
     }
     
@@ -39,8 +38,9 @@ class RootCoordinator: Coordinator {
                                      RxCoordinator(presenter: presenter),
                                      CollapseCoordinator(presenter: presenter),
                                      SicaCoordinator(presenter: presenter),
-                                     ViewCodeCoordinator(presenter: presenter)]
-//                                     UberCoordinator(presenter: presenter)]
+                                     ViewCodeCoordinator(presenter: presenter),
+                                     ChartsCoordinator(presenter: presenter),
+                                     FoldingCoordinator(presenter: presenter)]
         childCoordinators?.append(contentsOf: childC)
         for child in childCoordinators ?? []{
             self.options.append(child.name ?? "")
