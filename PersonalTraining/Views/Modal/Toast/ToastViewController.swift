@@ -15,7 +15,7 @@ class ToastViewController: UIViewController {
     
     
     var text: String?
-    var timer = Timer()
+
     
     convenience required init( _ text: String?) {
         self.init()
@@ -30,7 +30,6 @@ class ToastViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        timer.fire()
         UIView.animate(withDuration: 1, animations: {
             self.toastView.isHidden = false
         }, completion: nil) 
@@ -53,9 +52,6 @@ class ToastViewController: UIViewController {
     
     private func setupToastView() {
         toastView.layer.cornerRadius = 8
-        toastView.layer.borderWidth = 1
-        toastView.layer.borderColor = toastText.backgroundColor?.cgColor
-        
     }
 
 }

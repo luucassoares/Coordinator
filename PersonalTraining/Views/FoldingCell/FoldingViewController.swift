@@ -11,7 +11,7 @@ import RxCocoa
 import RxSwift
 
 protocol FoldingViewControllerDelegate {
-    func showToast(withText text: String?)
+    func showToast(withText text: String?, toastLength: ToastLength)
 }
 
 class FoldingViewController: UIViewController {
@@ -31,13 +31,7 @@ class FoldingViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupTextField()
         setupBtnObservable()
-        
-    }
-    
-    func setupTextField() {
-        
     }
     
     func setupBtnObservable() {
@@ -45,10 +39,10 @@ class FoldingViewController: UIViewController {
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.2, execute: {
                 guard let text = self.newToastMessage.text, text != "" else {
                     NSLog("Impossible to retrieve textfield text")
-                    self.delegate?.showToast(withText: "Impossible to retrieve textfield text")
+                    self.delegate?.showToast(withText: "Impossible to retrieve textfield text", toastLength: .short)
                     return
                 }
-                self.delegate?.showToast(withText: text)
+                self.delegate?.showToast(withText: text, toastLength: .long)
             })
         }).disposed(by: disposeBag)
     }

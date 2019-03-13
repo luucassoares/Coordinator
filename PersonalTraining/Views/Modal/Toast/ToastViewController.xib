@@ -23,18 +23,18 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="euS-Vf-lMv">
-                    <rect key="frame" x="153" y="587" width="69" height="40"/>
+                    <rect key="frame" x="155.5" y="587" width="64.5" height="40"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nNg-q0-Hxx">
-                            <rect key="frame" x="16" y="8" width="37" height="24"/>
-                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                            <rect key="frame" x="16" y="8" width="32.5" height="24"/>
+                            <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="13"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
                     <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="40" id="HjG-fg-bvN"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="HjG-fg-bvN"/>
                         <constraint firstAttribute="bottom" secondItem="nNg-q0-Hxx" secondAttribute="bottom" constant="8" id="K0R-yV-tgF"/>
                         <constraint firstItem="nNg-q0-Hxx" firstAttribute="leading" secondItem="euS-Vf-lMv" secondAttribute="leading" constant="16" id="LaO-BA-3fJ"/>
                         <constraint firstItem="nNg-q0-Hxx" firstAttribute="centerX" secondItem="euS-Vf-lMv" secondAttribute="centerX" id="Qzu-NF-Wos"/>
@@ -45,7 +45,9 @@
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
+                <constraint firstItem="euS-Vf-lMv" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="8" id="TsZ-xj-fHU"/>
                 <constraint firstItem="euS-Vf-lMv" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="qSI-ZD-RlR"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="euS-Vf-lMv" secondAttribute="trailing" constant="8" id="udQ-k5-HwN"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="euS-Vf-lMv" secondAttribute="bottom" constant="40" id="xmb-gY-9H4"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

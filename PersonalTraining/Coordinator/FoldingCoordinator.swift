@@ -9,9 +9,11 @@
 import Foundation
 import UIKit
 
-protocol FoldingCoordinatorDelegate {
-    func showModal(text: String?)
+enum ToastLength: Int {
+    case short = 3
+    case long = 5
 }
+
 
 class FoldingCoordinator: Coordinator {
     var name: String? = "Toast"
@@ -19,10 +21,13 @@ class FoldingCoordinator: Coordinator {
     var viewController: FoldingViewController?
     var toastVc: ToastViewController?
     var viewModel: FoldingViewModel?
-    var timer: Timer?
-    var timeLeft: Int = 3
+    var timer: Timer? {
+        didSet {
+            NSLog("Timer was set to nil: \(timer == nil)")
+        }
+    }
+    var timeLeft: Int?
     
-    var delegate: FoldingCoordinatorDelegate?
     
     func start() {
         NSLog("Initing Folding View Controller")
@@ -45,12 +50,19 @@ class FoldingCoordinator: Coordinator {
     }
     
     @objc private func timerFired() {
-        if timeLeft > 0 {
-            timeLeft = timeLeft - 1
-            NSLog("Remaining Toast Time: %i", timeLeft)
+        guard var mTimeLeft = timeLeft else {
+            assertionFailure("timeLeft is nil, please set an duration time in seconds for Toast")
+            return
+        }
+        if mTimeLeft > 0 {
+            mTimeLeft = mTimeLeft - 1
+            timeLeft = mTimeLeft
+            NSLog("Remaining Toast Time: %i", mTimeLeft)
         } else {
             NSLog("Toast Finished")
             timer?.invalidate()
+            timer = nil
+            timeLeft = nil
             toastVc?.dismiss(animated: true, completion: nil)
         }
         
@@ -58,16 +70,22 @@ class FoldingCoordinator: Coordinator {
 }
 
 extension FoldingCoordinator: FoldingViewControllerDelegate {
-    func showToast(withText text: String?) {
+    func showToast(withText text: String?, toastLength: ToastLength) {
         if toastVc == nil {
             toastVc = ToastViewController(text)
         } else {
             toastVc?.changeText(to: text)
         }
-        if timer == nil {
-            timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(timerFired), userInfo: nil, repeats: true)
-            
-        }
-        viewController?.showModal(viewController: toastVc!)
+        
+        timeLeft = toastLength.rawValue
+        
+        
+        viewController?.showLoader()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2, execute: {
+            self.viewController?.hideLoader()
+            self.timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.timerFired), userInfo: nil, repeats: true)
+            self.viewController?.showModal(viewController: self.toastVc!)
+        })
+        
     }
 }
