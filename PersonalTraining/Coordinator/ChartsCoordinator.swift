@@ -15,6 +15,7 @@ enum ChartType: String {
 }
 
 class ChartsCoordinator: Coordinator {
+    
     var name: String? = "Charts"
     
     var presenter: UINavigationController?

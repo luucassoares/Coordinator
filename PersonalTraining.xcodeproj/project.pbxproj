@@ -18,6 +18,8 @@
 		DE1440A022125FBC0083445D /* PersonalTrainingDev-info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE14409F22125FBC0083445D /* PersonalTrainingDev-info.plist */; };
 		DE1440A122125FBC0083445D /* PersonalTrainingDev-info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE14409F22125FBC0083445D /* PersonalTrainingDev-info.plist */; };
 		DEA6D482221579AA0034EC3A /* ViewCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF18CA9221493A800770861 /* ViewCodeViewController.swift */; };
+		DEB5584822393193000C91A5 /* ToastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB5584622393193000C91A5 /* ToastViewController.swift */; };
+		DEB5584922393193000C91A5 /* ToastViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEB5584722393193000C91A5 /* ToastViewController.xib */; };
 		DECAEF5F22186EB9000F4418 /* ExtensionDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECAEF5E22186EB9000F4418 /* ExtensionDate.swift */; };
 		DECAEF6122186FDC000F4418 /* ExtensionUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECAEF6022186FDC000F4418 /* ExtensionUIButton.swift */; };
 		EC0075D12226CCC600C8615F /* FoldingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0075CF2226CCC600C8615F /* FoldingViewController.swift */; };
@@ -154,6 +156,8 @@
 		DE0168DA2217B574003E5BB6 /* ExtensionString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionString.swift; sourceTree = "<group>"; };
 		DE0168DC2217B5FA003E5BB6 /* NewTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTextField.swift; sourceTree = "<group>"; };
 		DE14409F22125FBC0083445D /* PersonalTrainingDev-info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "PersonalTrainingDev-info.plist"; sourceTree = "<group>"; };
+		DEB5584622393193000C91A5 /* ToastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastViewController.swift; sourceTree = "<group>"; };
+		DEB5584722393193000C91A5 /* ToastViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToastViewController.xib; sourceTree = "<group>"; };
 		DECAEF5E22186EB9000F4418 /* ExtensionDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDate.swift; sourceTree = "<group>"; };
 		DECAEF6022186FDC000F4418 /* ExtensionUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUIButton.swift; sourceTree = "<group>"; };
 		EC0075CF2226CCC600C8615F /* FoldingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoldingViewController.swift; sourceTree = "<group>"; };
@@ -287,6 +291,15 @@
 				EC059987221B14E900E5013F /* CustomUIView.swift */,
 			);
 			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		DEB5584322392F5F000C91A5 /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				DEB5584622393193000C91A5 /* ToastViewController.swift */,
+				DEB5584722393193000C91A5 /* ToastViewController.xib */,
+			);
+			path = Toast;
 			sourceTree = "<group>";
 		};
 		EC0075CE2226CCB200C8615F /* FoldingCell */ = {
@@ -425,6 +438,7 @@
 		ECCD6A8E22270DC4007F8F81 /* Modal */ = {
 			isa = PBXGroup;
 			children = (
+				DEB5584322392F5F000C91A5 /* Toast */,
 				ECCD6A8F22270DCD007F8F81 /* Base */,
 			);
 			path = Modal;
@@ -716,6 +730,7 @@
 				ECAFAA252211F58500480517 /* LottieCell.xib in Resources */,
 				EC74A9DD2211FEB500B54F46 /* AnimationViewController.xib in Resources */,
 				ECEE6310221C3B7400652EFC /* ChartsViewController.xib in Resources */,
+				DEB5584922393193000C91A5 /* ToastViewController.xib in Resources */,
 				EC383C2A22131E1F00EC1AA4 /* CollapsibleTableViewCell.xib in Resources */,
 				EC74A9D22211FC9200B54F46 /* location.json in Resources */,
 				EC220CE822134E610096D63E /* SicaViewController.xib in Resources */,
@@ -992,6 +1007,7 @@
 				ECF18CA82214927600770861 /* ViewCodeCoordinator.swift in Sources */,
 				EC0075DA2226CEAD00C8615F /* UniversityService.swift in Sources */,
 				ECD706CB2211CC4300873E26 /* AppDelegate.swift in Sources */,
+				DEB5584822393193000C91A5 /* ToastViewController.swift in Sources */,
 				EC383C2122131BC200EC1AA4 /* ExtensionColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

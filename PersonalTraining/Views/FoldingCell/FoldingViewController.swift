@@ -7,13 +7,21 @@
 //
 
 import UIKit
+import RxCocoa
+import RxSwift
 
-
+protocol FoldingViewControllerDelegate {
+    func showToast(withText text: String?)
+}
 
 class FoldingViewController: UIViewController {
-
+    @IBOutlet weak var newToastMessage: NewTextField!
+    @IBOutlet weak var makeToastBtn: CustomUIButton!
+    
     //MARK :- Vars
     var viewModel: FoldingViewModel?
+    var delegate: FoldingViewControllerDelegate?
+    let disposeBag = DisposeBag()
     
     convenience required init (viewModel: FoldingViewModel?) {
         self.init()
@@ -23,6 +31,26 @@ class FoldingViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupTextField()
+        setupBtnObservable()
+        
+    }
+    
+    func setupTextField() {
+        
+    }
+    
+    func setupBtnObservable() {
+        makeToastBtn.rx.tap.subscribe(onNext: {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.2, execute: {
+                guard let text = self.newToastMessage.text, text != "" else {
+                    NSLog("Impossible to retrieve textfield text")
+                    self.delegate?.showToast(withText: "Impossible to retrieve textfield text")
+                    return
+                }
+                self.delegate?.showToast(withText: text)
+            })
+        }).disposed(by: disposeBag)
     }
  
 }

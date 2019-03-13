@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ToastViewController" customModule="PersonalTraining" customModuleProvider="target">
+            <connections>
+                <outlet property="toastText" destination="nNg-q0-Hxx" id="Iw0-LU-9EV"/>
+                <outlet property="toastView" destination="euS-Vf-lMv" id="LZF-Bd-UGt"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="euS-Vf-lMv">
+                    <rect key="frame" x="153" y="587" width="69" height="40"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nNg-q0-Hxx">
+                            <rect key="frame" x="16" y="8" width="37" height="24"/>
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="HjG-fg-bvN"/>
+                        <constraint firstAttribute="bottom" secondItem="nNg-q0-Hxx" secondAttribute="bottom" constant="8" id="K0R-yV-tgF"/>
+                        <constraint firstItem="nNg-q0-Hxx" firstAttribute="leading" secondItem="euS-Vf-lMv" secondAttribute="leading" constant="16" id="LaO-BA-3fJ"/>
+                        <constraint firstItem="nNg-q0-Hxx" firstAttribute="centerX" secondItem="euS-Vf-lMv" secondAttribute="centerX" id="Qzu-NF-Wos"/>
+                        <constraint firstAttribute="trailing" secondItem="nNg-q0-Hxx" secondAttribute="trailing" constant="16" id="mZq-Gs-DzT"/>
+                        <constraint firstItem="nNg-q0-Hxx" firstAttribute="centerY" secondItem="euS-Vf-lMv" secondAttribute="centerY" id="vH4-6h-G7y"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="euS-Vf-lMv" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="qSI-ZD-RlR"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="euS-Vf-lMv" secondAttribute="bottom" constant="40" id="xmb-gY-9H4"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>

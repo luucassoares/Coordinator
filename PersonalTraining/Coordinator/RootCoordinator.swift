@@ -23,7 +23,7 @@ class RootCoordinator: Coordinator {
     init( window: UIWindow ) {
         self.window = window
         presenter = UINavigationController()
-        self.presenter?.navigationBar.prefersLargeTitles = true
+//        self.presenter?.navigationBar.prefersLargeTitles = true
         setupChildCoords()
     }
     
@@ -34,6 +34,7 @@ class RootCoordinator: Coordinator {
     
     //create the options to go from this screen
     private func setupChildCoords() {
+        
         let childC: [Coordinator] = [LottieCoordinator(presenter: presenter),
                                      RxCoordinator(presenter: presenter),
                                      CollapseCoordinator(presenter: presenter),
@@ -75,7 +76,7 @@ class RootCoordinator: Coordinator {
 
 extension RootCoordinator: OptionsViewControllerDelegate {
     func didTapOption(at index: Int?) {
-        guard let mIndex = index, mIndex < childCoordinators!.count - 1, mIndex < childCoordinators!.count - 2 else {
+        guard let mIndex = index, mIndex < childCoordinators!.count else {
             let baseModal = BaseModalViewController(modalTitle: "Not implemented", modalMessage: "It is not possible to retrieve the flow using coordinator at index \(index ?? -1)", pMessage: "Ok", nMessage: "Cancel")
             baseModal.delegate = self
             viewController!.showModal(viewController: baseModal)
@@ -89,7 +90,7 @@ extension RootCoordinator: BaseModalViewControllerDelegate {
     func didTapPositiveButton(modal: BaseModalViewController) {
         print("Positive Tap")
     }
-    
+
     func didTapNegativeButton(modal: BaseModalViewController) {
         print("Negative Tap")
     }

@@ -9,6 +9,7 @@ import UIKit
 import NVActivityIndicatorView
 
 private var loaderViewAssociationKey: NVActivityIndicatorView?
+
 extension UIViewController {
     
     var loaderView: NVActivityIndicatorView! {

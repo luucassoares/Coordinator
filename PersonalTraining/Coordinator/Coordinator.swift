@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+
 protocol Coordinator {
     var name: String? { get set }
     var presenter: UINavigationController? { get set }
