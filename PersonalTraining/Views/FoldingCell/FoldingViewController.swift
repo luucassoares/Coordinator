@@ -15,6 +15,7 @@ protocol FoldingViewControllerDelegate {
 }
 
 class FoldingViewController: UIViewController {
+    @IBOutlet weak var segmentedControll: UISegmentedControl!
     @IBOutlet weak var newToastMessage: NewTextField!
     @IBOutlet weak var makeToastBtn: CustomUIButton!
     
@@ -22,6 +23,11 @@ class FoldingViewController: UIViewController {
     var viewModel: FoldingViewModel?
     var delegate: FoldingViewControllerDelegate?
     let disposeBag = DisposeBag()
+    var toastLength: ToastLength! {
+        didSet {
+            NSLog("toastLength was setted to: \(toastLength)")
+        }
+    }
     
     convenience required init (viewModel: FoldingViewModel?) {
         self.init()
@@ -31,19 +37,55 @@ class FoldingViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupSegmentedControl()
         setupBtnObservable()
+        setupDismissKeyboard()
     }
     
-    func setupBtnObservable() {
+    private func setupSegmentedControl() {
+        segmentedControll.removeAllSegments()
+        segmentedControll.insertSegment(withTitle: "Short - \(ToastLength.short.rawValue)s", at: 0, animated: true)
+        segmentedControll.insertSegment(withTitle: "Medium - \(ToastLength.medium.rawValue)s", at: 1, animated: true)
+        segmentedControll.insertSegment(withTitle: "Long - \(ToastLength.long.rawValue)s", at: 2, animated: true)
+        segmentedControll.selectedSegmentIndex = 0
+        segmentedControll.addTarget(self, action: #selector(segmentedControlValueChanged(segmentedControl:)), for: .valueChanged)
+    }
+    
+    
+    @objc private func segmentedControlValueChanged(segmentedControl: UISegmentedControl) {
+        switch (segmentedControll.selectedSegmentIndex) {
+        case 0:
+            toastLength = .short
+        case 1:
+            toastLength = .medium
+        case 2:
+            toastLength = .long
+        default:
+            NSLog("Default case on setToastLength")
+        }
+    }
+    
+    private func setupDismissKeyboard() {
+        let tap = UITapGestureRecognizer(target: self, action: #selector(endEditing(tap:)))
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc private func endEditing(tap: UITapGestureRecognizer) {
+        self.view.endEditing(true)
+    }
+    
+    
+    private func setupBtnObservable() {
+
+        
         makeToastBtn.rx.tap.subscribe(onNext: {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.2, execute: {
-                guard let text = self.newToastMessage.text, text != "" else {
-                    NSLog("Impossible to retrieve textfield text")
-                    self.delegate?.showToast(withText: "Impossible to retrieve textfield text", toastLength: .short)
-                    return
-                }
-                self.delegate?.showToast(withText: text, toastLength: .long)
-            })
+            
+            guard let text = self.newToastMessage.text, text != "" else {
+                NSLog("Impossible to retrieve textfield text")
+                self.delegate?.showToast(withText: "Impossible to retrieve textfield text", toastLength: self.toastLength)
+                return
+            }
+            self.delegate?.showToast(withText: text, toastLength: self.toastLength)
         }).disposed(by: disposeBag)
     }
  

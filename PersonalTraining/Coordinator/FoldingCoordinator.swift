@@ -11,7 +11,8 @@ import UIKit
 
 enum ToastLength: Int {
     case short = 3
-    case long = 5
+    case medium = 5
+    case long = 7
 }
 
 

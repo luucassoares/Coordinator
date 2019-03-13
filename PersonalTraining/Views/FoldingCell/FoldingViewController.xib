@@ -14,6 +14,7 @@
             <connections>
                 <outlet property="makeToastBtn" destination="o95-2w-nxV" id="IRB-tj-LbI"/>
                 <outlet property="newToastMessage" destination="FYs-kF-J6t" id="jrl-oP-KCV"/>
+                <outlet property="segmentedControll" destination="Yar-ci-S3R" id="Kkl-jv-ABZ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -29,7 +30,7 @@
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o95-2w-nxV" customClass="CustomUIButton" customModule="PersonalTraining" customModuleProvider="target">
-                    <rect key="frame" x="127.5" y="89" width="120" height="40"/>
+                    <rect key="frame" x="127.5" y="139" width="120" height="40"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="120" id="ub8-oo-2mX"/>
                         <constraint firstAttribute="height" constant="40" id="xDr-qa-2vs"/>
@@ -49,13 +50,22 @@
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                 </button>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Yar-ci-S3R">
+                    <rect key="frame" x="139" y="91" width="97" height="29"/>
+                    <segments>
+                        <segment title="Short"/>
+                        <segment title="Long"/>
+                    </segments>
+                </segmentedControl>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="Yar-ci-S3R" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="0pz-J7-CkK"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="FYs-kF-J6t" secondAttribute="trailing" constant="16" id="6HF-eX-09m"/>
-                <constraint firstItem="o95-2w-nxV" firstAttribute="top" secondItem="FYs-kF-J6t" secondAttribute="bottom" constant="8" id="NwD-2b-Xa5"/>
                 <constraint firstItem="o95-2w-nxV" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Olu-H3-NgD"/>
                 <constraint firstItem="FYs-kF-J6t" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Z3B-yM-MZ0"/>
+                <constraint firstItem="o95-2w-nxV" firstAttribute="top" secondItem="Yar-ci-S3R" secondAttribute="bottom" constant="20" id="du1-bB-4qx"/>
+                <constraint firstItem="Yar-ci-S3R" firstAttribute="top" secondItem="FYs-kF-J6t" secondAttribute="bottom" constant="10" id="gsP-KL-Gg1"/>
                 <constraint firstItem="FYs-kF-J6t" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="40" id="jfj-H8-bUs"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
