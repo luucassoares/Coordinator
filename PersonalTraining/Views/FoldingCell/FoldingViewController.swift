@@ -47,8 +47,9 @@ class FoldingViewController: UIViewController {
         segmentedControll.insertSegment(withTitle: "Short - \(ToastLength.short.rawValue)s", at: 0, animated: true)
         segmentedControll.insertSegment(withTitle: "Medium - \(ToastLength.medium.rawValue)s", at: 1, animated: true)
         segmentedControll.insertSegment(withTitle: "Long - \(ToastLength.long.rawValue)s", at: 2, animated: true)
-        segmentedControll.selectedSegmentIndex = 0
         segmentedControll.addTarget(self, action: #selector(segmentedControlValueChanged(segmentedControl:)), for: .valueChanged)
+        segmentedControll.selectedSegmentIndex = 0
+        segmentedControll.sendActions(for: .valueChanged)
     }
     
     
@@ -76,17 +77,12 @@ class FoldingViewController: UIViewController {
     
     
     private func setupBtnObservable() {
-
-        
         makeToastBtn.rx.tap.subscribe(onNext: {
-            
             guard let text = self.newToastMessage.text, text != "" else {
-                NSLog("Impossible to retrieve textfield text")
-                self.delegate?.showToast(withText: "Impossible to retrieve textfield text", toastLength: self.toastLength)
+                self.delegate?.showToast(withText: "Text field was empty", toastLength: self.toastLength)
                 return
             }
             self.delegate?.showToast(withText: text, toastLength: self.toastLength)
         }).disposed(by: disposeBag)
     }
- 
 }
