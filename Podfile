@@ -22,15 +22,10 @@ def myPods
       pod 'Moya/RxSwift', '~> 11.0'
       pod 'lottie-ios'
       pod 'LGSideMenuController'
-      #pod 'ViewAnimator'
-      #pod 'SwifterSwift'
       pod 'NVActivityIndicatorView'
-      #pod 'Sica'
       pod 'MaterialComponents/TextFields'
       pod 'TLCustomMask'
-      pod 'SwiftCharts', '~> 0.6.3'
-      pod 'IBAnimatable'
-      pod 'FoldingCell'
+      pod 'RxGesture'
 end
 
 

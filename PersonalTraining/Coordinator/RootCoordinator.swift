@@ -40,7 +40,6 @@ class RootCoordinator: Coordinator {
                                      CollapseCoordinator(presenter: presenter),
                                      SicaCoordinator(presenter: presenter),
                                      ViewCodeCoordinator(presenter: presenter),
-                                     ChartsCoordinator(presenter: presenter),
                                      FoldingCoordinator(presenter: presenter)]
         childCoordinators?.append(contentsOf: childC)
         for child in childCoordinators ?? []{

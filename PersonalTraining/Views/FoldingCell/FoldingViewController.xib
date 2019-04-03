@@ -15,6 +15,7 @@
                 <outlet property="makeToastBtn" destination="o95-2w-nxV" id="IRB-tj-LbI"/>
                 <outlet property="newToastMessage" destination="FYs-kF-J6t" id="jrl-oP-KCV"/>
                 <outlet property="segmentedControll" destination="Yar-ci-S3R" id="Kkl-jv-ABZ"/>
+                <outlet property="toast" destination="ZD9-bW-Hei" id="QVu-7I-uHn"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -57,14 +58,24 @@
                         <segment title="Long"/>
                     </segments>
                 </segmentedControl>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZD9-bW-Hei" customClass="Toast" customModule="PersonalTraining" customModuleProvider="target">
+                    <rect key="frame" x="8" y="597" width="359" height="50"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="MYx-ou-YRv"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="Yar-ci-S3R" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="0pz-J7-CkK"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="FYs-kF-J6t" secondAttribute="trailing" constant="16" id="6HF-eX-09m"/>
                 <constraint firstItem="o95-2w-nxV" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Olu-H3-NgD"/>
+                <constraint firstItem="ZD9-bW-Hei" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="8" id="Xh7-wR-HNh"/>
                 <constraint firstItem="FYs-kF-J6t" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Z3B-yM-MZ0"/>
                 <constraint firstItem="o95-2w-nxV" firstAttribute="top" secondItem="Yar-ci-S3R" secondAttribute="bottom" constant="20" id="du1-bB-4qx"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ZD9-bW-Hei" secondAttribute="trailing" constant="8" id="e03-vf-X3Q"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="ZD9-bW-Hei" secondAttribute="bottom" constant="20" id="gVq-9s-bq8"/>
                 <constraint firstItem="Yar-ci-S3R" firstAttribute="top" secondItem="FYs-kF-J6t" secondAttribute="bottom" constant="10" id="gsP-KL-Gg1"/>
                 <constraint firstItem="FYs-kF-J6t" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="40" id="jfj-H8-bUs"/>
             </constraints>

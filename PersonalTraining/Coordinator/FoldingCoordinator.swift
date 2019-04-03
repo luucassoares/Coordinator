@@ -20,7 +20,7 @@ class FoldingCoordinator: Coordinator {
     var name: String? = "Toast"
     var presenter: UINavigationController?
     var viewController: FoldingViewController?
-    var toastVc: ToastViewController?
+    
     var viewModel: FoldingViewModel?
     var timer: Timer? {
         didSet {
@@ -64,7 +64,8 @@ class FoldingCoordinator: Coordinator {
             timer?.invalidate()
             timer = nil
             timeLeft = nil
-            toastVc?.dismiss(animated: true, completion: nil)
+//            toastVc?.dismiss(animated: true, completion: nil)
+            self.viewController?.toast.isHidden = true
         }
         
     }
@@ -72,20 +73,12 @@ class FoldingCoordinator: Coordinator {
 
 extension FoldingCoordinator: FoldingViewControllerDelegate {
     func showToast(withText text: String?, toastLength: ToastLength) {
-        if toastVc == nil {
-            toastVc = ToastViewController(text)
-        } else {
-            toastVc?.changeText(to: text)
-        }
-        
         timeLeft = toastLength.rawValue
-        
-        
         viewController?.showLoader()
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2, execute: {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: {
             self.viewController?.hideLoader()
             self.timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.timerFired), userInfo: nil, repeats: true)
-            self.viewController?.showModal(viewController: self.toastVc!)
+            self.viewController?.showToast(text: text)
         })
         
     }

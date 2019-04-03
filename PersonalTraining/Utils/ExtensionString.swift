@@ -142,7 +142,7 @@ extension String {
      Verifica se é um CNPJ válido
      */
     func isCNPJ() -> Bool {
-        let numbers = characters.compactMap({Int(String($0))})
+        let numbers = self.compactMap({Int(String($0))})
         guard numbers.count == 14 && Set(numbers).count != 1 else { return false }
         let soma1 = 11 - ( numbers[11] * 2 +
             numbers[10] * 3 +
@@ -284,7 +284,7 @@ extension String {
         
         // remove from String: “$”, “.”, “,”
         let regex = try! NSRegularExpression(pattern: "[^0-9]", options: .caseInsensitive)
-        amountWithPrefix = regex.stringByReplacingMatches(in: amountWithPrefix, options: NSRegularExpression.MatchingOptions(rawValue: 0), range: NSMakeRange(0, self.characters.count), withTemplate: "")
+        amountWithPrefix = regex.stringByReplacingMatches(in: amountWithPrefix, options: NSRegularExpression.MatchingOptions(rawValue: 0), range: NSMakeRange(0, self.count), withTemplate: "")
         
         let double = (amountWithPrefix as NSString).doubleValue
         number = NSNumber(value: (double / 100))

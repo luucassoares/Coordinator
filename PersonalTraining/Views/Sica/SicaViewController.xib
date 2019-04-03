@@ -130,17 +130,26 @@
                         <constraint firstAttribute="height" constant="80" id="uuy-Wx-bHo"/>
                     </constraints>
                 </view>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Pq-e8-goN">
+                    <rect key="frame" x="20" y="300" width="295" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="0Pq-e8-goN" secondAttribute="trailing" constant="60" id="2Px-N3-lbc"/>
                 <constraint firstItem="qwv-Is-3Pu" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="8" id="5bf-lr-rhG"/>
                 <constraint firstItem="BGi-b9-soe" firstAttribute="top" secondItem="qwv-Is-3Pu" secondAttribute="bottom" constant="60" id="81l-7d-9hQ"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="BGi-b9-soe" secondAttribute="trailing" constant="30" id="ATL-Ui-5bS"/>
                 <constraint firstItem="OpW-vl-W2j" firstAttribute="top" secondItem="BGi-b9-soe" secondAttribute="bottom" constant="8" id="OKQ-Md-b36"/>
                 <constraint firstItem="BGi-b9-soe" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="Xv8-AZ-Zx4"/>
+                <constraint firstItem="0Pq-e8-goN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="hFx-wk-iK3"/>
                 <constraint firstItem="qwv-Is-3Pu" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="8" id="ms6-pN-xh6"/>
                 <constraint firstItem="OpW-vl-W2j" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="q0W-nH-QyK"/>
                 <constraint firstItem="BGi-b9-soe" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="r6R-iD-zY1"/>
+                <constraint firstItem="0Pq-e8-goN" firstAttribute="top" secondItem="OpW-vl-W2j" secondAttribute="bottom" constant="30" id="uIW-me-jOO"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="qwv-Is-3Pu" secondAttribute="trailing" constant="8" id="zQz-05-svn"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

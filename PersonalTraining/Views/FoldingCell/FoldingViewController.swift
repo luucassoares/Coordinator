@@ -19,6 +19,9 @@ class FoldingViewController: UIViewController {
     @IBOutlet weak var newToastMessage: NewTextField!
     @IBOutlet weak var makeToastBtn: CustomUIButton!
     
+    @IBOutlet weak var toast: Toast!
+    
+    
     //MARK :- Vars
     var viewModel: FoldingViewModel?
     var delegate: FoldingViewControllerDelegate?
@@ -40,6 +43,7 @@ class FoldingViewController: UIViewController {
         setupSegmentedControl()
         setupBtnObservable()
         setupDismissKeyboard()
+   
     }
     
     private func setupSegmentedControl() {
@@ -73,6 +77,14 @@ class FoldingViewController: UIViewController {
     
     @objc private func endEditing(tap: UITapGestureRecognizer) {
         self.view.endEditing(true)
+    }
+    
+    func showToast(text: String?) {
+        UIView.animate(withDuration: 2) {
+            self.toast.isHidden = false
+            self.toast.label.text = text
+            self.view.layoutIfNeeded()
+        }
     }
     
     
